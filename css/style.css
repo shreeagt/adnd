@@ -1,3 +1,117 @@
+/* ********************header css******************** */
+.navbar{
+    background-color: #fff !important;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    z-index: 9999;
+    min-width: 100%;
+}
+.nav-item-image{
+    width: 50px;
+
+}
+.ham-item{
+    width: 200px;
+    background: #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem !important;
+    padding: 5px;
+    margin-bottom: 4rem;
+    font-family: Arial;
+    letter-spacing: 5px;
+    border-radius: 2px;
+}
+#ham-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#navbar-nav{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    width: 100%;
+}
+#nav-link{
+    font-weight: bold; 
+    font-size: 14px; 
+    color: #000; 
+    letter-spacing: 4.9px;
+
+
+    
+}
+#nav-link-brand{
+    font-weight: bold; font-size: 20px; color: #cfa671;  letter-spacing: 4.9px;
+}
+#navbar-brand{
+    font-weight: bold; 
+    font-size: 20px; 
+    color: #E7D2B8;
+}
+#ham-link{
+    font-weight: 700; font-size: 14px; color: #000;
+}
+.gwpr{
+    position: relative;
+}
+
+/* <!--================Images for Home page================--> */
+
+.hoverstyle1{
+    background-image: url('../img/Component 17.png');
+}
+.hoverstyle2{
+    background-image: url('../img/Mask Group 28.png');
+}
+.hoverstyle3{
+    background-image: url('../img/Mask Group 28.png');
+}
+.hoverstyle4{
+    background-image: url('../img/Component 17.png');
+}
+.hoverstyle5{
+    background-image: url('../img/Component 17.png');
+}
+.hoverstyle6{
+    background-image: url('../img/Mask Group 28.png');
+}
+.hoverstyle7{
+    background-image: url('../img/Mask Group 28.png');
+}
+.hoverstyle8{
+    background-image: url('../img/Component 17.png');
+}
+@media only screen and (max-width:768px){
+    .navbar-nav{
+        text-align: center;
+    }
+}
+/* ********************footer css******************** */
+
+
+.footer-text{
+    letter-spacing: 4.9px;
+}
+.page-scroll{
+    color: black;
+    text-decoration: none;
+
+}
+
+@media only screen and (max-width:1250px){
+    .footer{
+        display:none
+
+    }
+
+}
+/* ********************index.html css******************** */
+
 html,
         body {
             font-family: Gotham;
@@ -91,24 +205,15 @@ html,
         }
 
         .hoverstyle {
+            filter: grayscale(1);
             background-repeat: no-repeat;
             background-size: cover;
             height: 100%;
             margin: 20px;
-            -webkit-filter: grayscale(100%);
-            -moz-filter: grayscale(100%);
-            filter: grayscale(100%);
-            transition: all 6s cubic-bezier(.08, .35, .13, 1.02), opacity 4s;
-            /* transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity */
         }
 
         .hoverstyle:hover {
-            /* filter: none; */
-            -webkit-filter: grayscale(0%);
-            -moz-filter: grayscale(0%);
-            filter: grayscale(0%);
-            transition: all 6s cubic-bezier(.08, .35, .13, 1.02), opacity 4s;
-        
+            filter: none;
         }
 
         .section-container:hover .grow {
@@ -181,4 +286,396 @@ html,
 }
 .active{
     font-weight: bold;
+}
+#container4{
+    margin-bottom: 4rem;
+}
+
+
+
+/* ********************page1 css******************** */
+
+#zoom-in-image{
+    
+    width: 100%;
+    transition: all 1s;
+}
+.zoom-in-image img:hover{
+    transform: scale(1.1);
+}
+.zoom-in-image{
+    
+    overflow: hidden;
+    margin-top: 4rem;
+}
+.ml-5{
+    margin-left: 3rem !important;
+}
+.h-550{
+    max-height: 700px;
+}
+.text-container{
+    text-align: right;
+}
+.ml-lg-auto{
+    margin-left: auto !important;
+}
+.text-container,.details{
+    font-family: "Gotham",sans-serif;
+    opacity: 80%;
+    font-weight: bold;
+    
+}
+.details h3{
+    font-weight: bold;
+}
+.details{
+    max-width: 340px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textalc{
+    text-align: center;
+}
+.mb-4{
+    margin-bottom:1.5rem;
+}
+@media only screen and (min-width:1200px){
+
+    #zoom-in-image{
+        height: 90vh;
+    }
+}
+@media only screen and (max-width:976px){
+    .text-container{
+        text-align: left;
+    }
+    .ml-5{
+        margin-left: 3rem !important; 
+    }
+}
+
+/* page2 css */
+
+
+
+
+.years{
+    
+    height: 700px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.years h1{
+    color: white;
+    font-family: 'Gotham', sans-serif;
+}
+.images{
+    
+    /* background-color: blueviolet; */
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pg-2-hover-text{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    font-family: 'Gotham', sans-serif;
+    
+}
+.images img{
+    position: absolute;
+    top:0;
+}
+
+.pg-2hover-text:hover{
+    opacity: 80%;
+}
+.pg-2hover-text h2{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:768px){
+    .years{
+        height: 70vw;
+    }
+    .images{
+        height: 70vw;
+    }
+}
+
+/* page3 css */
+
+img{
+    max-width: 100%;
+}
+.image{
+    overflow: hidden;
+}
+.hover-image{
+    transition: all 1s;
+}
+.hover-image:hover{
+    transform: scale(1.1);
+}
+
+/* page 4 css */
+
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+
+
+.contact-form form{
+    width: 100%;
+    /* padding: 30px; */
+    /* padding-right: 150px; */
+    padding-top: 70px;
+}
+.contact-details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gotham', sans-serif;
+}
+
+.contact-details a{
+    color: black;
+}
+.contact-details h2{
+    font-size: 20px;
+    opacity: 80%;
+
+}
+input,textarea{
+    width: 100%;
+}
+input{
+    border: none;
+    border-bottom: groove;
+}
+#name:focus{
+    outline: goldenrod !important;
+}
+.form-floating{
+    width: 300px;
+}
+#message{
+    border: 2px solid groove;
+    padding: 20px;
+    border-radius: 10px;
+    height: 10rem;
+}
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.Details{
+    padding: 100px;
+    font-family: 'Gotham', sans-serif;
+}
+input[type=submit]{
+    width: 200px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background-color: goldenrod;
+    color: white;
+    
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (max-width:1100px){
+
+    
+    .Details{
+        width: 100vw;
+        padding: 30px;
+    }
+    .contact-form{
+        width: 100vw;
+    }
+.contact-form form{
+        padding-right: 30px;
+    }
+}
+
+/* page 5 css */
+
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+
+.gallery{
+    margin-top: 4rem !important;
+}
+.mag-img{
+    text-align: center;
+
+}
+.gallery img{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.image{
+    position: relative;
+    
+}
+.pg-5-hover-text{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    transition: all 1s;
+    padding: 15px;
+    font-family: "Gotham",sans-serif;
+}
+
+.pg-5-hover-text:hover{
+    opacity: 60%;
+}
+/* page 6 css */
+
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+.text{
+    width: 60%;
+}
+
+.awards img{
+    max-width: 60%;
+
+}
+
+.awards{
+    margin-top: 4rem;
+    text-align: center;
+    font-family: "Gotham",sans-serif;
+}
+.textContainer{
+    display: flex;
+    justify-content: center;
+   text-align: left;
+    flex-direction: column;
+    padding: 25px;
+    border: 2px solid #979797;
+    border-right: none;
+    width: 200px;
+
+    
+}
+.award-desc{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 30px;
+}
+.trophy{
+    height: 85vh;
+}
+.text h3{
+    font-size: 16px;
+    font-weight: bold;
+}
+.brl{
+    border-right: 1px solid #979797;
+}
+.textContainer p{
+    width: 264%;
+}
+@media only screen and (max-width:800px){
+    .text p{
+        width: 205%;
+    }
+    .award-desc{
+        justify-content: center;
+    }
+    .brl{
+        border: none;
+    }
+}
+@media only screen and (max-width:485px){
+    .award-desc{
+        justify-content: left;
+    }
+.awards img{
+    max-width: 90%;
+}
+}
+
+/* page7 css */
+
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+
+.pg-7-col img{
+    max-width: 100%;
+    
+}
+.pg-7-col{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.team{
+    margin-top: 4rem;
+    /* text-align: center; */
+    font-family: "Gotham",sans-serif;
+}
+.team h2{
+    opacity: 60%;
+    font-weight: 400;
+    font-size: 25px;
+}
+.pg-7-col video{
+    max-width: 100%;
+}
+.row .pg-7-col,.pg-7-col h2{
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.col-8 img{
+    max-width: 100%;
+}
+.col-4,.col-8{
+    text-align: center;
+}
+.txtalc{
+    text-align: center;
+}
+@media only screen and (max-width:800px){
+    .team{
+        text-align: center;
+    }
+    .pg-7-col{
+        text-align: center;
+    }
 }

@@ -1,0 +1,86 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+.section-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.years{
+    width: 48%;
+    height: 80vh;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.years h1{
+    color: white;
+    font-family: 'Gotham', sans-serif;
+}
+
+.section-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.images{
+    width: 48%;
+    /* background-color: blueviolet; */
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hover-text{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    font-family: 'Gotham', sans-serif;
+    
+}
+.images img{
+    position: absolute;
+    top:0;
+}
+
+.hover-text:hover{
+    opacity: 80%;
+}
+.hover-text h2{
+    font-size: 15px;
+    font-weight: bold;
+}
+.gap-{
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width:634px){
+    .section-1{
+        flex-direction: column;
+    }
+    .years{
+        width: 100vw;
+        height: 60vw;
+
+    }
+    .gap{
+        margin-top  : 2rem;
+    }
+    .images{
+        width: 100vw;
+        height: 60vw;
+    }
+}
