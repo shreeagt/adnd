@@ -818,9 +818,21 @@ span.strong {
         width: 60% !important;
     }
 }
-
+@media only screen and (max-width:1300px){
+    .col-12.pg3-col-lg-4-8.mt-sm-60px.prl-0.pd-tp {
+        padding-top: 4px;
+    }
+}
 @media only screen and (max-width:1200px){
+    .pg-5-hover-text p {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
 
+    h5.bolder.hover-text {
+        font-size: 17px;
+        margin-bottom: 3px;
+    }
 }
 
 @media only screen and (width:768px){
@@ -952,6 +964,9 @@ span.strong {
         text-align: center;
     }
 
+
+
+
 }
 /* page3 css */
 
@@ -1078,6 +1093,27 @@ form{
 .gutter-0{
     --bs-gutter-x:0 !important; 
 }
+
+/* page 7 */
+
+.pg-5-hover-text.opa {
+    opacity: 80%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    transition: all 1s;
+    padding: 15px;
+    font-family: "Gotham-book",sans-serif;
+}
+
 @media only screen and (max-width:1500px){
     .contact-details{
         margin-left: 26% !important;
@@ -1138,6 +1174,27 @@ form{
     .india-text{
         font-size: 16px!important;
     }
+
+
+    /* .yearss.ye.w-100 {
+        width: 80vw!important;
+        height: 80vw;
+        margin: auto;
+    }
+
+    .row.row-cols-1.row-cols-lg-2.text_cust {
+        margin: 0 10vw;
+    }
+
+    .row.text_cust {
+        margin: 0 10vw;
+    }
+
+    .grid {
+        border: 2px solid #707070;
+        width: 80vw;
+        height: 80vw;
+    } */
 }
 /* page 5 css */
 
@@ -1215,8 +1272,13 @@ form{
     font-family: "Gotham",sans-serif;
 }
 
-.pg-5-hover-text:hover{
-    opacity: 60%;
+.pg-5-hover-text:hover {
+    opacity: 75%;
+}
+
+h5.bolder.hover-text {
+    font-weight: lighter;
+    color: #736e64;
 }
 /* page 6 css */
 
@@ -1379,6 +1441,7 @@ form{
     }
     .mobile-promap{
         display: block;
+        margin-block:30px!important;
     }
 }
 @media only screen and (max-width:485px){
@@ -1450,7 +1513,6 @@ form{
         display: flex;
         border: 2px solid #707070;
         align-items: center;
-        padding: 30px 0;
     }
 
     .row.row-cols-1.row-cols-lg-2.text_cust {
@@ -1500,9 +1562,9 @@ form{
 
     .ye .text-container h1 {
         font-size: 21px!important;
-        line-height: 30px;
+        line-height: 27px;
     }
-   
+    
     .row.row-cols-1.row-cols-lg-2.text_cust {
         margin: 0 30px;
     }
@@ -1527,6 +1589,18 @@ form{
         letter-spacing: 2.25px;
         line-height: 16px;
     }
+
+    h5.bolder.hover-text {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .pg-5-hover-text p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    
 }
 
 
@@ -1535,6 +1609,10 @@ form{
 
 #ideal-text-container{
     transition: all 2s ease-out;
+}
+
+.col-12.pg3-col-lg-4-8.mt-sm-60px.prl-0.pd-tp {
+    padding-top: 10px;
 }
 
 @import url('http://fonts.cdnfonts.com/css/gotham');
@@ -1987,7 +2065,7 @@ element.style {
   }
   @media only screen and (max-width:998px){
 
-   
+  
 
     .pr-sm-40px{
         padding-right: 40px;
@@ -2015,6 +2093,39 @@ element.style {
 }
 .mb-4-5-rem{
     margin-bottom: 3rem !important;
+}
+
+
+.yearss.ye.w-100 {
+    width: 80vw!important;
+    height: 80vw;
+    margin: auto;
+}
+
+.row.row-cols-1.row-cols-lg-2.text_cust {
+    margin: 0 10vw;
+}
+
+.row.row-cols-1.row-cols-lg-2.text_cust {
+    margin: 0 10vw;
+    margin-top: 30px;
+}
+
+.images.w-100 {
+    width: 80vw!important;
+    height: 80vw!important;
+}
+
+.images.w-100 {
+    width: 80vw!important;
+    height: 80vw!important;
+    margin: auto!important;
+}
+
+.grid {
+    width: 79vw!important;
+    height: 79vw!important;
+    margin: auto!important;
 }
  
   }
@@ -2408,6 +2519,20 @@ element.style {
         padding: 15px;
     }
   
+    .pg-5-hover-text p {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .pg-5-hover-text p {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .ye .text-container h1 {
+        font-size: 15px!important;
+        line-height: 20px;
+    }
 }
 
 @media only screen and (max-width:280px){
@@ -2430,4 +2555,14 @@ element.style {
         margin: 0 10px;
     }
 
+
+    .pg-5-hover-text p {
+        font-size: 8px;
+        margin-bottom: 0;
+    }
+
+    h5.bolder.hover-text {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
 }
