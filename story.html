@@ -36,23 +36,23 @@
             <div class="desktop-navbar ">
                 <div class="navbar-nav mr-auto mt-2 mt-lg-0 m-auto mh-66px" id="navbar-nav">
                     <div class="nav-item desk-item ">
-                        <a class="nav-link m-auto active desk-work" id="nav-link" href="/">WORK </a>
+                        <a class="nav-link m-auto  desk-work" id="nav-link" href="work.html">WORK </a>
 
                     </div>
                     <div class="nav-item desk-item desk-news">
-                        <a class="nav-link m-auto" id="nav-link" href="#">NEWS </a>
+                        <a class="nav-link m-auto" id="nav-link" href="news.html">NEWS </a>
                     </div>
                     <!--================Brand for Desktop================-->
                     <div class="nav-item desk-item desk-brand">
-                        <a class="nav-link m-auto brand" id="nav-link-brand" href="#"><img
+                        <a class="nav-link m-auto brand" id="nav-link-brand" href="work.html"><img
                                 src="./img/ADND_ASSETS/Group 36.png" alt="ADND">
                         </a>
                     </div>
                     <div class="nav-item desk-item desk-story">
-                        <a class="nav-link m-auto" id="nav-link" href="#">STORY</a>
+                        <a class="nav-link m-auto active" id="nav-link" href="story.html">STORY</a>
                     </div>
                     <div class="nav-item desk-item desk-contact">
-                        <a class="nav-link m-auto" id="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link m-auto" id="nav-link" href="contact.html">CONTACT</a>
                     </div>
                 </div>
             </div>
@@ -289,13 +289,16 @@
         <div class="row row-cols-1 row-cols-lg-2 ">
             <div class="col-12 col-lg-9 pg-7-col bdr-r cur-p gwrp p-0 mb-4-5-rem">
                 <img src="./img/ADND_ASSETS/map2.png" alt="indian map" class="map-img">
+                <a style="cursor:pointer">
+                    <div class="add-hl add1 " data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="India,HP">
 
-                <div class="add-hl add1 " data-bs-toggle="tooltip" data-bs-placement="top"
-                    data-bs-custom-class="tooltip-white text-start " title="India,HP">
+                    </div>
 
-                </div>
+                </a>
                 <div class="add-hl add2" data-bs-toggle="tooltip" data-bs-placement="top"
                     data-bs-custom-class="tooltip-white text-start " title="India,Gujarat"></div>
+
                 <div class="add-hl add3" data-bs-toggle="tooltip" data-bs-placement="top"
                     data-bs-custom-class="tooltip-white text-start " title="India,Mumbai"></div>
                 <div class="add-hl add4 active-map-location" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -305,9 +308,13 @@
 
             </div>
             <div class="col-12 col-lg-3 txtalr pg-7-col f-lighter f-18px cur-p project-details">
-                <h2 class="promap  mb-4"> Project Map</h2>
+                <a href="page1.html">
+                    <h2 class="promap  mb-4"> Project Map</h2>
+                </a>
                 <p class="india-text">India,Mumbai</p>
-                <p>Casa Feliz</p>
+                <a href="work.html">
+                    <p>Casa Feliz</p>
+                </a>
                 <p>PA House</p>
                 <p>JSL House</p>
 
@@ -428,6 +435,21 @@
         $(document).ready(function () {
             $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
                 $(this).toggleClass('open');
+            });
+        });
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.nav-item  a').click(function (e) {
+
+                $('.nav-item  a').removeClass('active');
+
+                var $this = $(this);
+                if (!$this.hasClass('active')) {
+                    $this.addClass('active');
+                }
             });
         });
     </script>
