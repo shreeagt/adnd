@@ -75,6 +75,10 @@ a {
     color: none;
     border-color: white !important;
 }
+
+.ongoingimg-wrapper {
+    width: 70%;
+}
 /* Icon 4 */
 
 #nav-icon4 {
@@ -631,7 +635,7 @@ html,
 .ye {
     height: 550px;
     display: flex;
-    border: 2px solid gray;
+    border: 4px solid #000;
     align-items: center;
 }
 
@@ -820,6 +824,69 @@ span.strong {
         margin: auto;
         text-align: center;
     }
+
+    .yearss .text-container {
+        width: 53%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .ye {
+        height: 650px;
+   
+    }
+
+    .years {
+        height: 650px!important;
+        display: flex;
+    }
+
+    .grid {
+   
+        grid-template-rows: repeat(5, 128px);
+      
+    }
+
+    .images {
+
+        height: 650px!important;
+    }
+
+    .ongoingimg-wrapper {
+        width: 70%;
+    }
+
+    .img-cont {
+        margin-right: 10px!important;
+        display: inline-block;
+    }
+
+    .concept {
+        text-align: center;
+        font-size: 21px;
+        letter-spacing: 0;
+        color: #000000;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width:1500px){
+    .yearss .text-container {
+        width: 49%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .award-cover {
+        width: 60%;
+    }
+
+    .newscover-cover {
+        width: 40%;
+    }
 }
 
 @media only screen and (min-width:1900px){
@@ -831,10 +898,22 @@ span.strong {
     #navbar-nav{
         width: 60% !important;
     }
+
+    .ye .text-container h1 {
+        font-size: 61px;
+    }
+
+  
 }
 @media only screen and (max-width:1300px){
     .col-12.pg3-col-lg-4-8.mt-sm-60px.prl-0.pd-tp {
         padding-top: 4px;
+    }
+
+    .yearss .text-container {
+        width: 54%;
+        margin: auto;
+        text-align: left;
     }
 }
 @media only screen and (max-width:1200px){
@@ -856,6 +935,12 @@ span.strong {
 
     .mt-4rem {
         margin-top: 5.5rem;
+    }
+
+    .grid {
+        width: 79vw!important;
+        height: 64vw!important;
+        margin: auto!important;
     }
 }
 @media only screen and (max-width:976px){
@@ -898,8 +983,7 @@ span.strong {
     line-height: 74px;
     font-weight: 400;
 }
-.images{
-    
+.images {
     /* background-color: blueviolet; */
     height: 550px;
     position: relative;
@@ -907,7 +991,53 @@ span.strong {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 4px solid #000000;
 }
+
+.images.ongoing.w-100 {
+    position: relative;
+}
+
+.ongoing-pro {
+    position: absolute;
+    bottom: 0;
+    height: 65px;
+    text-align: center;
+    vertical-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    background: black;
+    border: 0px solid black;
+   
+}
+
+
+span.ongoing-text {
+    font-size: 26px;
+    font-family: 'Gotham';
+    letter-spacing: 0;
+}
+
+.images.ongoing.w-100 {
+    position: relative;
+    background: #DCDCDC;
+}
+
+
+span.arrow {
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    right: 17px;
+}
+
+/* .pg-2-hover-text:hover +  */
+
+
 .pg-2-hover-text{
     width: 100%;
     height: 100%;
@@ -918,11 +1048,30 @@ span.strong {
     align-items: center;
     transition: all 1s;
     font-family: 'Gotham', sans-serif;
-    
+    /* position: absolute; */
 }
-.images img{
+
+.pg-2-hover-text.fs-22px.one-pro {
+    position: absolute;
+}
+
+/* .images img{
     position: absolute;
     top:0;
+} */
+.concept {
+    text-align: center;
+    font-size: 21px;
+    color: #000000;
+}
+
+.img-cont {
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.img-cont:nth-child(3){
+    margin-right:0px;
 }
 
 .pg-2-hover-text:hover{
@@ -931,6 +1080,11 @@ span.strong {
 .pg-2-hover-text h2{
     font-size: 22px;
     font-weight: bold;
+}
+
+
+img.ongoing-img {
+    position: unset;
 }
 
 @media only screen and (max-width:768px){
@@ -948,20 +1102,125 @@ span.strong {
         margin: 0px 20px !important;
     }
     
-}
-@media only screen and (min-width:1910px){
-    .years{
-        height: 826px;
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.6rem;
+        padding-left: 0.6rem;
+    }
+
+    .nav-link {
+        font-weight: bold;
+        font-size: 14px;
+        color: #BFBFBF !important;
+        letter-spacing: 4.9px;
+        font-family: 'Gotham Bold', sans-serif;
+        
+    }
+
+    .yearss .text-container {
+        width: 54%;
+        margin: auto;
+        text-align: center;
     }
 
 
-    .ye{
-        height:826px;
+    .yearss .text-container h1 {
+        font-size: 29px;
+        line-height: 41px;
+    }
+
+    
+}
+@media only screen and (min-width:1600px){
+    .ye {
+        height: 828px;
+    }
+
+    .years {
+        height: 828px!important;
+    }
+
+    .images {
+        height: 828px!important; 
+    }
+
+    .text-container h1 {
+        font-size: 41px;
+        line-height: 63px;
+    }
+
+    span.ongoing-text {
+        font-size: 25px;
+    }
+
+
+    .yearss .text-container {
+        width: 61%;
+        margin: auto;
+        text-align: left;
     }
 
     .grid {
         grid-template-rows: repeat(5, 164px);
+    
     }
+
+    .concept {
+        text-align: center;
+        font-size: 21px;
+        letter-spacing: 0;
+       
+    }
+
+    .img-cont {
+        margin-right: 20px;
+        display: inline-block;
+    }
+
+    .desc {
+        font-size: 17px!important;
+    }
+
+    .pg-5-hover-text.opa {
+        
+        padding: 18px;
+        padding-top: 21px;
+       
+    }
+
+    h5.bolder.hover-text {
+       
+        font-size: 17px!important;
+        margin-bottom: 3px;
+    }
+
+    .opa p {
+      
+        font-size: 17px!important;
+        letter-spacing: 1.8px;
+    }
+
+    .contact-details {
+        width: 100%;
+        display: flex;
+        margin-left: 30%!important;
+    }
+    
+}
+
+@media only screen and (min-width:1910px){
+    .years {
+        height: 899px!important;
+    }
+
+
+    .ye {
+        height: 899px!important;
+    }
+
+    .grid {
+        grid-template-rows: repeat(5, 178px);
+    }
+
 
     .years h1{
         
@@ -972,15 +1231,166 @@ span.strong {
         height: 826px;
     }
 
+
+
     .yearss .text-container {
-        width: 52%;
+        width: 72%;
         margin: auto;
-        text-align: center;
+        text-align: left;
     }
 
 
+    .ye .text-container h1 {
+        font-size: 61px;
+        line-height: 85px;
+    }
 
 
+    .unbuilt-cover {
+        width: 100%!important;
+        text-align: center;
+    }
+
+    .concept {
+     
+        font-size: 21px;
+        letter-spacing: 0;
+        color: #000000;
+    }
+
+    .desc {
+     
+        font-size: 18px!important;
+     
+    }
+
+    h5.bolder.hover-text {
+       
+        font-size: 18px!important;
+        margin-bottom: 3px;
+    }
+
+    .opa p {
+      
+        font-size: 18px!important;
+        letter-spacing: 1.8px;
+    }
+
+    .Details.m-small-auto.detail-cust {
+        padding: 10% 5%;
+    }
+
+    .contact-details {
+        width: 100%;
+        display: flex;
+        margin-left: 43%!important;
+    }
+
+    .container-lg{
+        min-width:1570px!important;
+    }
+}
+
+@media only screen and (min-width:2250px){
+    .years {
+        height: 1180px!important;
+    }
+
+    .ye {
+        height: 1180px!important;
+    }
+
+    .yearss .text-container {
+        width: 59%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .grid {
+        grid-template-rows: repeat(5, 234px);
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.2rem;
+        padding-left: 0.2rem;
+    }
+
+    .nav-link {
+        font-weight: bold;
+        font-size: 15px;
+
+    }
+
+    #nav-link-brand {
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .images.ongoing.w-100 {
+        position: relative;
+        height: 1180px;
+        background: #DCDCDC;
+    }
+
+    .unbuilt-cover {
+        width: 70%!important;
+        text-align: center;
+    }
+
+    .ongoing-pro {
+        
+        height: 80px;
+  
+    }
+
+    span.ongoing-text {
+        font-size: 28px;
+    }
+
+    span.arrow {
+        position: absolute;
+        width: 22px;
+        height: 36px;
+        right: 17px;
+        /* top: 20px; */
+    }
+
+    .ye .text-container h1 {
+        font-size: 65px;
+        line-height: 85px;
+    }
+
+    .concept {
+        text-align: center;
+        font-size: 23px;
+        letter-spacing: 0;
+        color: #000000;
+    }
+
+
+    .Details.m-small-auto.detail-cust {
+        padding: 10% 3%;
+    }
+
+
+    .contact-details {
+        width: 100%;
+        display: flex;
+        margin-left: 45%!important;
+        /* align-items: center; */
+        margin-top: 10%;
+    
+    }
+
+    .Details h2 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+   
+
+    .container.container-lgg.gallery.mt-4 {
+        min-width: 1850px!important;
+    }
 }
 /* page3 css */
 
@@ -998,6 +1408,12 @@ img{
 }
 
 /* page 4 css */
+
+.concept {
+    font-size: 21px;
+    letter-spacing: 0;
+  
+}
 
 @import url('http://fonts.cdnfonts.com/css/gotham');
 
@@ -1087,7 +1503,7 @@ input{
     font-weight: lighter;
 }
 .Details a{
-    text-decoration: underline;
+    text-decoration: none;
     
 }
 input[type=submit]{
@@ -1120,12 +1536,21 @@ form{
     background-color: white;
     opacity: 0%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: left;
     flex-direction: column;
     transition: all 1s;
-    padding: 15px;
+    padding: 30px;
     font-family: "Gotham-book",sans-serif;
+}
+
+
+@media only screen and (max-width:1600px){
+    .contact-details {
+        width: 100%;
+        display: flex;
+        margin-left: 30%;
+    }
 }
 
 @media only screen and (max-width:1500px){
@@ -1138,12 +1563,45 @@ form{
     .awards img{
         width: 60%;
     }
+
+    .award-cover {
+        width: 60%;
+    }
+
+    .newscover-cover {
+        width: 40%;
+    }
+
+    .desc {
+ 
+        color: #373022;
+        font-size: 15px!important;
+    }
+
+    .opa p {
+        font-size: 16px!important;
+        letter-spacing: 1.8px;
+    }
+
+    .pg-5-hover-text.opa {
+       
+        padding: 16px!important;
+        padding-top: 20px;
+    
+    }
+
+    
+    #ideal-text {
+        line-height: 35px;
+        font-size: 15px!important;
+    }
+
 }
 @media only screen and (max-width:1100px){
 
     
     .Details{
-        width: 100vw;
+        width: 54vw;
         padding: 30px;
     }
     .contact-form{
@@ -1156,7 +1614,17 @@ form{
 .contact-form form{
         /* padding-right: 30px; */
     }
+    .Details {
+        width: 57vw;
+        padding: 30px;
+        margin: auto;
+    }
+
+ 
+
 }
+
+
 @media only screen and (max-width:768px){
     .contact-form form{
         width: 80%;
@@ -1165,7 +1633,17 @@ form{
         margin-left: 5% !important;
     }
     
-   
+    .ongoing-pro {
+        height: 11.50%;
+    }
+
+    span.arrow {
+        position: absolute;
+        width: 14px;
+        height: 29px;
+        right: 17px;
+    }
+
 }
 @media only screen and (max-width:768px){
     
@@ -1209,6 +1687,34 @@ form{
         width: 80vw;
         height: 80vw;
     } */
+
+    span.ongoing-text {
+        font-size: 22px;
+        font-family: 'Gotham';
+        letter-spacing: 0;
+    }
+
+    .pg-5-hover-text.opa {
+        padding: 15px!important;
+        padding-top: 20px;
+    }
+
+    .opa p {
+        font-size: 15px!important;
+        letter-spacing: 1.8px;
+    }
+  
+    .pg-5-hover-text.opa {
+        
+        justify-content: flex-start!important;
+       
+    }
+
+ 
+    .col-12.col-lg-6.mt-sm-60px.prl-0.pl-44px.h-100.home-col.h-md-70vw {
+        width: 100vw!important;
+    }
+    
 }
 /* page 5 css */
 
@@ -1291,8 +1797,18 @@ form{
 }
 
 h5.bolder.hover-text {
-    font-weight: lighter;
-    color: #736e64;
+    font-weight: bold;
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.opa p {
+    margin-bottom: 0;
+    color: #000;
+    font-family: "Gotham Book",sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.8px;
 }
 /* page 6 css */
 
@@ -1386,15 +1902,75 @@ h5.bolder.hover-text {
     .yearss .text-container {
         width: 54%;
         margin: auto;
-        text-align: center;
+        text-align: left;
+    }
+
+    span.ongoing-text {
+        font-size: 24px;
+        font-family: 'Gotham';
+        letter-spacing: 0;
+    }
+
+  
+
+    .img-cont {
+        width: 26%;
+    }
+
+    .img-cont {
+        margin-right: 10px;
+        display: inline-block;
+    }
+
+    .concept {
+  
+        font-size: 20px;
+        letter-spacing: 0;
+        color: #000000;
     }
 }
 
 @media only screen and (max-width:1200px){
     .yearss .text-container {
-        width: 58%;
+        width: 68%;
         margin: auto;
+        text-align: left;
+    }
+
+    .grid {
+        display: grid;
+       
+        grid-template-rows: repeat(5, 98px);
+      
+    }
+
+    .images {
+  
+        height: 500px;
+    
+    }
+
+    .unbuilt-cover {
         text-align: center;
+    }
+
+    .ye {
+        height: 500px;
+    }
+
+    .years {
+        height: 500px;
+    }
+/* 
+    .pg-5-hover-text.opa {
+   
+        padding: 30px;
+        padding-top: 65px;
+ 
+    } */
+
+    .p1-cust.pg-5-hover-text.opa:hover {
+        justify-content: center;
     }
 }
 
@@ -1417,6 +1993,12 @@ h5.bolder.hover-text {
     }
     .brl{
         border: none;
+    }
+
+    .yearss .text-container {
+        width: 52%;
+        margin: auto;
+        text-align: center;
     }
 }
 @media only screen and (max-width:700px){
@@ -1458,37 +2040,7 @@ h5.bolder.hover-text {
         margin-block:30px!important;
     }
 }
-@media only screen and (max-width:485px){
-    .award-desc{
-        justify-content: left;
-    }
-.awards img{
-    max-width: 60%;
-}
-#award1{
-    max-width: 63%;
-}
 
-.pad-top{
-    margin-top: 25px;
-}
-
-.mag-desc-text {
-    padding: 0 20px;
-}
-
-.br_good{
-    display: block;
-}
-
-
-.image.m-auto {
-    margin: 0 0 100px 0!important;
-}
-
-
-
-}
 @media only screen and (max-width:650px){
     .desk-trophy-desc{
         display: none;
@@ -1518,7 +2070,7 @@ h5.bolder.hover-text {
 
 
     .yearss .text-container {
-        width: 75%;
+        width: 82%;
         margin: auto;
     }
 
@@ -1548,76 +2100,92 @@ h5.bolder.hover-text {
     .tropy-mar{
         margin-top:40px;
     }
-}
 
-
-@media only screen and (max-width:360px){
-    .mobile-nav-link {
-        letter-spacing: 0px !important;
+    .yearss .text-container {
+        width: 69%;
+        margin: auto;
     }
 
-    .text-container h1 {
-        font-size: 26px !important;
-        line-height: 38px;
+    .yearss .text-container {
+        width: 83%;
+        margin: auto;
     }
 
-    .text-container h1 {
-        font-size: 26px !important;
-        line-height: 38px;
+    .concept {
+        font-size: 18px;
+        letter-spacing: 0;
+        color: #000000;
     }
 
-    .years h1 {
-        font-size: 40px;
+    span.arrow {
+        position: absolute;
+        width: 10px!important;
+        height: 29px;
+        right: 17px;
     }
 
-    .text p {
-        width: 187%;
+    .pg-5-hover-text.opa {
+        padding: 15px!important;
+        padding-top: 20px;
     }
 
-    .ye .text-container h1 {
-        font-size: 21px!important;
-        line-height: 27px;
-    }
-    
-    .row.row-cols-1.row-cols-lg-2.text_cust {
-        margin: 0 30px;
-    }
-
-    .row.text_cust {
-        margin: 0 30px;
-    }
-
-    .cell {
-    
-        display: flex;
-        font-family: Arial;
-        font-size: 2rem;
-     
-    }
-
-    .mag-desc-text {
-        padding: 0 0;
-    }
-
-    .mag-img p {
-        letter-spacing: 2.25px;
-        line-height: 16px;
-    }
-
-    h5.bolder.hover-text {
-        font-size: 15px;
-        margin-bottom: 0;
-    }
-
-    .pg-5-hover-text p {
-        font-size: 12px;
-        margin-bottom: 0;
+    .opa p {
+        font-size: 15px!important;
+        letter-spacing: 1.8px;
     }
 
   
-
-    
 }
+
+@media only screen and (max-width:485px){
+    .award-desc{
+        justify-content: left;
+    }
+.awards img{
+    max-width: 60%;
+}
+#award1{
+    max-width: 63%;
+}
+
+.pad-top{
+    margin-top: 25px;
+}
+
+.mag-desc-text {
+    padding: 0 20px;
+}
+
+.br_good{
+    display: block;
+}
+
+
+.image.m-auto {
+    margin: 0 0 100px 0!important;
+}
+
+.pg-5-hover-text.opa {
+    padding: 15px!important;
+    padding-top: 20px;
+}
+
+.opa p {
+    font-size: 15px!important;
+    letter-spacing: 1px;
+}
+
+.mt-5 {
+    margin-top: 2rem!important;
+}
+
+}
+
+
+
+
+
+
 
 
 
@@ -1835,7 +2403,7 @@ left: 0 !important;
     font-family: "Gotham Book",sans-serif !important;
     Opacity:100%;
     font-weight:lighter;
-    
+    padding-top:10px;
 }
 .promap{
     color: #736E64;
@@ -1943,14 +2511,24 @@ element.style {
         width: 209px;
         height: 194px;
     }
-    .kdnd img{
+    .kdnd img {
         width: 232px;
-        height: 179px;
+        height: 220px;
+    }
+
+    .desc {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .img-cont {
+        margin-right: 70px;
+        display: inline-block;
     }
 }
-@media only screen and (min-width: 1500px){
+@media only screen and (min-width: 1600px){
     .container-lg{
-        min-width: 1516px !important;
+        min-width: 1510px !important;
     }
 }
 @media only screen and (max-width:700px){
@@ -1998,6 +2576,7 @@ element.style {
         width: 10px;
         height: 10px;
     }
+
 }
 /* unbuild projects */
 
@@ -2081,7 +2660,9 @@ element.style {
   }
   @media only screen and (max-width:998px){
 
-  
+    .col-12.col-lg-3.txtalr.pg-7-col.f-lighter.f-18px.cur-p.project-details {
+        margin-bottom: 160px;
+    }
 
     .pr-sm-40px{
         padding-right: 40px;
@@ -2133,17 +2714,52 @@ element.style {
 }
 
 .images.w-100 {
-    width: 80vw!important;
+    width: 79vw!important;
     height: 80vw!important;
     margin: auto!important;
 }
 
 .grid {
     width: 79vw!important;
-    height: 79vw!important;
+    height: 65vw!important;
     margin: auto!important;
 }
  
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    border: 4px solid #707070;
+    height: 80vw!important;
+    width:80vw;
+}
+.mt-sm-60px {
+    margin-top: 50px;
+    width: 80vw!important;
+    height: 80vw!important;
+}
+
+.col-12.col-lg-6.mt-sm-60px.prl-0.mt-one {
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.images {
+
+    border: 0px solid #000000;
+}
+
+
+.contact-details.h-auto {
+    text-align: center;
+    margin-left: 0!important;
+}
+
+.socials.w-80.m-auto.w-100.txtalc {
+    text-align: center;
+}
+
   }
 
 .pr-40px{
@@ -2231,8 +2847,16 @@ element.style {
     background: url("../img/ADND_ASSETS/Component 17 – 2.png") no-repeat center;
     background-size: auto 100%;
 }
-#home-image-1-b{
+
+/* #home-image-1-b{
     background: url("../img/ADND_ASSETS/Component 17 – 2.png") no-repeat center;
+    background-size: auto 100%;
+
+} */
+
+
+#home-image-1-b{
+    background: url("../img/ADND_ASSETS/Amin.png") no-repeat center;
     background-size: auto 100%;
 
 }
@@ -2338,6 +2962,19 @@ element.style {
     
 
 }
+
+@media only screen and (min-width:2250px){
+
+    .container-lg {
+        min-width: 1750px!important;
+    }
+
+    .pg-5-hover-text.opa {
+        padding: 40px;
+   
+    }
+}
+
 @media only screen and (min-width:1500px){
     .col-lg-4-7{
         width: 40%;
@@ -2383,7 +3020,7 @@ element.style {
 .mobile-nav{
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: white;
     display: none;
 }
@@ -2418,11 +3055,12 @@ element.style {
     line-height: 21px;
     font-family: "Gotham Book",sans-serif;
 }
-.socials{
+.socials {
     display: block !important;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     width: 200px;
+    text-align: left;
     display: none;
     margin: 0 auto 0 0!important;
 }
@@ -2506,6 +3144,11 @@ element.style {
         padding-left: calc(var(--bs-gutter-x) * 1)  !important;
     }
 
+    .yearss .text-container h1 {
+        font-size: 29px!important;
+        line-height: 41px;
+    }
+
 }
 
 @media only screen and (max-width:475px){
@@ -2520,6 +3163,200 @@ element.style {
         width: 138px;
         height: 141px;
     }
+
+
+    .mt-sm-60px {
+        margin-top: 50px;
+        width: 80vw!important;
+        height: 80vw!important;
+        margin: auto;
+        margin-top: 50px!important;
+    }
+
+    .concept {
+        font-size: 17px;
+        letter-spacing: 0;
+        color: #000000;
+    }
+
+    span.ongoing-text {
+        font-size: 20px;
+        font-family: 'Gotham';
+        letter-spacing: 0;
+    }
+
+    .yearss .text-container h1 {
+        font-size: 25px!important;
+        line-height: 30px!important;
+    }
+
+    .mobile-nav-link {
+     
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 4.3px;
+     
+    }
+
+    .mobile-brand-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+    }
+
+    #ideal-text {
+        font-size: 13px !important;
+        line-height: 25px !important;
+    }
+
+    .head {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width:360px){
+    .mobile-nav-link {
+        letter-spacing: 0px !important;
+    }
+
+    .text-container h1 {
+        font-size: 26px !important;
+        line-height: 38px;
+    }
+
+    .text-container h1 {
+        font-size: 26px !important;
+        line-height: 38px;
+    }
+
+    .years h1 {
+        font-size: 40px;
+    }
+
+    .text p {
+        width: 187%;
+    }
+
+    .ye .text-container h1 {
+        font-size: 21px!important;
+        line-height: 27px;
+    }
+    
+    .row.row-cols-1.row-cols-lg-2.text_cust {
+        margin: 0 30px;
+    }
+
+    .row.text_cust {
+        margin: 0 30px;
+    }
+
+    .cell {
+    
+        display: flex;
+        font-family: Arial;
+        font-size: 2rem;
+     
+    }
+
+    .mag-desc-text {
+        padding: 0 0;
+    }
+
+    .mag-img p {
+        letter-spacing: 2.25px;
+        line-height: 16px;
+    }
+
+    h5.bolder.hover-text {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    .pg-5-hover-text p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+
+    .yearss .text-container h1 {
+        font-size: 22px!important;
+        line-height: 30px!important;
+    }
+  
+    .grid {
+        display: grid;
+        height: 80vw!important;
+        width: 80vw;
+    }
+
+    .mt-sm-60px {
+        margin-top: 50px;
+        width: 83vw!important;
+        height: 80vw!important;
+    }
+
+    .concept {
+        font-size: 14px;
+        letter-spacing: 0;
+        color: #000000;
+    }
+
+    .img-cont {
+        margin-right: 4px;
+        display: inline-block;
+    }
+
+    .mt-sm-60px {
+        margin-top: 50px;
+        width: 80vw!important;
+        height: 80vw!important;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .yearss .text-container {
+        width: 82%;
+        margin: auto;
+    }
+
+    .mobile-nav-link {
+        color: #BFBFBF;
+        text-decoration: none;
+        font-size: 12px;
+    
+    }
+
+    .opa p {
+        font-size: 14px!important;
+        letter-spacing: 1.8px;
+    }
+
+    h5.bolder.hover-text {
+        font-size: 14px!important;
+        margin-bottom: 0;
+    }
+
+    .pg-5-hover-text.opa {
+        padding: 8px!important;
+
+    }
+
+    .col-12.col-lg-3.txtalr.pg-7-col.f-lighter.f-18px.cur-p.project-details {
+        margin-bottom: 60px;
+    }
+
+
+    .Details a {
+        font-size: 14px;
+    }
+
+
+    .mb-4 {
+        margin-bottom: 1.2rem!important;
+    }
+    
 }
 
 
@@ -2551,12 +3388,65 @@ element.style {
 
     .ye .text-container h1 {
         font-size: 15px!important;
-        line-height: 20px;
+        line-height: 20px!important;
     }
 
     .ideal-image {
         width: 120px;
         height: 122px;
+    }
+
+    .concept {
+        font-size: 11px;
+        letter-spacing: 0;
+        color: #000000;
+    }
+
+    .img-cont {
+        width: 23%;
+    }
+
+    .yearss .text-container {
+        width: 65%;
+        margin: auto;
+    }
+
+  
+
+    .p1-cust.pg-5-hover-text.opa {
+        padding: 9px !important;
+    }
+
+    .pg-5-hover-text.opa {
+        padding: 6px!important;
+        padding-top: 0;
+    }
+
+    .opa p {
+        letter-spacing: 0px;
+    }
+
+    .desc {
+        font-size: 13px!important;
+    }
+
+    .head {
+        font-size: 15px;
+    }
+
+
+    .Details h2 {
+        font-size: 16px;
+        line-height: 17px;
+      
+    }
+
+    .Details p {
+        font-size: 12px;
+    }
+
+    .Detais .mb-2-5rem {
+        margin-bottom: 1.5rem!important;
     }
 }
 
@@ -2594,5 +3484,34 @@ element.style {
     .ideal-image {
         width: 100px;
         height: 101px;
+    }
+
+    .yearss .text-container {
+        width: 73%;
+        margin: auto;
+    }
+
+    .concept {
+        font-size: 10px;
+        letter-spacing: 0;
+        color: #000000;
+    }
+
+    .opa p {
+        font-size: 11px!important;
+        letter-spacing: 0px;
+    }
+
+    h5.bolder.hover-text {
+        font-size: 11px!important;
+        margin-bottom: 0;
+    }
+}
+
+
+@media only screen and (width:1024px) and (height: 600px){
+    .Details p, .Details a {
+        font-size: 18px;
+        line-height: 23px;
     }
 }
