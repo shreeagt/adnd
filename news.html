@@ -52,9 +52,9 @@
         display: none;
     }
 
-    .owl-stage {
+    /* .owl-stage {
         transition: all 2s ease 0s !important;
-    }
+    } */
 </style>
 
 
@@ -172,7 +172,7 @@
                                             ./img/ADND_ASSETS/Mask Group -3.png" alt="">
                                         </div>
 
-
+                                        <!-- col-12 mt-sm-60px prl-0 pl-44px h-100 home-col h-md-70vw col-lg-6" -->
 
                                         <div class="item">
                                             <h4></h4>
@@ -1835,8 +1835,8 @@
         </div> -->
 
 
-        <!-- <div class="contain">
-            <div id="owl-carouselone" class="owl-carousel owl-theme">
+        <div class="contain">
+            <div id="owl-carousel" class="owl-carousel owl-theme">
                 <div class="item">
                     1
                 </div>
@@ -1846,12 +1846,11 @@
                 <div class="item">
                     3
                 </div>
-                
-            </div>
-        </div> -->
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+            </div>
+        </div>
+
+
 
 
 
@@ -1873,7 +1872,8 @@
 
 
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
 
 
@@ -1893,11 +1893,11 @@
 
 
         <script>
-            $('.owl-carouselone').owlCarousel({
+            $('.owl-carousel').owlCarousel({
 
-                nav: true,
+                nav: false,
                 rtl: true,
-
+                goToFirstSpeed: 5000,
                 autoplay: true,
                 responsive: {
                     0: {
