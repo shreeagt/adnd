@@ -53,6 +53,10 @@
     }
 
     /* .owl-stage {
+        transition: 0.8s !important;
+    } */
+
+    /* .owl-stage {
         transition: all 2s ease 0s !important;
     } */
 </style>
@@ -1835,7 +1839,7 @@
         </div> -->
 
 
-        <div class="contain">
+        <!-- <div class="contain">
             <div id="owl-carousel" class="owl-carousel owl-theme">
                 <div class="item">
                     1
@@ -1848,7 +1852,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
 
 
@@ -1894,7 +1898,10 @@
 
         <script>
             $('.owl-carousel').owlCarousel({
-
+                rewindSpeed: 1000,
+                paginationSpeed: 800,
+                slideSpeed: 300,
+                autoplayTimeout: 5000,
                 nav: false,
                 rtl: true,
                 goToFirstSpeed: 5000,
