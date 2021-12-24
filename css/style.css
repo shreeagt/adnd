@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: gotham-book;
-    src: url("../fonts/Gotham\ Book\ Font.otf");
+    src: url("../fonts/Gotham-Book-Font.otf") format('OpenType');
 }
 
 
@@ -21,19 +21,19 @@
 
 @font-face {
     font-family: gotham;
-    src: url("../fonts/Gotham\ Regular.otf");
+    src: url("../fonts/Gotham-Regular.otf") format('OpenType');
 }
 
 
 @font-face {
     font-family: gotham-bold;
-    src: url("../fonts/Gotham-Bold.otf");
+    src: url("../fonts/Gotham-Bold.otf") format('OpenType');
 }
 
 
 @font-face {
     font-family: gotham-black;
-    src: url("../fonts/Gotham-Black.otf");
+    src: url("../fonts/Gotham-Black.otf") format('OpenType');
 }
 
 
@@ -2813,11 +2813,7 @@ element.style {
   @media only screen and (max-width:998px){
 
 
-    .container-fluid,.prl-0{
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        overflow: auto;
-    }
+
 
     .container.new-bottom.pb-70px.pt-70px {
         margin-bottom: 22px;
