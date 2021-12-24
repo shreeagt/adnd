@@ -18,6 +18,22 @@
 
 
     <style>
+        @media only screen and (min-width:2250px) {
+            #navbar-nav {
+                width: 59% !important;
+            }
+        }
+
+
+        @media only screen and (max-width:1500px) {
+            #navbar-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 75%;
+            }
+        }
+
         @media only screen and (min-width:1000px) {
             .col.prl-0.py-44px {
                 padding-right: 35px !important;
@@ -224,20 +240,41 @@
 
     <div class="container-fluid mt-60px ">
 
+        <div class="row row-cols-1 row-cols-lg-2 prl-0">
+            <div class="col   prl-0 py-44px">
+                <div class="image w-100 h-100 hover-image-container ">
+                    <img src="./img/ADND_ASSETS/Mask Group 33.png" alt="img" class="w-100 h-100 hover-image">
+                </div>
+            </div>
+            <div class="col mt-sm-60px  prl-0  cust-page">
+                <div class="image w-100 h-100 hover-image-container ml-88px ml-44px">
+                    <img src="./img/ADND_ASSETS/Mask Group 32.png" alt="img" class="w-100  h-100 hover-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid
+     ">
+
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <!-- <div class="carousel-item active">
                     <div class="row row-cols-1 row-cols-lg-2">
-                        <div class="col-12 col-lg-6 prl-0 cust-page">
-                            <img src="./img/ADND_ASSETS/Mask Group 33.png" class="d-block w-100 pr-44px" alt="...">
-
+                        <div class="col-12 col-lg-6 prl-0 cust-page pr-44px">
+                            <div class="image-wr hover-image-container ">
+                                <img src="./img/ADND_ASSETS/Mask Group 33.png" class="d-block  w-100 h-100 hover-image"
+                                    alt="...">
+                            </div>
                         </div>
-                        <div class=" col-12 col-lg-6 prl-0 mt-sm-60px cust-page">
-
-                            <img src="./img/ADND_ASSETS/Mask Group 32.png" class="d-block w-100 pl-44px" alt="...">
+                        <div class=" col-12 col-lg-6 prl-0 mt-sm-60px cust-page pl-44px">
+                            <div class="image-wr hover-image-container ">
+                                <img src="./img/ADND_ASSETS/Mask Group 32.png"
+                                    class="d-block w-100  w-100 h-100 hover-image" alt="...">
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="carousel-item">
                     <div class=" row row-cols-1 row-cols-lg-2">
                         <div class=" col-12 col-lg-6 prl-0 cust-page">
@@ -276,7 +313,7 @@
         </div>
     </div>
 
-    <div class="container  pb-70px pt-70px">
+    <div class="container new-bottom  pb-70px pt-70px">
 
         <div class="row ">
             <div class="col-6 txtalr prl-0 col-grey">
