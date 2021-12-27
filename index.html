@@ -926,12 +926,17 @@
 
     <script>
         jQuery(function ($) {
-            $('#golink').click(function () {
-                return false;
-            }).dblclick(function () {
-                window.location = this.href;
-                return false;
-            });
+            var width = $(window).width();
+
+            if (width < 998) {
+                $('#golink').click(function () {
+                    return false;
+                }).dblclick(function () {
+                    window.location = this.href;
+                    return false;
+                });
+            }
+
         });
     </script>
 
@@ -961,12 +966,17 @@
 
     <script>
         jQuery(function ($) {
-            $('#gofourlink').click(function () {
-                return false;
-            }).dblclick(function () {
-                window.location = this.href;
-                return false;
-            });
+            var width = $(window).width();
+
+            if (width < 998) {
+                $('#gofourlink').click(function () {
+                    return false;
+                }).dblclick(function () {
+                    window.location = this.href;
+                    return false;
+                });
+            }
+
         });
     </script>
 

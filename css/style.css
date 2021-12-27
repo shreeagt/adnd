@@ -804,7 +804,7 @@ span.strong {
     margin-left: auto !important;
 }
 .text-container,.details{
-    font-family:gotham-book!important;
+    font-family:gotham-book;
                                                 
     opacity: 80%;
     /* font-weight: bold; */
