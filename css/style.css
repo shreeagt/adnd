@@ -16,39 +16,33 @@
 
 @font-face {
     font-family: gotham-bold;
-    src: url("./fonts/gothamBold.otf") format('OpenType');
+    src: url("../fonts/gothamBold.otf") format('OpenType');
 }
 
 
 @font-face {
     font-family: gotham-book;
-    src: url("./fonts/gothambookfont.otf") format('OpenType');
+    src: url("../fonts/gothambookfont.otf") format('OpenType');
 }
 
 
 @font-face {
     font-family: gotham;
-    src: url("./fonts/gothamregular.otf") format('OpenType');
+    src: url("../fonts/gothamregular.otf") format('OpenType');
 }
 
 
 @font-face {
     font-family: gotham-black;
-    src: url("./fonts/gothamblack.otf") format('OpenType');
+    src: url("../fonts/gothamblack.otf") format('OpenType');
 }
 
-/* 
 
+@font-face {
+    font-family: 'Gotham', sans-serif;
+    src: url("../fonts/gothamregular.otf");
+}
 
-
-
-
-
-
-
-
-
- */
 
 
 :root{
@@ -402,7 +396,7 @@ a.col-bla {
 }
 html,
         body {
-            font-family: 'Gotham', sans-serif;
+            font-family: 'Gotham', sans-serif!important;
             margin: 0 auto;
             height: 100%;
             width: 100%;
@@ -687,7 +681,7 @@ html,
 /* ********************page1 css******************** */
 
 .text-container h1{
-    font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham', sans-serif!important;
     font-weight:100 !important;
     margin-bottom: 0;
     color: #000000;
