@@ -1,7 +1,7 @@
-@import url('http://fonts.cdnfonts.com/css/gotham');
+/* @import url('http://fonts.cdnfonts.com/css/gotham');
 @import url('http://fonts.cdnfonts.com/css/gotham-book');
 @import url('http://fonts.cdnfonts.com/css/gotham-bold');
-@import url('http://fonts.cdnfonts.com/css/gotham-black');                             
+@import url('http://fonts.cdnfonts.com/css/gotham-black');                              */
 
                 
                 
@@ -1517,7 +1517,7 @@ img{
     margin-top: 10px;
 }
 
-@import url('http://fonts.cdnfonts.com/css/gotham');
+/* @import url('http://fonts.cdnfonts.com/css/gotham'); */
 
 .mb-2-5rem{
     margin-bottom: 2.5rem;
@@ -1853,7 +1853,7 @@ form{
 }
 /* page 5 css */
 
-@import url('http://fonts.cdnfonts.com/css/gotham');
+/* @import url('http://fonts.cdnfonts.com/css/gotham'); */
 
 
 .w-80{
@@ -1946,8 +1946,8 @@ h5.bolder.hover-text {
     letter-spacing: 1.8px;
 }
 /* page 6 css */
-
-@import url('http://fonts.cdnfonts.com/css/gotham');
+/* 
+@import url('http://fonts.cdnfonts.com/css/gotham'); */
 
 .project-details{
     font-family:gotham-book;
@@ -2368,7 +2368,7 @@ h5.bolder.hover-text {
     padding-top: 10px;
 }
 
-@import url('http://fonts.cdnfonts.com/css/gotham');
+/* @import url('http://fonts.cdnfonts.com/css/gotham'); */
 
 .mt-sm-120px{
     margin-top: 120px !important;
@@ -2830,8 +2830,8 @@ element.style {
   @media only screen and (max-width:998px){
 
 
-
-    @import url('http://fonts.cdnfonts.com/css/gotham');
+/* 
+    @import url('http://fonts.cdnfonts.com/css/gotham'); */
 
     .concept.con-cust {
         display: none;
