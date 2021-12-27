@@ -12,8 +12,8 @@
 }
 
 @font-face {
-    font-family: gotham-book;
-    src: url("../fonts/Gotham-Book-Font.otf") format('OpenType');
+    font-family: gothambook;
+    src: url("./fonts/gothambookfont.otf") format('OpenType');
 }
 
 
@@ -21,19 +21,19 @@
 
 @font-face {
     font-family: gotham;
-    src: url("../fonts/Gotham-Regular.otf") format('OpenType');
+    src: url("./fonts/gothamregular.otf") format('OpenType');
 }
 
 
 @font-face {
     font-family: gotham-bold;
-    src: url("../fonts/Gotham-Bold.otf") format('OpenType');
+    src: url("./fonts/gothamBold.otf") format('OpenType');
 }
 
 
 @font-face {
     font-family: gotham-black;
-    src: url("../fonts/Gotham-Black.otf") format('OpenType');
+    src: url("./fonts/gothamblack.otf") format('OpenType');
 }
 
 
@@ -96,6 +96,15 @@ a {
   -moz-transition: .25s ease-in-out;
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+}
+
+.ongoing-pro.on-text {
+    display: none;
+}
+
+
+.ongoing-pro.on-cust {
+    display: none;
 }
 
 .navbar-light .navbar-toggler {
@@ -787,7 +796,7 @@ span.strong {
     margin-left: auto !important;
 }
 .text-container,.details{
-    font-family: gotham-book!important;
+    font-family:gothambook!important;
                                                 
     opacity: 80%;
     /* font-weight: bold; */
@@ -1563,7 +1572,7 @@ input{
 .Details{
     width: 500px;
     padding: 10% 7%;
-    font-family: gotham-book!important;
+    font-family:gothambook!important;
     height: 65%;
     display: flex;
     flex-direction: column;
@@ -1583,7 +1592,7 @@ input{
     font-size: 18px;
     line-height: 35px;
     color: #373022;
-    font-family: gotham-book!important;
+    font-family:gothambook!important;
     opacity: 100%;
     font-weight: lighter;
 }
@@ -1626,7 +1635,7 @@ form{
     flex-direction: column;
     transition: all 1s;
     padding: 30px;
-    font-family: gotham-book;
+    font-family:gothambook;
 }
 
 
@@ -1872,7 +1881,7 @@ form{
                                                 
 }
 .mag-img p{
-    font-family: gotham-book!important;
+    font-family:gothambook!important;
     color: #000000;
     font-size: 15px;
     letter-spacing: 5.25px;
@@ -1924,7 +1933,7 @@ h5.bolder.hover-text {
 .opa p {
     margin-bottom: 0;
     color: #000;
-    font-family: gotham-book;
+    font-family:gothambook;
     font-size: 18px;
     letter-spacing: 1.8px;
 }
@@ -1933,7 +1942,7 @@ h5.bolder.hover-text {
 @import url('http://fonts.cdnfonts.com/css/gotham');
 
 .project-details{
-    font-family: gotham-book;
+    font-family:gothambook;
 }
 .project-details h2{
     font-size: 20px !important;
@@ -1996,7 +2005,7 @@ h5.bolder.hover-text {
     border-right: 1px solid #979797;
 }
 .textContainer p{
-    font-family: gotham-book!important;
+    font-family:gothambook!important;
     width: 264%;
     font-size: 15px;
     line-height: 17px;
@@ -2007,7 +2016,7 @@ h5.bolder.hover-text {
     text-align: center;
     font-size: 20px;
     line-height: 21px;
-    font-family: gotham-book;
+    font-family:gothambook;
     color: #736E64;
 }
 @media only screen and (max-width:1300px){
@@ -2174,7 +2183,7 @@ h5.bolder.hover-text {
     .project-details p{
         font-size: 14px;
         line-height: 21px;
-        font-family: gotham-book;
+        font-family:gothambook;
     }
     .promap{
         display: none;
@@ -2523,7 +2532,7 @@ left: 0 !important;
 
 #ideal-text{
     line-height: 35px;
-    font-family: gotham-book!important;
+    font-family:gothambook!important;
     color: #373022;
     font-size: 18px;
                                                 
@@ -2552,7 +2561,7 @@ left: 0 !important;
     line-height: 35px;
     color: #373022;
     font-size: 18px;
-    font-family: gotham-book!important;
+    font-family:gothambook!important;
     Opacity:100%;
     font-weight:lighter;
     padding-top:10px;
@@ -2570,7 +2579,7 @@ left: 0 !important;
     /* font-size: 25px; */
     line-height: 21px;
     margin-bottom: 25px;
-    font-family: gotham-book!important;
+    font-family:gothambook!important;
     opacity: 100%;
                                                 
 }
@@ -2813,7 +2822,22 @@ element.style {
   @media only screen and (max-width:998px){
 
 
+    .concept.con-cust {
+        display: none;
+    }
 
+    .ongoing-pro.on-cust {
+        display: flex;
+    }
+
+    span.ongoing-text {
+        font-size: 18px;
+    }
+
+  
+    .pg-2-hover-text:hover {
+        opacity: 0;
+    }
 
     .container.new-bottom.pb-70px.pt-70px {
         margin-bottom: 22px;
@@ -3274,7 +3298,7 @@ a#nav-link {
     display: none;
     font-size: 20px;
     line-height: 21px;
-    font-family: gotham-book;
+    font-family:gothambook;
 }
 .socials {
     display: block !important;
@@ -3435,6 +3459,10 @@ a#nav-link {
     .head {
         font-size: 18px;
     }
+
+    span.ongoing-text {
+        font-size: 16px;
+    }
 }
 
 
@@ -3579,6 +3607,15 @@ a#nav-link {
         margin-bottom: 1.2rem!important;
     }
     
+    span.ongoing-text {
+        font-size: 14px;
+    }
+
+    span.arrow {
+        position: absolute;
+        width: 8px!important;
+        height: 29px;
+    }
 }
 
 
