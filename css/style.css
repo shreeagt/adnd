@@ -713,7 +713,7 @@ span.strong {
 }
 
 .text-container b{
-    font-family: gotham-black;
+    font-family: gotham-black!important;
     /* font-weight: bolder !important; */
                                                 
 }
