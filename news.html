@@ -32,14 +32,52 @@
 </head>
 
 <style>
+    /* span.arrow {
+        position: absolute;
+        width: 15px;
+        height: 25px;
+        right: 17px;
+        animation: monFrame 5s linear 2s infinite alternate;
+    } */
+
+
+    .text_cust a:hover+span.arrow {
+        right: 10px;
+        transistion-delay: 1s;
+    }
+
+
+    .pg-2-hover-text:hover span.arrow {
+        position: absolute;
+        right: 10px;
+        transistion: 2s ease-in-out;
+        transistion-delay: 250ms;
+    }
+
+    /* 
+    span.arrow {
+        position: absolute;
+        width: 15px;
+        height: 25px;
+        right: 17px;
+        transistion: 2s ease-in-out;
+    } */
+
     .owl-item {
         padding: 1px !important;
     }
 
+    @media only screen and (max-width:998px) {
+        .images.ongoing.w-100:hover+span.arrow {
+            right: 10px;
+            transistion: 2s ease-in-out;
+        }
+    }
 
+    /* 
     .item {
         margin-left: -1px;
-    }
+    } */
 
     .mobile-nav {
         position: fixed;
@@ -1675,7 +1713,7 @@
                                     <span class="ongoing-text">
                                         On-going Project
                                     </span>
-                                    <span class="arrow">
+                                    <span class="arrow" id="test">
                                         <img src="./img/ADND_ASSETS/__MACOSX/icon-arrow.svg" alt="arrow">
                                     </span>
                                 </div>
@@ -2029,9 +2067,16 @@
                     }
                 });
             });
+
+
         </script>
+        <script>
+            function myFunction(e) {
+                document.getElementById("test").style.transistion = "2s ease";
+                document.getElementById("test").style.right = "15px";
 
-
+            }
+        </script>
 
 
 </body>
