@@ -16,31 +16,31 @@
 
 @font-face {
     font-family: gotham-bold;
-    src: url("../fonts/gothamBold.otf") format('OpenType');
+    src: url("/fonts/gothambold.otf") format('OpenType');
 }
 
 
 @font-face {
     font-family: gotham-book;
-    src: url("../fonts/gothambookfont.otf") format('OpenType');
+    src: url("/fonts/gothambookfont.otf") format('OpenType');
 }
 
 
-@font-face {
+/* @font-face {
     font-family: gotham;
-    src: url("../fonts/gothamregular.otf") format('OpenType');
-}
+    src: url("/fonts/gothamregular.otf") format('OpenType');
+} */
 
 
 @font-face {
     font-family: gotham-black;
-    src: url("../fonts/gothamblack.otf") format('OpenType');
+    src: url("/fonts/gothamblack.otf") format('OpenType');
 }
 
 
 @font-face {
     font-family: 'Gotham', sans-serif;
-    src: url("../fonts/gothamregular.otf");
+    src: url("/fonts/gothamregular.otf");
 }
 
 
