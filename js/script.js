@@ -25,6 +25,46 @@ document.getElementById("ideal-image2").onmouseleave=()=>{
     document.getElementById("idealogy-text2").classList.remove("idealogy-text2-opacity")
     document.getElementById("idealogy-text3").classList.remove("idealogy-text3-opacity")
 }
+
+
+
+
+// script-new
+
+
+// document.getElementById("ideal-image3").onmouseover=()=>{
+//     document.getElementById("left-image3").classList.add('left-image1-hover')
+//     document.getElementById("left-image4").classList.add('left-image2-hover')
+//     document.getElementById("idealogy-text4").classList.add("idealogy-text2-opacity")
+//     document.getElementById("idealogy-text3").classList.add("idealogy-text1-opacity")
+// }
+
+// document.getElementById("ideal-image3").onmouseleave=()=>{
+//     document.getElementById("left-image3").classList.remove('left-image1-hover')
+//     document.getElementById("left-image4").classList.remove('left-image2-hover')
+//     document.getElementById("idealogy-text4").classList.remove("idealogy-text2-opacity")
+//     document.getElementById("idealogy-text3").classList.remove("idealogy-text1-opacity")
+// }
+
+// document.getElementById("ideal-image4").onmouseover=()=>{
+//     document.getElementById("right-image3").classList.add('right-image1-hover')
+//     document.getElementById("right-image4").classList.add('right-image2-hover')
+//     document.getElementById("idealogy-text4").classList.add("idealogy-text2-opacity")
+//     document.getElementById("idealogy-text5").classList.add("idealogy-text3-opacity")
+// }
+
+// document.getElementById("ideal-image4").onmouseleave=()=>{
+//     document.getElementById("right-image3").classList.remove('right-image1-hover')
+//     document.getElementById("right-image4").classList.remove('right-image2-hover')
+//     document.getElementById("idealogy-text4").classList.remove("idealogy-text2-opacity")
+//     document.getElementById("idealogy-text5").classList.remove("idealogy-text3-opacity")
+// }
+
+
+
+
+
+
 // document.getElementById("left-image1").addEventListener("click",()=>{
     
 
