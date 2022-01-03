@@ -3063,6 +3063,10 @@ display:none;
   }
   @media only screen and (max-width:998px){
 
+    .col-12.pg3-col-lg-4-8.mt-sm-60px.prl-0.pd-tp.cust-page {
+        width: 100vw!important;
+    }
+    
     .Details h2 {
         opacity: 90%;
         font-weight: lighter;

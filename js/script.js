@@ -29,36 +29,43 @@ document.getElementById("ideal-image2").onmouseleave=()=>{
 
 
 
+
+
+
 // script-new
 
 
-// document.getElementById("ideal-image3").onmouseover=()=>{
-//     document.getElementById("left-image3").classList.add('left-image1-hover')
-//     document.getElementById("left-image4").classList.add('left-image2-hover')
-//     document.getElementById("idealogy-text4").classList.add("idealogy-text2-opacity")
-//     document.getElementById("idealogy-text3").classList.add("idealogy-text1-opacity")
+document.getElementById("ideal-image-one").onload=()=>{
+    document.getElementById("left-image-one").classList.add('left-image1-hover')
+    document.getElementById("left-image-two").classList.add('left-image2-hover')
+    document.getElementById("idealogy-text-two").classList.add("idealogy-text2-opacity")
+    document.getElementById("idealogy-text-one").classList.add("idealogy-text1-opacity")
+    document.getElementById("left-image-one").classList.remove('left-image1-hover')
+    document.getElementById("left-image-two").classList.remove('left-image2-hover')
+    document.getElementById("idealogy-text-two").classList.remove("idealogy-text2-opacity")
+    document.getElementById("idealogy-text-one").classList.remove("idealogy-text1-opacity")
+    document.getElementById("right-image-one").classList.add('right-image1-hover')
+    document.getElementById("right-image-two").classList.add('right-image2-hover')
+    document.getElementById("idealogy-text-two").classList.add("idealogy-text2-opacity")
+    document.getElementById("idealogy-text-three").classList.add("idealogy-text3-opacity")
+    document.getElementById("right-image-one").classList.remove('right-image1-hover')
+    document.getElementById("right-image-two").classList.remove('right-image2-hover')
+    document.getElementById("idealogy-text-two").classList.remove("idealogy-text2-opacity")
+    document.getElementById("idealogy-text-three").classList.remove("idealogy-text3-opacity")
+}
+
+// document.getElementById("ideal-image-one").onmouseleave=()=>{
+   
 // }
 
-// document.getElementById("ideal-image3").onmouseleave=()=>{
-//     document.getElementById("left-image3").classList.remove('left-image1-hover')
-//     document.getElementById("left-image4").classList.remove('left-image2-hover')
-//     document.getElementById("idealogy-text4").classList.remove("idealogy-text2-opacity")
-//     document.getElementById("idealogy-text3").classList.remove("idealogy-text1-opacity")
+// document.getElementById("ideal-image-two").onmouseover=()=>{
+   
 // }
 
-// document.getElementById("ideal-image4").onmouseover=()=>{
-//     document.getElementById("right-image3").classList.add('right-image1-hover')
-//     document.getElementById("right-image4").classList.add('right-image2-hover')
-//     document.getElementById("idealogy-text4").classList.add("idealogy-text2-opacity")
-//     document.getElementById("idealogy-text5").classList.add("idealogy-text3-opacity")
+// document.getElementById("ideal-image-two").onmouseleave=()=>{
+   
 // }
 
-// document.getElementById("ideal-image4").onmouseleave=()=>{
-//     document.getElementById("right-image3").classList.remove('right-image1-hover')
-//     document.getElementById("right-image4").classList.remove('right-image2-hover')
-//     document.getElementById("idealogy-text4").classList.remove("idealogy-text2-opacity")
-//     document.getElementById("idealogy-text5").classList.remove("idealogy-text3-opacity")
-// }
 
 
 
