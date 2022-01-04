@@ -18,6 +18,18 @@
 
 
     <style>
+        .row.sarr {
+            /* height: 18px; */
+            margin-top: 10px;
+        }
+
+        @media only screen and (min-width:1300px) {
+            .row.sarr {
+                /* height: 18px; */
+                margin-top: 16px;
+            }
+        }
+
         .mw-100 {
             height: 100%;
             max-width: 100% !important;
@@ -52,6 +64,13 @@
                 margin-left: 33px !important;
             }
 
+        }
+
+        @media only screen and (max-width:998px) {
+            .row.sarr {
+                /* height: 18px; */
+                margin-top: 0px;
+            }
         }
     </style>
 
@@ -324,7 +343,7 @@
 
     <div class="container new-bottom  pb-70px pt-70px">
 
-        <div class="row ">
+        <div class="row sarr">
             <div class="col-6 txtalr prl-0 col-grey">
                 <i class="lni lni-chevron-left prev-bt pr-bt-30px pr-sm-40px" id="prev-bt"></i>
             </div>

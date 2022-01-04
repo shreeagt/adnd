@@ -32,6 +32,40 @@
 </head>
 
 <style>
+    .ongoing-pro.onv {
+        height: 0;
+    }
+
+    span.ongoing-text {
+        color: gainsboro;
+    }
+
+    .onv .arrow img {
+        width: 0;
+    }
+
+    .hover-res:hover .ongoing-pro.onv {
+        height: 65px;
+        transition: 0.3s all;
+        color: #DCDCDC !important;
+    }
+
+    .hover-res:hover span.arrow {
+        position: absolute;
+        right: 10px;
+        transition: 0.4s ease-in-out;
+    }
+
+    .hover-res:hover .onv .arrow img {
+        width: 100%;
+    }
+
+    .hover-res:hover span.ongoing-text {
+        color: gainsboro;
+    }
+
+
+
     /* span.arrow {
         position: absolute;
         width: 15px;
@@ -74,10 +108,20 @@
         margin-top: 63px !important;
     }
 
+    @media only screen and (min-width:998px) {
+        .mb-0 {
+            padding-bottom: 0 !important;
+        }
+    }
+
     @media only screen and (max-width:998px) {
         .images.ongoing.w-100:hover+span.arrow {
             right: 10px;
             transistion: 2s ease-in-out;
+        }
+
+        .onv {
+            display: none !important;
         }
     }
 
@@ -1715,7 +1759,7 @@
                                 <img src="./img/ADND_ASSETS/__MACOSX/all-shape.png" alt="ongoing" class="ongoing-img">
                             </div>
                             <!-- <img src="./img/ADND_ASSETS/asset-4.png" alt="image" class="w-100 h-100 pr-44px"> -->
-                            <div class="pg-2-hover-text fs-22px one-pro">
+                            <!-- <div class="pg-2-hover-text fs-22px one-pro">
                                 <div class="ongoing-pro">
                                     <span class="ongoing-text">
                                         On-going Projects
@@ -1724,6 +1768,14 @@
                                         <img src="./img/ADND_ASSETS/__MACOSX/icon-arrow.svg" alt="arrow">
                                     </span>
                                 </div>
+                            </div> -->
+                            <div class="ongoing-pro onv">
+                                <span class="ongoing-text">
+                                    On-going Projects
+                                </span>
+                                <span class="arrow" id="test">
+                                    <img src="./img/ADND_ASSETS/__MACOSX/icon-arrow.svg" alt="arrow">
+                                </span>
                             </div>
                             <div class="ongoing-pro  on-cust">
                                 <span class="ongoing-text ">
@@ -1782,7 +1834,7 @@
                                 <!-- <img src="./img/ADND_ASSETS/__MACOSX/Group 107.png" alt=""> -->
                             </div>
 
-                            <div class="pg-2-hover-text fs-22px one-pro">
+                            <!-- <div class="pg-2-hover-text fs-22px one-pro">
                                 <div class="ongoing-pro">
                                     <span class="ongoing-text">
                                         Unbuilt Projects
@@ -1791,6 +1843,14 @@
                                         <img src="./img/ADND_ASSETS/__MACOSX/icon-arrow.svg" alt="arrow">
                                     </span>
                                 </div>
+                            </div> -->
+                            <div class="ongoing-pro onv">
+                                <span class="ongoing-text">
+                                    Unbuilt Projects
+                                </span>
+                                <span class="arrow" id="test">
+                                    <img src="./img/ADND_ASSETS/__MACOSX/icon-arrow.svg" alt="arrow">
+                                </span>
                             </div>
                             <div class="ongoing-pro on-cust">
                                 <span class="ongoing-text ">
@@ -1809,7 +1869,7 @@
 
     <!--================Section-3================-->
 
-    <div class="container-fluid mt-60px pb-70px">
+    <div class="container-fluid mt-60px pb-70px mb-0">
         <div class="row text_cust">
             <div class="col-12 col-lg-6  prl-0 ">
                 <div class="pr-44px hover-res">
@@ -1823,8 +1883,8 @@
                             <div class="award-cover">
                                 <img src="./img/ADND_ASSETS/__MACOSX/award.png" alt="award">
                             </div>
-                            <div class="pg-2-hover-text fs-22px one-pro">
-                                <!-- <h2>AWARDS</h2> -->
+                            <!-- <div class="pg-2-hover-text fs-22px one-pro">
+                                
                                 <div class="ongoing-pro ">
                                     <span class="ongoing-text">
                                         Awards
@@ -1833,6 +1893,14 @@
                                         <img src="./img/ADND_ASSETS/__MACOSX/icon-arrow.svg" alt="arrow">
                                     </span>
                                 </div>
+                            </div> -->
+                            <div class="ongoing-pro onv">
+                                <span class="ongoing-text">
+                                    Awards
+                                </span>
+                                <span class="arrow" id="test">
+                                    <img src="./img/ADND_ASSETS/__MACOSX/icon-arrow.svg" alt="arrow">
+                                </span>
                             </div>
                             <div class="ongoing-pro on-cust">
                                 <span class="ongoing-text ">
@@ -1855,7 +1923,7 @@
                             <div class="newscover-cover">
                                 <img src="./img/ADND_ASSETS/__MACOSX/architecture.png" alt="architecture">
                             </div>
-                            <div class="pg-2-hover-text fs-22px one-pro">
+                            <!-- <div class="pg-2-hover-text fs-22px one-pro">
                                 <div class="ongoing-pro">
                                     <span class="ongoing-text">
                                         News Cover
@@ -1864,6 +1932,15 @@
                                         <img src="./img/ADND_ASSETS/__MACOSX/icon-arrow.svg" alt="arrow">
                                     </span>
                                 </div>
+                            </div> -->
+
+                            <div class="ongoing-pro onv">
+                                <span class="ongoing-text">
+                                    News Cover
+                                </span>
+                                <span class="arrow" id="test">
+                                    <img src="./img/ADND_ASSETS/__MACOSX/icon-arrow.svg" alt="arrow">
+                                </span>
                             </div>
                             <div class="ongoing-pro on-cust">
                                 <span class="ongoing-text ">
