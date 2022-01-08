@@ -54,7 +54,7 @@ if (window.innerWidth > 960) {
         document.getElementById("idealogy-text3").classList.remove("idealogy-text3-opacity")
     }
     
-    if (window.innerWidth < 960) {
+    if ($(window).width() < 960) {
     parent();
     setInterval(function () {
         
