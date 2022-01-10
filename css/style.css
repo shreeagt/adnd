@@ -947,7 +947,7 @@ span.strong {
     }
 
     .ongoingimg-wrapper {
-        width: 50%;
+        width: 62%;
     }
 
     .img-cont {
@@ -956,6 +956,29 @@ span.strong {
 
     .unbuilt-cover.img-unbuilt-cover {
         width: 70%;
+    }
+
+
+    /* .ye .text-container h1 {
+        font-size: 50px;
+        line-height: 63px;
+    }
+
+    .yearss .text-container {
+        width: 83%;
+        margin: auto;
+        text-align: left;
+    } */
+
+    .ye .text-container h1 {
+        font-size: 50px;
+        line-height: 63px;
+    }
+
+    .yearss .text-container {
+        width: 83%;
+        margin: auto;
+        text-align: left;
     }
 
 }
@@ -1023,6 +1046,10 @@ span.strong {
     h5.bolder.hover-text {
         font-size: 17px;
         margin-bottom: 3px;
+    }
+
+    .ongoingimg-wrapper {
+        width: 55%;
     }
 }
 
@@ -1250,6 +1277,24 @@ img.ongoing-img {
         padding-right: 6vw;
     }
 }
+
+@media only screen and (min-width:1200px){
+
+
+   
+}
+
+@media only screen and (min-width:1400px){
+    .yearss .text-container {
+        width: 74%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .ongoingimg-wrapper {
+        width: 74%;
+    }
+}
 @media only screen and (min-width:1600px){
     .ye {
         height: 828px;
@@ -1329,7 +1374,41 @@ img.ongoing-img {
         font-size: 34px;
         line-height: 54px;
     }
+
+    /* css start */
+
+    .yearss .text-container {
+        width: 73%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .ye .text-container h1 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+
+    .ongoingimg-wrapper {
+        width: 73%;
+    }
+
+
     
+}
+
+
+
+@media only screen and (min-width:1680px){
+    .yearss .text-container {
+        width: 63%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .ye .text-container h1 {
+        font-size: 50px;
+        line-height: 71px;
+    }
 }
 
 @media only screen and (min-width:1910px){
@@ -1547,6 +1626,17 @@ img.ongoing-img {
         text-align: left;
         padding: 0 0px;
     }
+
+    .yearss .text-container {
+        width: 65%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .ye .text-container h1 {
+        font-size: 80px;
+        line-height: 96px;
+    }
 }
 /* page3 css */
 
@@ -1736,6 +1826,16 @@ form{
         font-size: 12px;
        padding-right:15px;
     }
+
+    /* css start */
+    .house, .interior, .commercial, .ongoing {
+        font-size: 12px;
+        padding-right: 19px;
+    }
+
+    span.ongoing-text {
+        font-size: 22px;
+    }
    
 }
 
@@ -1799,6 +1899,17 @@ form{
     .house,.interior,.commercial,.ongoing{
         font-size: 12px;
        padding-right:15px;
+    }
+
+    span.ongoing-text {
+        font-size: 20px;
+    }
+
+    span.arrow {
+        position: absolute;
+        width: 13px;
+        height: 25px;
+        right: 17px;
     }
 
 }
@@ -1905,7 +2016,7 @@ form{
 
     span.ongoing-text {
         font-size: 22px;
-        /* font-family: 'Gotham'; */
+
         font-family: 'Gotham', sans-serif;
         letter-spacing: 0;
     }
@@ -2124,10 +2235,16 @@ h5.bolder.hover-text {
     }
 
     span.ongoing-text {
-        font-size: 24px;
+        font-size: 20px;
         /* font-family: 'Gotham'; */
         font-family: 'Gotham', sans-serif;
         letter-spacing: 0;
+    }
+
+    .hover-res:hover .ongoing-pro.onv {
+        height: 50px;
+        transition: 0.3s all;
+        color: #DCDCDC !important;
     }
 
   
@@ -2149,6 +2266,28 @@ h5.bolder.hover-text {
     }
     .unbuilt-cover.img-unbuilt-cover {
         width: 70%;
+    }
+
+    .yearss .text-container {
+        width: 76%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .ye .text-container h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .ongoingimg-wrapper {
+        width: 70%;
+    }
+
+    span.arrow {
+        position: absolute;
+        width: 11px;
+        height: 22px;
+        right: 17px;
     }
 }
 
@@ -2198,6 +2337,17 @@ h5.bolder.hover-text {
     .p1-cust.pg-5-hover-text.opa:hover {
         justify-content: center;
         opacity: 80%!important;
+    }
+
+    .yearss .text-container {
+        width: 61%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .ye .text-container h1 {
+        font-size: 34px;
+        line-height: 50px;
     }
 }
 
@@ -2250,6 +2400,11 @@ h5.bolder.hover-text {
         font-size: 18px;
         letter-spacing: 0;
         color: #000000;
+    }
+
+    .ye .text-container h1 {
+        font-size: 32px;
+        line-height: 50px;
     }
 }
 @media only screen and (max-width:800px){
@@ -2891,6 +3046,15 @@ element.style {
         font-size: 12px;
        padding-right:13px;
     }
+
+    /* css start */
+    .house,
+    .interior,
+    .commercial,
+    .ongoing {
+        font-size: 12px;
+        padding-right: 20px;
+    }
 }
 @media only screen and (max-width:700px){
     .idealogy-text{
@@ -2970,6 +3134,21 @@ element.style {
         .right-image1-hover{
             left:180px !important;
         }
+
+        .ye .text-container h1 {
+            font-size: 56px;
+            line-height: 69px;
+        }
+
+        .yearss .text-container {
+            width: 71%;
+            margin: auto;
+            text-align: left;
+            padding-right: 46px;
+        }
+
+        
+ 
 
 }
 /* unbuild projects */
@@ -3561,12 +3740,16 @@ a#nav-link {
         width: 55%;
     }
 
-    .house,.interior,.commercial,.ongoing{
+    .house, .interior, .commercial, .ongoing {
         background: white;
         letter-spacing: 4.9px;
         font-family: 'Gotham', sans-serif;
         font-size: 12px;
-       padding-right:18px;
+        padding-right: 22px;
+    }
+
+    .ongoingimg-wrapper {
+        width: 65%;
     }
 }
 
