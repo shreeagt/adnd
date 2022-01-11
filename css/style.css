@@ -1286,7 +1286,7 @@ img.ongoing-img {
 
 @media only screen and (min-width:1400px){
     .yearss .text-container {
-        width: 74%;
+        width: 70%;
         margin: auto;
         text-align: left;
     }
@@ -1835,6 +1835,13 @@ form{
 
     span.ongoing-text {
         font-size: 22px;
+    }
+
+    span.arrow {
+        position: absolute;
+        width: 12px;
+        height: 25px;
+        right: 17px;
     }
    
 }
@@ -3070,14 +3077,14 @@ element.style {
         line-height: 27px !important;
     }
     #idealogy-text1{
-        text-align: left !important;
+        text-align: center !important;
         width: 80% !important;
 
     }
 
 
     #idealogy-text3{
-        text-align: right !important;
+        text-align: center !important;
         width: 80% !important;
 
     }
@@ -3141,10 +3148,10 @@ element.style {
         }
 
         .yearss .text-container {
-            width: 71%;
+            width: 74%;
             margin: auto;
-            text-align: left;
-            padding-right: 46px;
+            text-align: center;
+            padding-right: 0px;
         }
 
         
@@ -3262,7 +3269,7 @@ display:none;
     #idealogy-text3{
         margin: auto !important;
       
-        text-align: right !important;
+        text-align: center !important;
        
     }
     #ideal2{
@@ -3911,7 +3918,7 @@ a#nav-link {
     #idealogy-text1{
         margin: auto !important;
         width: 80% !important;
-        text-align: left !important;
+        text-align: center !important;
         margin-top: 30px !important;
         left: 0 !important;
         right: 0  !important;
@@ -3920,7 +3927,7 @@ a#nav-link {
     #idealogy-text3{
         margin: auto !important;
         width: 80% !important;
-        text-align: right !important;
+        text-align: center !important;
         margin-top: 30px !important;
         left: 0 !important;
         right: 0  !important; 
@@ -4188,7 +4195,7 @@ a#nav-link {
     }
 
     .yearss .text-container {
-        width: 82%;
+        width: 74%;
         margin: auto;
     }
 
