@@ -2432,7 +2432,7 @@ h5.bolder.hover-text {
         padding: 0;
     }
 }
-@media only screen and (max-width:700px){
+@media only screen and (max-width:760px){
     .text p{
         width: 205%;
     }
@@ -3063,7 +3063,7 @@ element.style {
         padding-right: 20px;
     }
 }
-@media only screen and (max-width:700px){
+@media only screen and (max-width:760px){
     .idealogy-text{
         max-width: 95% !important;
     }
@@ -3860,7 +3860,7 @@ a#nav-link {
 .socials a{
     text-decoration: none;
 }
-@media only screen and (max-width:700px){
+@media only screen and (max-width:760px){
     .mobile-nav{
         display: block;
     }
