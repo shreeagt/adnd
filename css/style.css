@@ -1276,6 +1276,20 @@ img.ongoing-img {
         text-align: left;
         padding-right: 6vw;
     }
+
+    /* .yearss .text-container {
+        width: 67%;
+        margin: auto;
+        text-align: center;
+        padding-right: 0px;
+    } */
+
+    .yearss .text-container {
+        width: 67%;
+        margin: auto;
+        text-align: center;
+        padding-right: 0px;
+    }
 }
 
 @media only screen and (min-width:1200px){
@@ -3149,12 +3163,11 @@ element.style {
         }
 
         .yearss .text-container {
-            width: 74%;
+            width: 53%;
             margin: auto;
             text-align: center;
             padding-right: 0px;
         }
-
         
  
 
