@@ -1147,7 +1147,7 @@ span.strong {
 span.ongoing-text {
     font-size: 26px;
     /* font-family: 'Gotham'; */
-    font-family: 'Gotham', sans-serif;
+    font-family:gotham-book;
     letter-spacing: 0;
 }
 
@@ -1280,7 +1280,7 @@ img.ongoing-img {
     /* .yearss .text-container {
         width: 67%;
         margin: auto;
-        text-align: center;
+        text-align: center;g
         padding-right: 0px;
     } */
 
@@ -2038,7 +2038,7 @@ form{
     span.ongoing-text {
         font-size: 22px;
 
-        font-family: 'Gotham', sans-serif;
+        font-family: gotham-book;
         letter-spacing: 0;
     }
 
@@ -2258,7 +2258,7 @@ h5.bolder.hover-text {
     span.ongoing-text {
         font-size: 20px;
         /* font-family: 'Gotham'; */
-        font-family: 'Gotham', sans-serif;
+        font-family: gotham-book;
         letter-spacing: 0;
     }
 
@@ -4034,7 +4034,7 @@ a#nav-link {
     span.ongoing-text {
         font-size: 20px;
         /* font-family: 'Gotham'; */
-        font-family: 'Gotham', sans-serif;
+        font-family: gotham-book;
         letter-spacing: 0;
     }
 
