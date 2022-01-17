@@ -991,6 +991,9 @@ span.strong {
         width: 49%;
         margin: auto;
         text-align: left;
+    
+            font-family: gotham-black;
+        
     }
 
     .award-cover {
@@ -1027,6 +1030,9 @@ span.strong {
         width: 54%;
         margin: auto;
         text-align: left;
+
+            font-family: gotham-black;
+        
     }
 
     .ongoingimg-wrapper {
@@ -1645,6 +1651,9 @@ img.ongoing-img {
         width: 65%;
         margin: auto;
         text-align: left;
+   
+            font-family: gotham-black;
+        
     }
 
     .ye .text-container h1 {
