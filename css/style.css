@@ -3886,6 +3886,7 @@ a#nav-link {
 }
 .socials a{
     text-decoration: none;
+    font-size: 0;
 }
 @media only screen and (max-width:760px){
     .mobile-nav{
