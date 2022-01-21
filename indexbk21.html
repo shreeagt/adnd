@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/4fe6022375.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -20,6 +22,8 @@
             }
         } */
 
+
+
         .pr-44px {
             padding-right: 40px !important;
         }
@@ -28,6 +32,10 @@
             padding-left: 40px !important;
         }
 
+        .my-5 {
+            margin-top: 1rem !important;
+            margin-bottom: 1rem !important;
+        }
 
         @media only screen and (max-width:1600px) {
             #navbar-nav {
@@ -35,6 +43,12 @@
             }
         }
 
+
+        @media only screen and (min-width:998px) {
+            .white-res {
+                display: none;
+            }
+        }
 
         @media only screen and (max-width:998px) {
             .pr-44px {
@@ -44,6 +58,37 @@
             .pl-44px {
                 padding-left: 0 !important;
             }
+
+
+            .white-res {
+                color: white;
+                font-weight: 900 !important;
+                font-size: 20px;
+                display: inline-block;
+            }
+
+            i#nx-bt {
+                font-size: 18px;
+                font-weight: 700;
+                /* margin-left: 5%; */
+            }
+
+            .home-hover-text h2 {
+                margin-left: 20px;
+            }
+
+
+            .h2 {
+                width: 100%;
+                text-align: center;
+            }
+
+
+            .white-res {
+                position: absolute;
+                right: 40px;
+            }
+
         }
 
         /* @media only screen and (min-width:1500px) {
@@ -161,6 +206,16 @@
             .marbot {
                 margin-bottom: 50px;
             }
+
+
+        }
+
+        @media only screen and (max-width:360px) {
+            .h2 {
+                width: 100%;
+            }
+
+
         }
     </style>
 </head>
@@ -300,10 +355,12 @@
                 <div class="col-12 col-lg-6  prl-0  h-100 pr-44px pr-44 home-col h-md-70vw">
 
                     <a href="casafeliz.html" id='golink'>
-                        <div class="home-image w-100 h-100 gwrp " id="home-image-1-a">
+                        <div class="home-image home-image-1-a w-100 h-100 gwrp " id="home-image-1-a">
                             <!-- <img src="./img/ADND_ASSETS/Mask Group 32.png" alt="image" class=" w-100 h-100"> -->
                             <div class="home-hover-text" id="home-hover-text-1-a">
-                                <h2>CASA FELIZ</h2>
+                                <h2 class="h2">CASA FELIZ
+                                    <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                                </h2>
                                 <P>Alibag, 2020</P>
                             </div>
                             <div class="square-anim" id="home-hover-anim-1-a"></div>
@@ -314,11 +371,14 @@
                 </div>
                 <div class="col-12 col-lg-6 mt-sm-60px prl-0 pl-44px pl-44 h-100 home-col h-md-70vw">
                     <a href="Aminhouse.html" id='gotolink'>
-                        <div class="home-image w-100 h-100   h-100 gwrp " id="home-image-1-b">
+                        <div class="home-image home-image-1-b w-100 h-100   h-100 gwrp " id="home-image-1-b">
                             <!-- <img src="./img/ADND_ASSETS/Component 17 – 2.png" alt="image" class=" w-100 h-100 "> -->
 
                             <div class="home-hover-text">
-                                <h2>Amin House</h2>
+                                <h2>Amin House
+
+                                    <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                                </h2>
                                 <P>Alibag, 2010</P>
                             </div>
                             <div class="square-anim" id="home-hover-anim-1-b"></div>
@@ -333,11 +393,13 @@
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
-                <div class="home-image w-100 h-100 gwrp " id="home-image-1-a">
+                <div class="home-image home-image-2-a w-100 h-100 gwrp " id="home-image-1-a">
                     <!-- <img src="./img/ADND_ASSETS/Mask Group 32.png" alt="image" class=" w-100 h-100"> -->
                     <a href="casafeliz.html" id='gothreelink'>
                         <div class="home-hover-text" id="home-hover-text-2-a">
-                            <h2>CASA FELIZ</h2>
+                            <h2>CASA FELIZ
+                                <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                            </h2>
                             <P>Alibaug, 2021</P>
                         </div>
                         <div class="square-anim" id="home-hover-anim-2-a"></div>
@@ -347,11 +409,13 @@
             </div>
             <div class="col-12 col-lg-6 mt-sm-60px prl-0 pl-44px  h-100 home-col h-md-70vw">
                 <a href="casafeliz.html" id='gofourlink'>
-                    <div class="home-image w-100 h-100   h-100 gwrp " id="home-image-1-b">
+                    <div class="home-image home-image-2-b w-100 h-100   h-100 gwrp " id="home-image-1-b">
                         <!-- <img src="./img/ADND_ASSETS/Component 17 – 2.png" alt="image" class=" w-100 h-100 "> -->
 
                         <div class="home-hover-text">
-                            <h2>CASA FELIZ</h2>
+                            <h2>CASA FELIZ
+                                <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                            </h2>
                             <P>Alibaug, 2021</P>
                         </div>
                         <div class="square-anim" id="home-hover-anim-2-b"></div>
@@ -366,16 +430,18 @@
         <div class="w-100 h-100 ">
 
 
-            <h3 class="text-center building-text">BUILDINGS</h3>
+            <h3 class="text-center building-text">Interiors</h3>
             <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container3">
 
                 <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
                     <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
                         <a href="casafeliz.html" id='gofivelink'>
-                            <div class="home-image w-100 h-100 gwrp " id="home-image-1-a">
+                            <div class="home-image home-image-3-a w-100 h-100 gwrp " id="home-image-1-a">
                                 <!-- <img src="./img/ADND_ASSETS/Mask Group 32.png" alt="image" class=" w-100 h-100"> -->
                                 <div class="home-hover-text" id="home-hover-text-3-a">
-                                    <h2>CASA FELIZ</h2>
+                                    <h2>CASA FELIZ
+                                        <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                                    </h2>
                                     <P>Alibaug, 2021</P>
                                 </div>
                                 <div class="square-anim" id="home-hover-anim-3-a"></div>
@@ -386,11 +452,13 @@
                     </div>
                     <div class="col-12 col-lg-6 mt-sm-60px prl-0 pl-44px  h-100 home-col h-md-70vw">
                         <a href="casafeliz.html" id='gosixlink'>
-                            <div class="home-image w-100 h-100   h-100 gwrp " id="home-image-1-b">
+                            <div class="home-image home-image-3-b w-100 h-100   h-100 gwrp " id="home-image-1-b">
                                 <!-- <img src="./img/ADND_ASSETS/Component 17 – 2.png" alt="image" class=" w-100 h-100 "> -->
 
                                 <div class="home-hover-text">
-                                    <h2>CASA FELIZ</h2>
+                                    <h2>CASA FELIZ
+                                        <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                                    </h2>
                                     <P>Alibaug, 2021</P>
                                 </div>
                                 <div class="square-anim" id="home-hover-anim-3-b"></div>
@@ -403,69 +471,93 @@
 
     </div>
     <!--================Ongoing section================-->
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container4">
+    <div class="w-100 h-100 mt-60px h-md-auto" id="container4">
+        <div class="w-100 h-100 ">
 
-        <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
-            <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
-                <a href="casafeliz.html" id='gosevenlink'>
-                    <div class="home-image w-100 h-100 gwrp " id="home-image-1-a">
-                        <!-- <img src="./img/ADND_ASSETS/Mask Group 32.png" alt="image" class=" w-100 h-100"> -->
-                        <div class="home-hover-text" id="home-hover-text-4-a">
-                            <h2>CASA FELIZ</h2>
-                            <P>Alibaug, 2021</P>
-                        </div>
-                        <div class="square-anim" id="home-hover-anim-4-a"></div>
+            <h3 class="text-center building-text">Commercial</h3>
+            <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container4">
+                <!-- <h3 class="text-center building-text">COMMERCIAL</h3> -->
+
+                <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
+                    <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
+                        <a href="casafeliz.html" id='gosevenlink'>
+                            <div class="home-image home-image-4-a w-100 h-100 gwrp " id="home-image-1-a">
+                                <!-- <img src="./img/ADND_ASSETS/Mask Group 32.png" alt="image" class=" w-100 h-100"> -->
+                                <div class="home-hover-text" id="home-hover-text-4-a">
+                                    <h2>CASA FELIZ
+                                        <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                                    </h2>
+                                    <P>Alibaug, 2021</P>
+                                </div>
+                                <div class="square-anim" id="home-hover-anim-4-a"></div>
+
+                            </div>
+                        </a>
 
                     </div>
-                </a>
+                    <div class="col-12 col-lg-6 mt-sm-60px prl-0 pl-44px  h-100 home-col h-md-70vw">
+                        <a href="casafeliz.html" id='goeightlink'>
+                            <div class="home-image w-100 h-100 home-image-4-b  h-100 gwrp  " id="home-image-1-b">
+                                <!-- <img src="./img/ADND_ASSETS/Component 17 – 2.png" alt="image" class=" w-100 h-100 "> -->
 
-            </div>
-            <div class="col-12 col-lg-6 mt-sm-60px prl-0 pl-44px  h-100 home-col h-md-70vw">
-                <a href="casafeliz.html" id='goeightlink'>
-                    <div class="home-image w-100 h-100   h-100 gwrp  " id="home-image-1-b">
-                        <!-- <img src="./img/ADND_ASSETS/Component 17 – 2.png" alt="image" class=" w-100 h-100 "> -->
-
-                        <div class="home-hover-text">
-                            <h2>CASA FELIZ</h2>
-                            <P>Alibaug, 2021</P>
-                        </div>
-                        <div class="square-anim" id="home-hover-anim-4-b"></div>
+                                <div class="home-hover-text">
+                                    <h2>CASA FELIZ
+                                        <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                                    </h2>
+                                    <P>Alibaug, 2021</P>
+                                </div>
+                                <div class="square-anim" id="home-hover-anim-4-b"></div>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
+
         </div>
     </div>
     <!--================Extra section================-->
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container1">
 
-        <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
-            <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
-                <a href="casafeliz.html" id='goninelink'>
-                    <div class="home-image w-100 h-100 gwrp " id="home-image-1-a">
-                        <!-- <img src="./img/ADND_ASSETS/Mask Group 32.png" alt="image" class=" w-100 h-100"> -->
-                        <div class="home-hover-text" id="home-hover-text-5-a">
-                            <h2>CASA FELIZ</h2>
-                            <P>Alibaug, 2021</P>
-                        </div>
-                        <div class="square-anim" id="home-hover-anim-5-a"></div>
+    <div class="w-100 h-100 mt-60px h-md-auto" id="container4">
+        <div class="w-100 h-100 ">
+            <h3 class="text-center building-text">Ongoing</h3>
+            <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container1">
+                <!-- <h3 class="text-center building-text">ONGOING</h3> -->
+                <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
+                    <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
+                        <a href="casafeliz.html" id='goninelink'>
+                            <div class="home-image w-100 h-100 gwrp  home-image-5-a" id="home-image-1-a">
+                                <!-- <img src="./img/ADND_ASSETS/Mask Group 32.png" alt="image" class=" w-100 h-100"> -->
+                                <div class="home-hover-text" id="home-hover-text-5-a">
+                                    <h2>CASA FELIZ
+
+                                    </h2><span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                                    <P>Alibaug, 2021</P>
+                                </div>
+                                <div class="square-anim" id="home-hover-anim-5-a"></div>
+
+                            </div>
+                        </a>
 
                     </div>
-                </a>
+                    <div class="col-12 col-lg-6 mt-sm-60px prl-0 pl-44px  h-100 home-col h-md-70vw marbot">
+                        <a href="casafeliz.html" id='gotenlink'>
+                            <div class="home-image w-100 h-100   h-100 gwrp home-image-5-b" id="home-image-1-b">
+                                <!-- <img src="./img/ADND_ASSETS/Component 17 – 2.png" alt="image" class=" w-100 h-100 "> -->
 
-            </div>
-            <div class="col-12 col-lg-6 mt-sm-60px prl-0 pl-44px  h-100 home-col h-md-70vw marbot">
-                <a href="casafeliz.html" id='gotenlink'>
-                    <div class="home-image w-100 h-100   h-100 gwrp " id="home-image-1-b">
-                        <!-- <img src="./img/ADND_ASSETS/Component 17 – 2.png" alt="image" class=" w-100 h-100 "> -->
-
-                        <div class="home-hover-text">
-                            <h2>CASA FELIZ</h2>
-                            <P>Alibaug, 2021</P>
-                        </div>
-                        <div class="square-anim" id="home-hover-anim-5-b"></div>
+                                <div class="home-hover-text">
+                                    <h2>CASA FELIZ
+                                        <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                                    </h2>
+                                    <P>Alibaug, 2021</P>
+                                </div>
+                                <div class="square-anim" id="home-hover-anim-5-b"></div>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
+
+
         </div>
     </div>
     <!--================Footer starts================-->
@@ -1084,6 +1176,199 @@
             }
 
         });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            var width = $(window).width();
+
+            if (width < 998) {
+                $('#home-hover-anim-1-a').click(function () {
+
+                    $('.home-image-1-a').toggleClass('active-image');
+                    $('.home-image-1-b').removeClass('active-image');
+                    $('.home-image-2-a').removeClass('active-image');
+                    $('.home-image-2-b').removeClass('active-image');
+                    $('.home-image-3-a').removeClass('active-image');
+                    $('.home-image-3-b').removeClass('active-image');
+                    $('.home-image-4-a').removeClass('active-image');
+                    $('.home-image-4-b').removeClass('active-image');
+                    $('.home-image-5-a').removeClass('active-image');
+                    $('.home-image-5-b').removeClass('active-image');
+                })
+                $('#home-hover-anim-1-b').click(function () {
+
+                    $('.home-image-1-b').toggleClass('active-image');
+                    $('.home-image-1-a').removeClass('active-image');
+                    $('.home-image-2-a').removeClass('active-image');
+                    $('.home-image-2-b').removeClass('active-image');
+                    $('.home-image-3-a').removeClass('active-image');
+                    $('.home-image-3-b').removeClass('active-image');
+                    $('.home-image-4-a').removeClass('active-image');
+                    $('.home-image-4-b').removeClass('active-image');
+                    $('.home-image-5-a').removeClass('active-image');
+                    $('.home-image-5-b').removeClass('active-image');
+                })
+                $('#home-hover-anim-2-a').click(function () {
+
+                    $('.home-image-2-a').toggleClass('active-image');
+                    $('.home-image-1-b').removeClass('active-image');
+                    $('.home-image-1-a').removeClass('active-image');
+                    $('.home-image-2-b').removeClass('active-image');
+                    $('.home-image-3-a').removeClass('active-image');
+                    $('.home-image-3-b').removeClass('active-image');
+                    $('.home-image-4-a').removeClass('active-image');
+                    $('.home-image-4-b').removeClass('active-image');
+                    $('.home-image-5-a').removeClass('active-image');
+                    $('.home-image-5-b').removeClass('active-image');
+                })
+                $('#home-hover-anim-2-b').click(function () {
+
+                    $('.home-image-2-b').toggleClass('active-image');
+                    $('.home-image-1-a').removeClass('active-image');
+                    $('.home-image-1-b').removeClass('active-image');
+                    $('.home-image-2-a').removeClass('active-image');
+                    $('.home-image-3-a').removeClass('active-image');
+                    $('.home-image-3-b').removeClass('active-image');
+                    $('.home-image-4-a').removeClass('active-image');
+                    $('.home-image-4-b').removeClass('active-image');
+                    $('.home-image-5-a').removeClass('active-image');
+                    $('.home-image-5-b').removeClass('active-image');
+                })
+                $('#home-hover-anim-3-a').click(function () {
+
+                    $('.home-image-3-a').toggleClass('active-image');
+                    $('.home-image-1-a').removeClass('active-image');
+                    $('.home-image-1-b').removeClass('active-image');
+                    $('.home-image-2-a').removeClass('active-image');
+                    $('.home-image-2-b').removeClass('active-image');
+                    $('.home-image-3-b').removeClass('active-image');
+                    $('.home-image-4-a').removeClass('active-image');
+                    $('.home-image-4-b').removeClass('active-image');
+                    $('.home-image-5-a').removeClass('active-image');
+                    $('.home-image-5-b').removeClass('active-image');
+                })
+                $('#home-hover-anim-3-b').click(function () {
+
+                    $('.home-image-3-b').toggleClass('active-image');
+                    $('.home-image-1-a').removeClass('active-image');
+                    $('.home-image-1-b').removeClass('active-image');
+                    $('.home-image-2-a').removeClass('active-image');
+                    $('.home-image-2-b').removeClass('active-image');
+                    $('.home-image-3-a').removeClass('active-image');
+                    $('.home-image-4-a').removeClass('active-image');
+                    $('.home-image-4-b').removeClass('active-image');
+                    $('.home-image-5-a').removeClass('active-image');
+                    $('.home-image-5-b').removeClass('active-image');
+                })
+                $('#home-hover-anim-4-a').click(function () {
+
+                    $('.home-image-4-a').toggleClass('active-image');
+                    $('.home-image-1-a').removeClass('active-image');
+                    $('.home-image-1-b').removeClass('active-image');
+                    $('.home-image-2-a').removeClass('active-image');
+                    $('.home-image-2-b').removeClass('active-image');
+                    $('.home-image-3-a').removeClass('active-image');
+                    $('.home-image-3-b').removeClass('active-image');
+                    $('.home-image-4-b').removeClass('active-image');
+                    $('.home-image-5-a').removeClass('active-image');
+                    $('.home-image-5-b').removeClass('active-image');
+                })
+                $('#home-hover-anim-4-b').click(function () {
+
+                    $('.home-image-4-b').toggleClass('active-image');
+                    $('.home-image-1-a').removeClass('active-image');
+                    $('.home-image-1-b').removeClass('active-image');
+                    $('.home-image-2-a').removeClass('active-image');
+                    $('.home-image-2-b').removeClass('active-image');
+                    $('.home-image-3-a').removeClass('active-image');
+                    $('.home-image-3-b').removeClass('active-image');
+                    $('.home-image-4-a').removeClass('active-image');
+                    $('.home-image-5-a').removeClass('active-image');
+                    $('.home-image-5-b').removeClass('active-image');
+                })
+                $('#home-hover-anim-5-a').click(function () {
+
+                    $('.home-image-5-a').toggleClass('active-image');
+                    $('.home-image-1-a').removeClass('active-image');
+                    $('.home-image-1-b').removeClass('active-image');
+                    $('.home-image-2-a').removeClass('active-image');
+                    $('.home-image-2-b').removeClass('active-image');
+                    $('.home-image-3-a').removeClass('active-image');
+                    $('.home-image-3-b').removeClass('active-image');
+                    $('.home-image-4-a').removeClass('active-image');
+                    $('.home-image-4-b').removeClass('active-image');
+                    $('.home-image-5-b').removeClass('active-image');
+                })
+                $('#home-hover-anim-5-b').click(function () {
+
+                    $('.home-image-5-b').toggleClass('active-image');
+                    $('.home-image-1-a').removeClass('active-image');
+                    $('.home-image-1-b').removeClass('active-image');
+                    $('.home-image-2-a').removeClass('active-image');
+                    $('.home-image-2-b').removeClass('active-image');
+                    $('.home-image-3-a').removeClass('active-image');
+                    $('.home-image-3-b').removeClass('active-image');
+                    $('.home-image-4-a').removeClass('active-image');
+                    $('.home-image-4-b').removeClass('active-image');
+                    $('.home-image-5-a').removeClass('active-image');
+                })
+
+
+                $('.home-image-1-a').click(function () {
+                    if (!$('.home-image-1-a').hasClass('active-image')) {
+                        window.location.href = "casafeliz.html";
+                    }
+                })
+                $('.home-image-1-b').click(function () {
+                    if (!$('.home-image-1-b').hasClass('active-image')) {
+                        window.location.href = "casafeliz.html";
+                    }
+                })
+                $('.home-image-2-a').click(function () {
+                    if (!$('.home-image-2-a').hasClass('active-image')) {
+                        window.location.href = "casafeliz.html";
+                    }
+                })
+                $('.home-image-2-b').click(function () {
+                    if (!$('.home-image-2-b').hasClass('active-image')) {
+                        window.location.href = "casafeliz.html";
+                    }
+                })
+                $('.home-image-3-a').click(function () {
+                    if (!$('.home-image-3-a').hasClass('active-image')) {
+                        window.location.href = "casafeliz.html";
+                    }
+                })
+                $('.home-image-3-b').click(function () {
+                    if (!$('.home-image-3-b').hasClass('active-image')) {
+                        window.location.href = "casafeliz.html";
+                    }
+                })
+
+                $('.home-image-4-a').click(function () {
+                    if (!$('.home-image-4-a').hasClass('active-image')) {
+                        window.location.href = "casafeliz.html";
+                    }
+                })
+                $('.home-image-4-b').click(function () {
+                    if (!$('.home-image-4-b').hasClass('active-image')) {
+                        window.location.href = "casafeliz.html";
+                    }
+                })
+                $('.home-image-5-a').click(function () {
+                    if (!$('.home-image-5-a').hasClass('active-image')) {
+                        window.location.href = "casafeliz.html";
+                    }
+                })
+                $('.home-image-5-b').click(function () {
+                    if (!$('.home-image-5-b').hasClass('active-image')) {
+                        window.location.href = "casafeliz.html";
+                    }
+                })
+            }
+        })
     </script>
 
 </body>
