@@ -3529,12 +3529,14 @@ a#nav-link {
     line-height: 25px;
     color: white;
     font-weight: 700;
+    text-transform:uppercase;
 }
 .home-hover-text p{
     font-size: 18px;
     line-height: 21px;
     color: white;
     font-weight: lighter;
+    text-transform: uppercase;
 }
 
 .gwrp{
