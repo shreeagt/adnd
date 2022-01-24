@@ -65,6 +65,21 @@
 }
 
 
+.images:hover{
+    background: #DCDCDC!important;
+}
+
+.ye:hover{
+    background: #DCDCDC!important;
+}
+
+h2.ongoingone-text {
+    font-family: gotham-bold;
+    color:#000000;
+    text-align: center;
+    width:100%;
+}
+
 a {
     text-decoration: none;
 }
@@ -73,6 +88,9 @@ a {
     text-align: center;
 }
 
+span.db {
+    display: block;
+}
 /* Icon 1 */
 
  #nav-icon4 {
@@ -708,7 +726,7 @@ html,
 .ye {
     height: 550px;
     display: flex;
-    border: 4px solid #000;
+   background-color: #F6F6F6;
     align-items: center;
 }
 
@@ -728,7 +746,7 @@ span.strong {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(5, 108px);
-    border: 4px solid #000000;
+    /* border: 4px solid #000000; */
 }
 
 .cell {
@@ -739,7 +757,7 @@ span.strong {
     font-size: 3rem;
     font-weight: bold;
     border: 1px solid #e8e8e8;
-    background: white;
+    background: #F6F6F6;
     opacity: 100%;
     overflow: hidden;
 }
@@ -1124,7 +1142,7 @@ span.strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 4px solid #000000;
+    /* border: 4px solid #000000; */
 }
 
 .images.ongoing.w-100 {
@@ -1159,7 +1177,7 @@ span.ongoing-text {
 
 .images.ongoing.w-100 {
     position: relative;
-    background: #DCDCDC;
+    background: #F6F6F6;
 }
 
 
@@ -1526,6 +1544,13 @@ img.ongoing-img {
     .ongoingimg-wrapper {
         width: 70%;
     }
+
+    h2.ongoingone-text {
+        font-size: 34px;
+        color: black;
+        line-height:107px;
+        letter-spacing:11.9px;
+    }
 }
 
 @media only screen and (min-width:2250px){
@@ -1853,7 +1878,7 @@ form{
     /* css start */
     .house, .interior, .commercial, .ongoing {
         font-size: 12px;
-        padding-right: 19px;
+        padding-right: 0;
     }
 
     span.ongoing-text {
@@ -1865,6 +1890,10 @@ form{
         width: 12px;
         height: 25px;
         right: 17px;
+    }
+
+    h2.ongoingone-text{
+        letter-spacing: 8px;
     }
    
 }
@@ -1928,7 +1957,7 @@ form{
 
     .house,.interior,.commercial,.ongoing{
         font-size: 12px;
-       padding-right:15px;
+       padding-right:0px;
     }
 
     span.ongoing-text {
@@ -1992,6 +2021,10 @@ form{
 
     .col-12{
         width: 100%!important;
+    }
+
+    h2.ongoingone-text {
+        letter-spacing: 4px;
     }
 }
 @media only screen and (max-width:768px){
@@ -2073,6 +2106,11 @@ form{
     }
     .col-12{
         width: 100%!important;
+    }
+
+    h2.ongoingone-text {
+        letter-spacing: 0;
+        font-size: 20px;
     }
 }
 /* page 5 css */
@@ -2843,7 +2881,7 @@ left: 0 !important;
 }
 .add4{
     top: 58%;
-    left: 33%;
+    left: 31%;
 }
 .add5{
     top: 46%;
@@ -3084,7 +3122,7 @@ element.style {
     .commercial,
     .ongoing {
         font-size: 12px;
-        padding-right: 20px;
+        padding-right: 0px;
     }
 }
 @media only screen and (max-width:760px){
@@ -3458,7 +3496,7 @@ display:none;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(5, 20%);
-    border: 2px solid #000000;
+    /* border: 2px solid #000000; */
     height: 80vw!important;
     width:80vw;
 }
@@ -3474,8 +3512,8 @@ display:none;
 }
 
 
-.images {
 
+.images {
     border: 0px solid #000000;
 }
 
@@ -3536,7 +3574,7 @@ a#nav-link {
     line-height: 21px;
     color: white;
     font-weight: lighter;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .gwrp{
@@ -3781,7 +3819,7 @@ a#nav-link {
         letter-spacing: 4.9px;
         font-family: 'Gotham', sans-serif;
         font-size: 12px;
-        padding-right: 22px;
+        padding-right: 0;
     }
 
     .ongoingimg-wrapper {
