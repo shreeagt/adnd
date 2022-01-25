@@ -416,6 +416,45 @@ a.col-bla {
 .h-90{
     height: 90% !important;
 }
+
+.grayscale {
+    position: relative;
+}
+
+
+
+.redding {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column-reverse;
+    font-family: gotham-bold;
+}
+
+.grayscale:hover .redding{
+    opacity:0;
+    transition: all 0.4s ease-in-out;
+}
+
+p.hy-text {
+    font-family: 'Gotham Light', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+h2.redy-text {
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
 html,
         body {
             font-family: 'Gotham', sans-serif!important;
