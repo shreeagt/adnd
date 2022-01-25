@@ -736,7 +736,7 @@
 
 
     <!-- section-12 -->
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container4">
+    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container">
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
@@ -775,10 +775,10 @@
 
 
     <!-- section-13-->
-    <div class="w-100 h-100 mt-60px h-md-auto" id="container1">
+    <div class="w-100 h-100 mt-60px h-md-auto" id="container4">
         <div class="w-100 h-100 ">
-            <h3 class="text-center building-text">Ongoing</h3>
-            <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container1">
+            <h3 class="text-center building-text" id="conatiner">Ongoing</h3>
+            <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container4">
                 <!-- <h3 class="text-center building-text">ONGOING</h3> -->
                 <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
                     <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
@@ -1167,7 +1167,7 @@
 
     <!-- section 23 -->
 
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container1">
+    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container">
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
@@ -2390,7 +2390,7 @@
             // console.log(scrolled)
             if (scrolled < 25) {
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "100%");
-                root.style.setProperty("--pseudo-progress-bar-house", scrolled * 2.5 + "%");
+                root.style.setProperty("--pseudo-progress-bar-house", scrolled * 4 + "%");
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "0%");
 
@@ -2400,7 +2400,7 @@
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "100%");
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "0%");
                 root.style.setProperty("--pseudo-progress-bar-house", "0%");
-                root.style.setProperty("--pseudo-progress-bar-interior", (scrolled - 25) * 2.5 + "%");
+                root.style.setProperty("--pseudo-progress-bar-interior", (scrolled - 25) * 4 + "%");
                 root.style.setProperty("--pseudo-progress-bar-commercial", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial-filled", "0%");
 
@@ -2413,7 +2413,7 @@
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial-filled", "100%");
 
-                root.style.setProperty("--pseudo-progress-bar-commercial", (scrolled - 51) * 2.5 + "%");
+                root.style.setProperty("--pseudo-progress-bar-commercial", (scrolled - 51) * 40 + "%");
                 root.style.setProperty("--pseudo-progress-bar-ongoing", "0%");
                 root.style.setProperty("--pseudo-progress-bar-ongoing-filled", "0%");
 
@@ -2426,7 +2426,7 @@
                 root.style.setProperty("--pseudo-progress-bar-house", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial", "0%");
-                root.style.setProperty("--pseudo-progress-bar-ongoing", (scrolled - 75) * 2.5 + "%");
+                root.style.setProperty("--pseudo-progress-bar-ongoing", (scrolled - 75) * 2.6 + "%");
 
             }
             // else if(scrolled==100){
