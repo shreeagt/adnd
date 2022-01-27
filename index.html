@@ -2764,24 +2764,24 @@
             let commercialscroll = root.style.getPropertyValue("--pseudo-progress-bar-commercial")
             let ongoingscroll = root.style.getPropertyValue("--pseudo-progress-bar-ongoing")
             // console.log(scrolled)
-            if (scrolled < 25) {
+            if (scrolled < 15) {
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "100%");
-                root.style.setProperty("--pseudo-progress-bar-house", scrolled * 4 + "%");
+                root.style.setProperty("--pseudo-progress-bar-house", scrolled * 4.5 + "%");
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "0%");
 
             }
-            else if (scrolled > 25 && scrolled < 51) {
+            else if (scrolled > 15 && scrolled < 38) {
                 // console.log('home scrolling ...')
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "100%");
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "0%");
                 root.style.setProperty("--pseudo-progress-bar-house", "0%");
-                root.style.setProperty("--pseudo-progress-bar-interior", (scrolled - 25) * 6 + "%");
+                root.style.setProperty("--pseudo-progress-bar-interior", (scrolled - 15) * 3 + "%");
                 root.style.setProperty("--pseudo-progress-bar-commercial", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial-filled", "0%");
 
 
-            } else if (scrolled < 75 && scrolled > 51) {
+            } else if (scrolled < 65 && scrolled > 38) {
                 // console.log('interior scrolling ...')
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "0%");
@@ -2789,11 +2789,11 @@
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial-filled", "100%");
 
-                root.style.setProperty("--pseudo-progress-bar-commercial", (scrolled - 51) * 7.5 + "%");
+                root.style.setProperty("--pseudo-progress-bar-commercial", (scrolled - 38) * 2.5 + "%");
                 root.style.setProperty("--pseudo-progress-bar-ongoing", "0%");
                 root.style.setProperty("--pseudo-progress-bar-ongoing-filled", "0%");
 
-            } else if (scrolled < 100 && scrolled > 75) {
+            } else if (scrolled < 100 && scrolled > 61) {
                 // console.log('commercial scrolling ...')
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "0%");
@@ -2802,7 +2802,7 @@
                 root.style.setProperty("--pseudo-progress-bar-house", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial", "0%");
-                root.style.setProperty("--pseudo-progress-bar-ongoing", (scrolled - 75) * 2.5 + "%");
+                root.style.setProperty("--pseudo-progress-bar-ongoing", (scrolled - 61) * 1.79 + "%");
 
             }
             // else if(scrolled==100){
