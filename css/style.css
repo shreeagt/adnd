@@ -72,6 +72,26 @@
 /* .ye:hover{
     background: #DCDCDC!important;
 } */
+.kdnd {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    font-size: 22px;
+    font-family: 'gotham-bold';
+}
+
+.ap {
+    bottom: 10%;
+}
+
+.kd {
+    bottom: 10%;
+}
+
+
+span.kdnd.cd {
+    bottom: 5%;
+}
 
 h2.ongoingone-text {
     font-family: gotham-bold;
@@ -1335,18 +1355,21 @@ img.ongoing-img {
         padding-right: 6vw;
     }
 
-    /* .yearss .text-container {
-        width: 67%;
-        margin: auto;
-        text-align: center;g
-        padding-right: 0px;
-    } */
-
     .yearss .text-container {
         width: 67%;
         margin: auto;
         text-align: center;
         padding-right: 0px;
+    }
+
+    .add-hl {
+        width: 7px;
+        height: 7px;
+    }
+
+    .add6 {
+        top: 27%;
+        left: 51%;
     }
 }
 
@@ -1556,7 +1579,7 @@ img.ongoing-img {
     }
 
     .Details.m-small-auto.detail-cust {
-        padding: 10% 5%;
+        padding: 3% 5%;
     }
 
     .contact-details {
@@ -1667,7 +1690,7 @@ img.ongoing-img {
 
 
     .Details.m-small-auto.detail-cust {
-        padding: 10% 3%;
+        padding: 4% 9%  0  0%;
     }
 
 
@@ -1832,7 +1855,7 @@ input{
 }
 .Details{
     width: 500px;
-    padding: 10% 7%;
+    padding: 6% 7%;
     font-family:gotham-book!important;
     height: 65%;
     display: flex;
@@ -1850,15 +1873,15 @@ input{
     
 }
 .Details p,.Details a{
-    font-size: 18px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 28px;
     color: #373022;
     font-family:gotham-book!important;
     opacity: 100%;
     font-weight: lighter;
 }
 .Details a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 input[type=submit]{
     width: 200px;
@@ -1952,8 +1975,8 @@ form{
     .contact-details{
         margin-left: 26% !important;
     }
-    .Details{
-        padding: 10% 9% !important;
+    .Details {
+        padding: 4% 15% 0  9% !important;
     }
     .awards img{
         width: 60%;
@@ -2031,7 +2054,22 @@ form{
         line-height: 28px;
     }
 
+    h2.ongoingone-text {
+        font-size: 28px!important;
+    }
 
+}
+
+@media only screen and (max-width:1400px){
+    h2.ongoingone-text {
+        font-size: 26px!important;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    h2.ongoingone-text {
+        font-size: 22px!important;
+    }
 }
 @media only screen and (max-width:1100px){
 
@@ -2056,7 +2094,9 @@ form{
         margin: auto;
     }
 
- 
+    h2.ongoingone-text {
+        font-size: 20px!important;
+    }
 
 }
 
@@ -2944,9 +2984,24 @@ left: 0 !important;
     top: 58%;
     left: 31%;
 }
-.add5{
-    top: 46%;
-    left: 53%;
+.add5 {
+    top: 53%;
+    left: 30%;
+}
+
+.add6 {
+    top: 27%;
+    left: 47%;
+}
+
+.add7 {
+    top: 53%;
+    left: 33%;
+}
+
+.add8 {
+    top: 38%;
+    left: 1%;
 }
 .active-map-location{
     transform: scale(2);
@@ -3429,12 +3484,6 @@ display:none;
         padding-bottom: 80px;
     }
 
-/* 
-    @import url('http://fonts.cdnfonts.com/css/gotham'); */
-
-    /* .concept.con-cust {
-        display: none;
-    } */
 
     .ongoing-pro.on-cust {
         display: flex;
@@ -3449,9 +3498,7 @@ display:none;
         opacity: 0;
     }
 
-    /* .container.new-bottom.pb-70px.pt-70px {
-        margin-bottom: 22px;
-    } */
+
 
     .col-12.mt-sm-60px.prl-0.pl-44px.h-100.home-col.h-md-70vw.pg1-col-lg-4 {
         width: 100%!important;
@@ -3612,7 +3659,13 @@ a#nav-link {
 }
 
 
+.ap {
+    bottom: 2%;
+}
 
+.kd{
+    bottom:2%;
+}
   }
 
 .pr-40px{
@@ -3665,19 +3718,7 @@ a#nav-link {
     transition: all 0.7s ease-in-out;
 }
 
-/* .home-hover-text{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    opacity: 0;
-    transition: all 0.1s ease-out;
-} */
+
 
 .home-hover-text-hovered{
     opacity: 1;
@@ -3696,18 +3737,7 @@ a#nav-link {
     
 }
 
-/* .square-anim{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border: 1.5rem solid rgba(0,0,0,0.15);
-    opacity: 0;
-    transform: scale3d(1,1,1);
-    
-    transition: transform 0.5s ease-out;
-    
-} */
+
 
 .square-anim-hovered{
     
@@ -4192,7 +4222,7 @@ a#nav-link {
         width: 350px  !important;
     }
     .Details a{
-        text-decoration: underline;
+        text-decoration: none;
     }
     .contact-details{
         margin-left: 0 !important;
@@ -4789,7 +4819,7 @@ a#nav-link {
 
 @media only screen and (width:1024px) and (height: 600px){
     .Details p, .Details a {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 23px;
     }
 }
