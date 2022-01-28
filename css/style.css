@@ -826,12 +826,12 @@ span.strong {
 .nx-bt{
     font-size: 20px;
 }
-.prev-bt:hover{
+/* .prev-bt:hover{
     opacity: 60%;
 }
 .nx-bt:hover{
     opacity: 60%;
-}
+} */
 .mr-30px{
     margin-right: 35px;
 }
