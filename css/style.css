@@ -88,6 +88,20 @@
     bottom: 10%;
 }
 
+p.india-text {
+    font-weight: 700;
+}
+
+p.dark-mage {
+    font-weight: 700;
+}
+
+
+.project-details p {
+    color: #373022;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
 
 span.kdnd.cd {
     bottom: 5%;
@@ -2968,9 +2982,9 @@ left: 0 !important;
     border: 1px solid white;
     transition: transform 0.5s ease-out;
 }
-.add1{
-    top: 23%;
-    left: 39%;
+.add1 {
+    top: 24%;
+    left: 42%;
 }
 .add2{    
     top: 45%;
@@ -3000,9 +3014,45 @@ left: 0 !important;
 }
 
 .add8 {
-    top: 38%;
-    left: 1%;
+    top: 34%;
+    left: 4%;
 }
+
+.add9 {
+    top: 57%;
+    left: 35%;
+}
+
+.add10 {
+    top: 65%;
+    left: 32%;
+}
+
+.add11 {
+    top: 71%;
+    left: 38%;
+}
+
+.add12 {
+    top: 71%;
+    left: 40%;
+}
+
+.add13 {
+    top: 47%;
+    left: 59%;
+}
+
+.add14 {
+    top: 50%;
+    left: 26%;
+}
+
+.add15 {
+    top: 80%;
+    left: 37%;
+}
+
 .active-map-location{
     transform: scale(2);
 }
@@ -3665,6 +3715,64 @@ a#nav-link {
 
 .kd{
     bottom:2%;
+}
+
+
+.add6 {
+    top: 27%;
+    left: 50%;
+}
+
+
+.add1 {
+    top: 24%;
+    left: 46%;
+}
+
+
+.add13 {
+    top: 48%;
+    left: 64%;
+}
+
+.add9 {
+    top: 57%;
+    left: 35%;
+}
+
+.add7 {
+    top: 53%;
+    left: 35%;
+}
+
+.add5 {
+    top: 53%;
+    left: 32%;
+}
+
+.add4 {
+    top: 56%;
+    left: 32%;
+}
+
+
+.add10 {
+    top: 65%;
+    left: 35%;
+}
+
+.add15 {
+    top: 80%;
+    left: 39%;
+}
+
+.add12 {
+    top: 71%;
+    left: 41%;
+}
+
+.dk-none {
+    display: none!important;
 }
   }
 
