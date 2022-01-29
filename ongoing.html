@@ -181,14 +181,20 @@
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col-12 pg3-col-lg-4-7  prl-0 imagetwo">
 
-                <!-- <div class="redding">
-                    <P class="hy-text">Anjur</P>
-                    <h2 class="redy-text">Anjur Clubhouse
+                <div class="red text-center">
+                    <P class="hy-text white">Anjur</P>
+                    <h2 class="redy-text white">Anjur Clubhouse
                         <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
                     </h2>
-                    <span class="kdnd">KDND</span>
-                </div> -->
-
+                </div>
+                <span class="kdnd white">KDND</span>
+                <style>
+.imagetwo { position: relative; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+.imagetwo:hover .kdnd, .imagetwo:hover .red { opacity: 1; visibility: visible; }
+.red { position: absolute;top: 50%; transform: translateY(-50%);  left: 0; right: 0px; z-index: 6666; color: #fff; opacity: 0; visibility: hidden; -webkit-transition: all .4s ease-in-out;-moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out; }
+.kdnd { position: absolute; bottom: 10px; right: 10px; z-index: 666; opacity: 0; visibility: hidden; }
+.white { color: white; }
+                </style>
                 <a href="anjurclubhouse.html">
                     <div class="image w-100 h-100 hover-image-container grayscale">
                         <img src="./img/ADND_ASSETS/anjurongoingb.png" alt="image" class="h-100 hover-image">
