@@ -3905,6 +3905,16 @@ a#nav-link {
 
 
 /**interior**/
+#home-image-28-a{
+    background: url("../img/ADND_ASSETS/Individual_second_3.png") no-repeat center;
+    background-size: auto 100%;
+}
+
+#home-image-28-b{
+    background: url("../img/ADND_ASSETS/Individual_second_3.png") no-repeat center;
+    background-size: auto 100%;
+}
+
 #home-image-5-a{
     background: url("../img/ADND_ASSETS/apresidencew.png") no-repeat center;
     background-size: auto 100%;
