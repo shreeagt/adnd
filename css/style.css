@@ -3007,6 +3007,14 @@ left: 0 !important;
     left: 47%;
 }
 
+.add-hl.add6 {
+    display: none;
+}
+
+.add-hl.add3 {
+    display: none;
+}
+
 .add7 {
     top: 53%;
     left: 33%;
@@ -4104,11 +4112,7 @@ a#nav-link {
 
 #home-image-20-a{
     background: url("../img/ADND_ASSETS/runwalwork.png") no-repeat center;
-<<<<<<< HEAD
     background-size: auto 100%;
-=======
-    background-size:  auto  100%;
->>>>>>> b7181e05d92080faf0daee7bea80a4e90d814b8b
 }
 #home-image-20-b{
     background: url("../img/ADND_ASSETS/runeireneclubw.png") no-repeat center;
