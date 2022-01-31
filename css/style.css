@@ -3844,7 +3844,9 @@ a#nav-link {
     
 }
 
-
+#home-image-20-a{
+    background-size:100% auto;
+}
 
 .square-anim-hovered{
     
@@ -4102,7 +4104,7 @@ a#nav-link {
 
 #home-image-20-a{
     background: url("../img/ADND_ASSETS/runwalblissclubw.png") no-repeat center;
-    background-size: auto 100%;
+    background-size:  auto  100%;
 }
 #home-image-20-b{
     background: url("../img/ADND_ASSETS/runeireneclubw.png") no-repeat center;
