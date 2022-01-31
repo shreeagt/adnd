@@ -3007,6 +3007,14 @@ left: 0 !important;
     left: 47%;
 }
 
+.add-hl.add6 {
+    display: none;
+}
+
+.add-hl.add3 {
+    display: none;
+}
+
 .add7 {
     top: 53%;
     left: 33%;
