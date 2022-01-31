@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+
+</head>
+
+<style>
+    /**css Added**/
+
+
+
+
+    body {
+        transition: 0.4s all;
+    }
+
+    p.name-sho {
+        opacity: 79%;
+        font-family: gotham-book !important;
+    }
+
+    p.name-adnd {
+        font-size: 15px !important;
+        line-height: 27px !important;
+        padding: 0 28px;
+        font-family: gotham-book !important;
+    }
+
+    .anand-content {
+        display: inline-block;
+        width: 400px;
+        transition: all 5s;
+
+    }
+
+    .adjust-mar {
+        margin-left: 0;
+    }
+
+
+    .mobile-view {
+        max-width: 400px;
+        /* max-width: 100vw; */
+        overflow: hidden;
+        margin: auto;
+        padding-top: 110px;
+    }
+
+
+
+    .ideology-content {
+        display: inline-block;
+        width: 400px;
+
+    }
+
+    .shubham-content {
+        display: inline-block;
+
+        width: 400px;
+
+    }
+
+    .content-cover {
+        width: 1209px;
+        margin-left: -100%;
+        transition: all 5s;
+
+    }
+
+    .mobile-view {
+        text-align: center;
+        display: none;
+    }
+
+    .img-cover {
+        width: 165px;
+        height: 151px;
+        display: inline-block;
+
+        background-image: url("/img/ADND_ASSETS/left-gif.gif");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        margin-right: 60px;
+    }
+
+    .img-cover-one {
+        width: 165px;
+        height: 151px;
+        display: inline-block;
+
+        background-image: url("img/ADND_ASSETS/right-gif.gif");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .img-front {
+        width: 165px;
+        height: 151px;
+        margin-left: -200%;
+
+        transition: all 5s;
+    }
+
+    .img-back {
+        width: 165px;
+        height: 151px;
+        margin-left: 100%;
+        transition: all 5s;
+    }
+
+    .img-0 {
+        margin-left: 0;
+        transition: all 5s;
+    }
+
+    .img-1 {
+        margin-left: 0;
+        transition: all 5s;
+    }
+
+
+    .content-shu {
+        margin-left: -200%;
+    }
+
+
+    .anand-content {
+
+        vertical-align: top;
+        transition: all 5s;
+    }
+
+    .shubham-content {
+
+        vertical-align: top;
+
+    }
+
+    /**css Ended**/
+
+    h5.bolder.hover-text {
+        font-family: gotham-bold;
+    }
+
+    .dk-none {
+        display: none !important;
+    }
+
+    #right-image-one {
+        position: absolute;
+        left: 0px;
+        transition: left 700ms ease-out;
+    }
+
+    #idealogy-text-one {
+        position: absolute;
+        left: 0;
+        text-align: right;
+        opacity: 0;
+        transition: opacity 700ms ease-out;
+        width: 47%;
+        font-weight: lighter !important;
+    }
+
+    #idealogy-text-two {
+        opacity: 1;
+        transition: opacity 700ms ease-out;
+        width: 42%;
+    }
+
+    #left-image-one {
+        position: absolute;
+        right: 0px;
+        transition: right 700ms ease-out;
+    }
+
+    #left-image-two {
+        position: absolute;
+        left: 280px;
+        transition: left 700ms ease-out;
+    }
+
+    #right-image-one {
+        position: absolute;
+        left: 0px;
+        transition: left 700ms ease-out;
+    }
+
+    #right-image-two {
+        position: absolute;
+        right: 280px;
+        transition: right 700ms ease-out;
+    }
+
+    #idealogy-text-three {
+        position: absolute;
+        right: 0;
+        text-align: left;
+        opacity: 0;
+        transition: opacity 700ms ease-out;
+        width: 47%;
+        font-weight: lighter !important;
+    }
+
+    #ideal-two {
+        Opacity: 79%;
+        font-weight: lighter !important;
+        color: #000000;
+    }
+
+    #idealogy-text-three {
+        position: absolute;
+        right: 0;
+        text-align: left;
+        opacity: 0;
+        transition: opacity 700ms ease-out;
+        width: 47%;
+        font-weight: lighter !important;
+    }
+
+    #ideal-textt {
+        line-height: 35px;
+        font-family: gotham-book !important;
+        color: #373022;
+        font-size: 18px;
+    }
+
+    /* #idealogy-text2 {
+    opacity: 1;
+    transition: opacity 700ms ease-out;
+    width: 42%;
+} */
+
+
+
+    @media only screen and (min-width:650px) {
+        .mobile-view {
+            display: none;
+        }
+    }
+
+
+
+    @media only screen and (min-width:998px) {
+
+
+        p.head {
+            margin-left: 5px;
+        }
+
+        p.desc {
+            margin-left: 5px;
+        }
+
+        p.head.head-kdnd {
+            margin-left: 15px;
+        }
+
+        p.desc.des1 {
+            margin-left: 15px;
+        }
+
+
+
+    }
+
+    @media only screen and (min-width:1600px) {
+        p.head.head-kdnd {
+            margin-left: 17px;
+        }
+
+        p.head {
+            margin-left: 7px;
+        }
+    }
+
+
+
+
+    @media only screen and (max-width:998px) {
+        p.desc {
+            margin-bottom: 59px;
+        }
+
+        .desktop-view {}
+    }
+
+    @media only screen and (max-width:650px) {
+        .col-12.col-lg-3.txtalr.pg-7-col.f-lighter.f-18px.cur-p.project-details {
+            margin-bottom: 200px;
+        }
+
+        .container-lg.mt-5.mt-6.prl-0.f-lighter {
+            margin-top: 3.5rem !important;
+        }
+
+        /* .head {
+            margin-bottom: 0;
+        } */
+
+        .studio-text {
+            margin-top: 80px;
+        }
+
+        p.head.head-kdnd {
+            margin-bottom: 0;
+        }
+
+        h5.bolder.hover-text {
+
+            font-size: 15px;
+
+        }
+
+        p.india-text {
+            margin-bottom: 20px !important;
+        }
+
+        p.name-sho {
+            margin: 23px 0;
+            font-size: 20px;
+        }
+
+        /* 
+        .desktop-view {
+            display: none !important;
+        } */
+    }
+
+    @media only screen and (max-width:475px) {
+        .name-sho {
+            font-size: 18px;
+        }
+
+        #ideal-text {
+            font-size: 13px !important;
+            line-height: 25px !important;
+        }
+
+        p.name-adnd {
+            font-size: 13px !important;
+            line-height: 25px !important;
+            padding: 0 45px;
+
+        }
+
+        .img-cover {
+            width: 138px;
+            height: 136px;
+            margin-right: 45px;
+        }
+
+        .img-cover-one {
+            width: 138px;
+            height: 136px;
+
+        }
+    }
+
+    @media only screen and (max-width:415px) {
+        p.india-text {
+            margin-bottom: 10px !important;
+        }
+
+        .col-12.col-lg-3.txtalr.pg-7-col.f-lighter.f-18px.cur-p.project-details {
+            margin-bottom: 150px;
+        }
+
+        .mobile-promap {
+            display: block;
+            margin-block: 20px !important;
+        }
+
+        .container-lg.mt-5.mt-6.prl-0.f-lighter {
+            margin-top: 3rem !important;
+        }
+
+        p.desc {
+            margin-bottom: 45px;
+        }
+
+        .m-5rem {
+            margin-top: 3rem !important;
+            margin-bottom: 0rem !important;
+        }
+
+        .studio-text {
+            margin-top: 50px;
+        }
+
+        .team {
+            margin-top: 3rem;
+        }
+    }
+
+    @media only screen and (max-width:400px) {
+
+        .ideology-content {
+            display: inline-block;
+            /* width: 400px; */
+            width: 100vw;
+
+
+
+        }
+
+        .anand-content {
+            display: inline-block;
+            /* width: 400px; */
+            width: 100vw;
+            /* margin-left: -67%; */
+            /* vertical-align: middle;
+    transition: all 5s; */
+            /* padding: 0 2vw; */
+        }
+
+        .shubham-content {
+            display: inline-block;
+            width: 100vw;
+            /* width: 400px; */
+            /* vertical-align: middle; */
+            /* padding: 0 2vw; */
+        }
+
+        .content-cover {
+            /* width: 1209px; */
+            width: 302.5vw;
+            /* margin-left: -100%;
+    transition: all 5s; */
+            /* margin: auto; */
+        }
+
+        .mobile-view {
+            /* max-width: 400px; */
+            max-width: 100vw;
+            overflow: hidden;
+            margin: auto;
+        }
+    }
+
+    @media only screen and (max-width:360px) {
+        .img-cover {
+            width: 120px;
+            height: 122px;
+        }
+
+        .img-front {
+            width: 120px;
+            height: 122px;
+
+        }
+
+        .img-cover-one {
+            width: 120px;
+            height: 122px;
+        }
+
+        .img-back {
+            width: 120px;
+            height: 122px;
+        }
+    }
+
+    @media only screen and (max-width:330px) {
+        .content-cover {
+            width: 303.5vw;
+
+        }
+    }
+
+    @media only screen and (max-width:300px) {
+
+
+        .img-cover {
+            width: 100px;
+            height: 101px;
+            margin-right: 38px;
+        }
+
+        .img-front {
+            width: 100px;
+            height: 101px;
+        }
+
+        .img-cover-one {
+            width: 100px;
+            height: 101px;
+        }
+
+        .img-back {
+            width: 100px;
+            height: 101px;
+        }
+
+        p.name-adnd {
+            padding: 0 25px;
+        }
+    }
+</style>
+
+<body onLoad="code()">
+    <!--================Header-start================-->
+    <header>
+
+        <!--================Nav for Desktop================-->
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-light container px-3 d-none d-sm-block d-sm-none d-md-block">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <!-- <div id="nav-icon4" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div> -->
+            <div class="desktop-navbar ">
+                <div class="navbar-nav mr-auto mt-2 mt-lg-0 m-auto mh-66px" id="navbar-nav">
+                    <div class="nav-item desk-item ">
+                        <a class="nav-link m-auto  desk-work" id="nav-link" href="index.html">WORK </a>
+
+                    </div>
+                    <div class="nav-item desk-item desk-news">
+                        <a class="nav-link m-auto" id="nav-link" href="news.html">NEWS </a>
+                    </div>
+                    <!--================Brand for Desktop================-->
+                    <div class="nav-item desk-item desk-brand">
+                        <a class="nav-link m-auto brand" id="nav-link-brand" href="index.html"><img
+                                src="./img/ADND_ASSETS/Group 36.png" alt="ADND">
+                        </a>
+                    </div>
+                    <div class="nav-item desk-item desk-story">
+                        <a class="nav-link m-auto active" id="nav-link" href="story.html">STORY</a>
+                    </div>
+                    <div class="nav-item desk-item desk-contact">
+                        <a class="nav-link m-auto" id="nav-link" href="contact.html">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--================Nav for Mobiles/Hamburger menu================-->
+        <nav class="mobile-nav container-fluid">
+            <div class="row">
+                <a href="index.html">
+                    <div class="col-12 txtalc mobile-brand-container">
+                        <img src="./img/ADND_ASSETS/Group 36.png" alt="brand" class="mobile-brand">
+                    </div>
+                </a>
+                <div class="col-12">
+                    <div class="mobile-nav-menu">
+                        <div class="mobile-nav-item w-100">
+                            <a href="index.html" class=" mobile-nav-link">WORK</a>
+                            <a href="news.html" class=" mobile-nav-link">NEWS</a>
+                            <a href="story.html" class="active mobile-nav-link">STORY</a>
+                            <a href="contact.html" class=" mobile-nav-link">CONTACT</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--================Section1================-->
+    <div class="container-lg minh80vh mt-5 mt-sm-120px all-center desktop-view">
+
+        <div class="idioContainer m-auto">
+
+
+            <div class="row txtalc">
+                <div class="col-6 txtalr prl-sm-0 pr-44px pg-7-leg-img1">
+                    <div class="ideal-image ml-auto" id="ideal-image1">
+                        <img src="./img/ADND_ASSETS/leggleft.gif" alt="leftleg" id="left-image1">
+                        <img src="./img/ADND_ASSETS/Mask Group 45.png" alt="leftleg" id="left-image2">
+
+                    </div>
+
+
+                </div>
+                <div class="col-6 txtall prl-sm-0 pl-44px pg-7-leg-img2">
+                    <div class="ideal-image mr-auto" id="ideal-image2">
+
+                        <img src="./img/ADND_ASSETS/right-gif.gif" alt="rightleg" id="right-image1">
+                        <img src="./img/ADND_ASSETS/Mask Group 46.png" alt="rightleg" id="right-image2">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-fluid " id="ideal-text-container">
+
+                <div class="idealogy-text ml-10px" id="idealogy-text1">
+
+
+                    <p class="head" id="ideal2">
+                        Shobhan
+                    </p>
+                    <p id="ideal-text">ADND believes that there needs to be the right interface between the client’s
+                        vision and the execution on site. The firm provides this interface and helps bridge any gaps
+                        that may arise during the project. ADND believes that there</p>
+                </div>
+
+                <div class="idealogy-text" id="idealogy-text2">
+
+
+                    <p class="head" id="ideal2">
+                        Ideology
+                    </p>
+                    <p id="ideal-text">From the inception of this coalition, we were well acquainted with how
+                        diametrically polar our personas were. What echoed resoundingly true even beyond our spectrum of
+                        dissimilitude was our shared penchant for the discipline of design — a binding denominator that
+                        created our kaleidoscopic vision in the fraternity, now transcending its two-decade mark as the
+                        design atelier ‘ADND’.</p>
+                </div>
+                <div class="idealogy-text mr-10px" id="idealogy-text3">
+
+
+                    <p class="head" id="ideal2">
+                        Anand
+                    </p>
+                    <p id="ideal-text">ADND believes that there needs to be the right interface between the client’s
+                        vision and the execution on site. The firm provides this interface and helps bridge any gaps
+                        that may arise during the project. ADND believes that there</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-lg minh80vh mt-5 mt-sm-120px all-center dk-none">
+
+        <div class="idioContainer m-auto">
+
+
+            <div class="row txtalc">
+                <div class="col-6 txtalr prl-sm-0 pr-44px pg-7-leg-img1">
+                    <div class="ideal-image ml-auto" id="ideal-image-one">
+                        <img src="./img/ADND_ASSETS/left-gif.gif" alt="leftleg" id="left-image-one">
+                        <img src="./img/ADND_ASSETS/Mask Group 45.png" alt="leftleg" id="left-image-two">
+
+                    </div>
+
+
+                </div>
+                <div class="col-6 txtall prl-sm-0 pl-44px pg-7-leg-img2">
+                    <div class="ideal-image mr-auto" id="ideal-image-two">
+
+                        <img src="./img/ADND_ASSETS/right-gif.gif" alt="rightleg" id="right-image-one">
+                        <img src="./img/ADND_ASSETS/Mask Group 46.png" alt="rightleg" id="right-image-two">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-fluid " id="ideal-text-container">
+
+                <div class="idealogy-text ml-10px" id="idealogy-text-one">
+
+
+                    <p class="head" id="ideal-two">
+                        Shobhan
+                    </p>
+                    <p id="ideal-textt">ADND believes that there needs to be the right interface between the client’s
+                        vision and the execution on site. The firm provides this interface and helps bridge any gaps
+                        that may arise during the project. ADND believes that there</p>
+                </div>
+
+                <div class="idealogy-text" id="idealogy-text-two">
+
+
+                    <p class="head" id="ideal-two">
+                        Ideology
+                    </p>
+                    <p id="ideal-textt">From the inception of this coalition, we were well acquainted with how
+                        diametrically polar our personas were. What echoed resoundingly true even beyond our spectrum of
+                        dissimilitude was our shared penchant for the discipline of design — a binding denominator that
+                        created our kaleidoscopic vision in the fraternity, now transcending its two-decade mark as the
+                        design atelier ‘ADND’.</p>
+                </div>
+                <div class="idealogy-text mr-10px" id="idealogy-text3">
+
+
+                    <p class="head" id="ideal-two">
+                        Anand
+                    </p>
+                    <p id="ideal-textt">ADND believes that there needs to be the right interface between the client’s
+                        vision and the execution on site. The firm provides this interface and helps bridge any gaps
+                        that may arise during the project. ADND believes that there</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="mobile-view">
+        <div class="img-cover">
+            <img src="/img/ADND_ASSETS/Mask Group 45.png" alt="" class="img-front" id="imt">
+        </div>
+
+        <div class="img-cover-one">
+            <img src="img/ADND_ASSETS/Mask Group 46.png" alt="" class="img-back" id="it">
+        </div>
+
+        <div class="content-cover" id="content-cover">
+            <div class="anand-content" id="ad-content">
+                <p class="name-sho">Shobhan</p>
+                <p class="name-adnd">
+                    ADND believes that there needs to be the right interface between the client’s
+                    vision and the execution on site. The firm provides this interface and helps bridge any gaps
+                    that may arise during the project. ADND believes that there
+                </p>
+            </div>
+            <div class="ideology-content">
+                <p class="name-sho martp-sho">Ideology</p>
+                <p class="name-adnd">
+                    From the inception of this coalition, we were well acquainted with how
+                    diametrically polar our personas were. What echoed resoundingly true even beyond our spectrum of
+                    dissimilitude was our shared penchant for the discipline of design — a binding denominator that
+                    created our kaleidoscopic vision in the fraternity, now transcending its two-decade mark as the
+                    design atelier ‘ADND’.
+                </p>
+            </div>
+            <div class="shubham-content">
+                <p class="name-sho">Anand</p>
+                <p class="name-adnd">
+                    ADND believes that there needs to be the right interface between the client’s
+                    vision and the execution on site. The firm provides this interface and helps bridge any gaps
+                    that may arise during the project. ADND believes that there
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--================Section1================-->
+
+    <div class="container-lg team ">
+
+
+        <div class="row team-row f-lighter">
+            <p class="head">ADND Team</p>
+            <p class="desc">
+                <!-- ADND believes that there needs to be the right interface between the client’s vision and the
+                execution on site. The firm provides this interface and helps bridge any gaps that may arise during the
+                project. ADND believes that there needs believes that there to be the right interface between the
+                client’s vision and the execution on site. -->
+                Adnd believes that there needs to be the right interface between the client’s vision and the execution
+                on site. The firm provides this interface and helps bridge any gaps that may arise during the project.
+                Adnd believes that there needs believes that there to be the right interface between the client’s vision
+                and the execution on site.
+            </p>
+        </div>
+        <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6 team-gallery">
+
+            <div class="col team-image pg-7-col  txtalc adnd image">
+                <img src="./img/ADND_ASSETS/Rectangle 624.png" alt="team">
+
+                <div class="pg-5-hover-text  opa">
+                    <h5 class="bolder hover-text">John Wick</h5>
+                    <p>Interior</p>
+                    <p>Designer</p>
+                </div>
+            </div>
+            <div class="col team-image pg-7-col txtalc adnd image">
+                <img src="./img/ADND_ASSETS/Rectangle 622.png" alt="team">
+                <div class="pg-5-hover-text  opa">
+                    <h5 class="bolder hover-text">John Wick</h5>
+                    <p>Interior</p>
+                    <p>Designer</p>
+                </div>
+            </div>
+            <div class="col team-image pg-7-col txtalc adnd image">
+                <img src="./img/ADND_ASSETS/Rectangle 623.png" alt="team">
+                <div class="pg-5-hover-text  opa">
+                    <h5 class="bolder hover-text">John Wick</h5>
+                    <p>Interior</p>
+                    <p>Designer</p>
+                </div>
+            </div>
+            <div class="col team-image pg-7-col txtalc adnd image">
+                <img src="./img/ADND_ASSETS/Rectangle 620.png" alt="team">
+                <div class="pg-5-hover-text  opa">
+                    <h5 class="bolder hover-text">John Wick</h5>
+                    <p>Interior</p>
+                    <p>Designer</p>
+                </div>
+            </div>
+            <div class="col team-image pg-7-col txtalc adnd image">
+                <img src="./img/ADND_ASSETS/Rectangle 621.png" alt="team">
+                <div class="pg-5-hover-text  opa">
+                    <h5 class="bolder hover-text">John Wick</h5>
+                    <p>Interior</p>
+                    <p>Designer</p>
+                </div>
+            </div>
+            <div class="col team-image pg-7-col txtalc adnd image">
+                <img src="./img/ADND_ASSETS/Rectangle 627.png" alt="team">
+                <div class="pg-5-hover-text  opa">
+                    <h5 class="bolder hover-text">John Wick</h5>
+                    <p>Interior</p>
+                    <p>Designer</p>
+                </div>
+            </div>
+            <!-- <div class="col team-image pg-7-col txtalc adnd">
+                <img src="./img/ADND_ASSETS/Rectangle 624.png" alt="team">
+            </div>
+            <div class="col team-image pg-7-col txtalc adnd">
+                <img src="./img/ADND_ASSETS/Rectangle 622.png" alt="team">
+            </div>
+            <div class="col team-image pg-7-col txtalc adnd">
+                <img src="./img/ADND_ASSETS/Rectangle 623.png" alt="team">
+            </div> -->
+        </div>
+
+
+    </div>
+
+    <!--================Section2================-->
+
+    <div class="container-lg  f-lighter">
+        <div class="row studio">
+            <div class="col studio-text head">Studio</div>
+        </div>
+        <div class="row studio-video">
+            <div class="col studio-video-container pg-7-col">
+                <video src="./img/video.mp4" controls></video>
+            </div>
+        </div>
+    </div>
+
+    <!--================Section3================-->
+    <div class="container-lg m-5rem f-lighter">
+        <div class="pg-7-col ptb-0 prl-0">
+
+            <p class="head head-kdnd">KDND</p>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col pg-7-col prl-0 ptb-0">
+
+                <!-- <div class="row"> -->
+                <p class="desc des1">ADND believes that there needs to be the right interface between the client’s
+                    vision and
+                    the execution on site. The firm provides this interface and helps bridge any gaps that may arise
+                    during the project. ADND believes that there needs believes that there to be the right interface
+                    between the client’s vision and the execution on site.</p>
+
+                <!-- </div> -->
+            </div>
+            <div class="col pg-7-col prl-0 ptb-0">
+                <div class="row row-cols-3 row-cols-md-3 row-cols-lg-3 h-100">
+                    <div class="col pg-7-col  all-center kdnd px-2 image">
+                        <!-- <img src="./img/ADND_ASSETS/Mask Group 61.png" alt="team"> -->
+                        <img src="./img/ADND_ASSETS/Mask Group 46.png" alt="team">
+                        <div class="p1-cust pg-5-hover-text  opa">
+                            <h5 class="bolder hover-text">John Wick</h5>
+                            <p>Interior</p>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                    <div class="col pg-7-col all-center kdnd  px-2 image">
+                        <img src="./img/ADND_ASSETS/Mask Group 45.png" alt="team">
+                        <div class="p1-cust pg-5-hover-text  opa">
+                            <h5 class="bolder hover-text">John Wick</h5>
+                            <p>Interior</p>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                    <div class="col pg-7-col all-center kdnd  px-2 image">
+                        <img src="./img/ADND_ASSETS/Mask Group 46.png" alt="team">
+                        <div class="p1-cust pg-5-hover-text  opa">
+                            <h5 class="bolder hover-text">John Wick</h5>
+                            <p>Interior</p>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--================Section3================-->
+    <div class="container-lg mt-5 mt-6 prl-0 f-lighter ">
+        <h2 class="mobile-promap m-md-1 pro-map"> Project Map</h2>
+
+        <div class="row row-cols-1 row-cols-lg-2 ">
+            <div class="col-12 col-lg-9 pg-7-col bdr-r cur-p  p-0 mb-4-5-rem">
+                <div class="gwrp">
+                    <img src="./img/ADND_ASSETS/map2.png" alt="indian map" class="map-img">
+                    <a style="cursor:pointer">
+                        <div class="add-hl add1 " data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="tooltip-white text-start " title="Dehradun,India">
+
+                        </div>
+
+                    </a>
+                    <div class="add-hl add2" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Borada,India"></div>
+
+                    <div class="add-hl add3" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Indore,India"></div>
+                    <div class="add-hl add4 active-map-location" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Bombay,India"></div>
+                    <div class="add-hl add5 " data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Alibag,India"></div>
+                    <div class="add-hl add6 " data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Nepal"></div>
+                    <div class="add-hl add7 " data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Khandala,India"></div>
+                    <div class="add-hl add8 " data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Dubai,UAE"></div>
+                    <div class="add-hl add9 " data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Anjur,India"></div>
+                    <div class="add-hl add10 " data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Goa,India"></div>
+                    <div class="add-hl add11 " data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Bangalore,India"></div>
+                    <div class="add-hl add12 " data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Hyderabad,India"></div>
+                    <div class="add-hl add13 " data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Kolkata,India"></div>
+                    <div class="add-hl add14" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Karjat,India"></div>
+                    <div class="add-hl add15" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="tooltip-white text-start " title="Calicut,India"></div>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-3 txtalr pg-7-col f-lighter f-18px cur-p project-details">
+                <!-- <a href="casafeliz.html"> -->
+                <h2 class="promap  mb-4"> Project Map</h2>
+                <!-- </a> -->
+                <p class="india-text">Bombay, India</p>
+          
+       
+           
+
+                <p>JSL House</p>
+               
+
+                <p>Serenity villa</p>
+                <a href="pavilla.html">
+                    <p>PA House</p>
+                </a>
+
+                <p>JSL House</p>
+                <a href="aaresidence.html">
+                    <p>AA Residence</p>
+                </a>
+                <a href="APResidency.html">
+                    <p>AP Residence KDND</p>
+                </a>
+                <a href="KejriwalResidenceKDND.html">
+                    <p>KejriwalResidence KDND</p>
+                </a>
+                <a href="mresidence.html">
+                    <p>M Residence</p>
+                </a>
+                <a href="ngresidence.html">
+                    <p>NG Residence</p>
+                </a>
+                <a href="PPResidence.html">
+                    <p>PP Residence</p>
+                </a>
+                <a href="rbelements.html">
+                    <p>RB Elements</p>
+                </a>
+                <a href="rlpenthousekdnd.html">
+                    <p>RL Penthouse KDND</p>
+                </a>
+                <a href="skytreat.html">
+                    <p>SkyRetreat</p>
+                </a>
+                <a href="smresidence.html">
+                    <p>SM Residence</p>
+                </a>
+                <a href="swresidence.html">
+                    <p>SW Residence</p>
+                </a>
+                <a href="usresidence.html">
+                    <p>US Residence</p>
+                </a>
+                <a href="amaraclubhouse.html">
+                    <p>Amara Clubhouse</p>
+                </a>
+                <a href="apmoffice.html">
+                    <p>APM Office</p>
+                </a>
+                <a href="cloverresidence.html">
+                    <p>Clover Residence</p>
+                </a>
+                <a href="clubbspa.html">
+                    <p>Club B & Spa KDND</p>
+                </a>
+
+                <a href="devgan.html">
+                    <p>Devgan House</p>
+                </a>
+                <a href="runwalblissclubhouse.html">
+                    <p>Runwal Bliss Clubhouse</p>
+                </a>
+                <a href="salsettekdnd.html">
+                    <p>salsette 27 KDND</p>
+                </a>
+                <a href="ohanaongoing.html">
+                    <p>Ohana Outhouse</p>
+                </a>
+                <a href="pranavpatelresidence.html">
+                    <p>Pranav Patel Residence</p>
+                </a>
+                <a href="kusummoondhra.html">
+                    <p>Kusum Moondhra</p>
+                </a>
+                <a href="zydus.html">
+                    <p>Kusum Moondhra</p>
+                </a>
+                <a href="mittersain.html">
+                    <p>Mittersain</p>
+                </a>
+
+                <a href="PPresidence.html">
+                    <p>PP Residence</p>
+                </a>
+                <a href="wadkarresidence.html">
+                    <p>WadkarResidence</p>
+                </a>
+                <a href="shakeelladakh.html">
+                    <p>Shakeel Ladakh</p>
+                </a>
+                <a href="runwaleireneclubhouse.html">
+                    <p>Runwal Eirene Clubhouse KDND</p>
+                </a>
+
+                <a href="zyduswellness.html">
+                    <p>Zydus Wellness</p>
+                </a>
+                <a href="parkwoods.html">
+                    <p>Parkwoods</p>
+                </a>
+                <a href="lodhaclariant.html">
+                    <p>Lodha Clariant</p>
+                </a>
+                <a href="xperiafoodcourtkdnd.html">
+                   <p> Xperia Foodcourt KDND</p>
+                </a>
+                <a href="spreexperiencecentrekdnd.html">
+                   <p> SPRE Experience Center</p>
+                </a>
+                <a href="cloverresidence.html">
+                    <p>Clover Residence</p>
+                </a>
+                <a href="apmoffice.html">
+                    <p>APM Office</p>
+                </a>
+                <a href="mahindraandmahindrakdnd.html">
+                    <p>Mahindra & Mahindra KDND</p>
+                </a>
+                <!-- <a href="clubbspa.html">
+                    <p>Club B & Spa KDND</p>
+                </a> -->
+                <a href="hul.html">
+                    <p>HUL</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script defer>
+        document.getElementsByClassName('add1')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add1')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Dehradun, India</p>
+            <a href="orchardhouse.html"><p>Orchard House</p></a>
+            `
+
+
+
+
+        })
+        document.getElementsByClassName('add2')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add2')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Baroda, India</p>
+            <a class="#"><p>Gandhi House</p></a>
+            <a class="ohanahouse.html"><p>Ohana House</p></a>
+            <a class="patelhouse.html"><p>Patel House</p></a>
+            <a class="resorthouse.html"><p>Resort House</p></a>
+            <a class="#" style="cursor:pointer"><p>Alembic Townhouse</p></a>
+            <a class="#" style="cursor:pointer"><p>Pranav Patel House</p></a>
+            `
+
+
+
+        })
+        document.getElementsByClassName('add3')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add3')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Indore, India</p>
+            <a href="#" style="pointer:cursor"><p>Mutha Residence</p></a>
+            
+
+
+
+
+            `
+
+
+
+        })
+        document.getElementsByClassName('add4')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add4')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">India, Bombay</p>
+       
+           
+
+                
+            <p>JSL House</p>
+               
+
+               <p>Serenity villa</p>
+               <a href="pavilla.html">
+                   <p>PA House</p>
+               </a>
+
+               <p>JSL House</p>
+               <a href="aaresidence.html">
+                   <p>AA Residence</p>
+               </a>
+               <a href="APResidency.html">
+                   <p>AP Residence KDND</p>
+               </a>
+               <a href="KejriwalResidenceKDND.html">
+                   <p>KejriwalResidence KDND</p>
+               </a>
+               <a href="mresidence.html">
+                   <p>M Residence</p>
+               </a>
+               <a href="ngresidence.html">
+                   <p>NG Residence</p>
+               </a>
+               <a href="PPResidence.html">
+                   <p>PP Residence</p>
+               </a>
+               <a href="rbelements.html">
+                   <p>RB Elements</p>
+               </a>
+               <a href="rlpenthousekdnd.html">
+                   <p>RL Penthouse KDND</p>
+               </a>
+               <a href="skytreat.html">
+                   <p>SkyRetreat</p>
+               </a>
+               <a href="smresidence.html">
+                   <p>SM Residence</p>
+               </a>
+               <a href="swresidence.html">
+                   <p>SW Residence</p>
+               </a>
+               <a href="usresidence.html">
+                   <p>US Residence</p>
+               </a>
+               <a href="amaraclubhouse.html">
+                   <p>Amara Clubhouse</p>
+               </a>
+               <a href="apmoffice.html">
+                   <p>APM Office</p>
+               </a>
+               <a href="cloverresidence.html">
+                   <p>Clover Residence</p>
+               </a>
+               <a href="clubbspa.html">
+                   <p>Club B & Spa KDND</p>
+               </a>
+
+               <a href="devgan.html">
+                   <p>Devgan House</p>
+               </a>
+               <a href="runwalblissclubhouse.html">
+                   <p>Runwal Bliss Clubhouse</p>
+               </a>
+               <a href="salsettekdnd.html">
+                   <p>salsette 27 KDND</p>
+               </a>
+               <a href="ohanaongoing.html">
+                   <p>Ohana Outhouse</p>
+               </a>
+               <a href="pranavpatelresidence.html">
+                   <p>Pranav Patel Residence</p>
+               </a>
+               <a href="kusummoondhra.html">
+                   <p>Kusum Moondhra</p>
+               </a>
+               <a href="zydus.html">
+                   <p>Kusum Moondhra</p>
+               </a>
+               <a href="mittersain.html">
+                   <p>Mittersain</p>
+               </a>
+
+               <a href="PPresidence.html">
+                   <p>PP Residence</p>
+               </a>
+               <a href="wadkarresidence.html">
+                   <p>WadkarResidence</p>
+               </a>
+               <a href="shakeelladakh.html">
+                   <p>Shakeel Ladakh</p>
+               </a>
+               <a href="runwaleireneclubhouse.html">
+                   <p>Runwal Eirene Clubhouse KDND</p>
+               </a>
+
+               <a href="zyduswellness.html">
+                   <p>Zydus Wellness</p>
+               </a>
+               <a href="parkwoods.html">
+                   <p>Parkwoods</p>
+               </a>
+               <a href="lodhaclariant.html">
+                   <p>Lodha Clariant</p>
+               </a>
+               <a href="xperiafoodcourtkdnd.html">
+                   <p>Xperia Foodcourt KDND</p>
+               </a>
+               <a href="spreexperiencecentrekdnd.html">
+                   SPRE Experience Center
+               </a>
+               <a href="cloverresidence.html">
+                   <p>Clover Residence</p>
+               </a>
+               <a href="apmoffice.html">
+                   <p>APM Office</p>
+               </a>
+               <a href="mahindraandmahindrakdnd.html">
+                   <p>Mahindra & Mahindra KDND</p>
+               </a>
+               <!-- <a href="clubbspa.html">
+                   <p>Club B & Spa KDND</p>
+               </a> -->
+               <a href="hul.html">
+                   <p>HUL</p>
+               </a>
+            `
+
+
+
+
+        })
+        document.getElementsByClassName('add5')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add5')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Alibag, India</p>
+            <a href="casafeliz.html"><p>Casa Feliz</p></a>
+            <a href="Cestlavie.html"><p>Cest la vie</p></a>
+            <a href="Aminhouse.html"><p>Amin House</p></a>
+            <a href="haciendahouse.html"><p>Hacienda House</p></a>
+            <a href="kathotiavilla.html"><p>Kathotia Villa</p></a>
+            <a href="pratikmalkan.html"><p>Pratik Malkan House</p></a>
+            
+            `
+
+
+
+        })
+
+        document.getElementsByClassName('add6')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add6')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+           <p class="dark-mage">Nepal</p>
+           <a style="cursor:pointer"><p>Aangan House</p></a>
+            `
+
+
+
+        })
+
+        document.getElementsByClassName('add8')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add8')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Dubai, UAE</p>
+            <a href="casabkdnd.html"><p>Casa B-kand</p></a>
+            <p>Beach Villa</p>
+            `
+
+
+
+        })
+
+        document.getElementsByClassName('add7')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add7')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+
+
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Khandala, India</p>
+            <a href="pavilla.html"><p>PA Villa</p></a>
+            <a href="#" style="cursor:pointer"><p>Shift House</p></a>
+            `
+
+
+
+        })
+
+
+        document.getElementsByClassName('add9')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add9')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Anjur, India</p>
+            <a href="anjurclubhouse.html"><p>Anjur Clubhouse</p></a>
+            `
+
+
+
+        })
+
+        document.getElementsByClassName('add10')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add10')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Goa, India</p>
+            <a href="azaraororosa.html"><p>Azara Oro Rosa</p></a>
+            `
+
+
+
+        })
+
+        document.getElementsByClassName('add11')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add11')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Bangalore, India</p>
+            <a href="rahulsikka.html"><p>Rahul Sikka</p></a>
+            `
+
+
+
+        })
+
+
+        document.getElementsByClassName('add12')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add12')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Hyderabad, India</p>
+            <a href="reddyresidence.html"><p>Reddy Residence</p></a>
+            `
+
+
+
+        })
+
+        document.getElementsByClassName('add13')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add13')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Kolkata, India</p>
+            <a href="rishigupta.html"><p>Rishi Gupta</p></a>
+            `
+
+
+
+        })
+        document.getElementsByClassName('add14')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add14')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add15')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Karjat, India</p>
+            <a href="tapariavilla.html"><p>Taparia Villa</p></a>
+            `
+
+
+
+        })
+
+        document.getElementsByClassName('add15')[0].addEventListener("click", () => {
+            document.getElementsByClassName('add15')[0].classList.add("active-map-location")
+            document.getElementsByClassName('add5')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add2')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add3')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add4')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add1')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add6')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add8')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add7')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add9')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add10')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add11')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add12')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add13')[0].classList.remove("active-map-location")
+            document.getElementsByClassName('add14')[0].classList.remove("active-map-location")
+            document.getElementsByClassName("project-details")[0].innerHTML = `
+            <h2 class="promap "> Project Map</h2>
+            <p class="dark-mage">Calicut, India</p>
+            <a href="terrahouse.html"><p>Terra House</p></a>
+            `
+
+
+
+        })
+    </script>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+
+    <script defer>
+        $(document).ready(function () {
+            $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.nav-item  a').click(function (e) {
+
+                $('.nav-item  a').removeClass('active');
+
+                var $this = $(this);
+                if (!$this.hasClass('active')) {
+                    $this.addClass('active');
+                }
+            });
+        });
+    </script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.mobile-nav-item  a').click(function (e) {
+
+                $('.mobile-nav-item  a').removeClass('active');
+
+                var $this = $(this);
+                if (!$this.hasClass('active')) {
+                    $this.addClass('active');
+                }
+            });
+        });
+    </script>
+
+
+    <!-- 
+    <script>
+
+        function code() {
+            while (true) {
+                console.log("hello");
+                setTimeout(function () { your_main(); }, 5000);
+
+            }
+        }
+    </script> -->
+
+    <script>
+        function code() {
+            $("#imt").addClass("img-1");
+            $("#content-cover").addClass("img-1");
+            // setTimeout(() => { console.log("World!"); }, 2000);
+            setTimeout(function () { your_func(); }, 5000);
+
+        }
+    </script>
+
+    <!-- <script>
+        function your_main() {
+            $("#imt").addClass("img-1");
+            $("#content-cover").addClass("img-1");
+         
+            setTimeout(function () { your_func(); }, 5000);
+        }
+    </script> -->
+
+    <script>
+        function your_func() {
+            $("#imt").removeClass("img-1");
+            $("#content-cover").removeClass("img-1");
+            setTimeout(function () { your_func_one(); }, 5000);
+        }
+    </script>
+
+    <script>
+        function your_func_one() {
+            $("#it").addClass("img-1");
+            $("#content-cover").addClass("content-shu");
+            setTimeout(function () { your_func_two(); }, 5000);
+        }
+    </script>
+
+    <script>
+        function your_func_two() {
+            $("#it").removeClass("img-1");
+            $("#content-cover").removeClass("content-shu");
+            setTimeout(function () { your_func_two(); }, 5000);
+        }
+    </script>
+
+
+
+</body>
+
+</html>
