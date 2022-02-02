@@ -400,6 +400,9 @@ span.db {
 }
 
 
+.ad {
+    bottom: 40px;
+}
 
 .col-6.txtall.prl-0 {
     position: absolute!important;
@@ -3516,6 +3519,10 @@ display:none;
 
     .ongoingimg-wrapper {
         width: 50%;
+    }
+
+    .ad {
+        bottom: 10px;
     }
 
     /* .desktop-story{
