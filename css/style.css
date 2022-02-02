@@ -400,6 +400,9 @@ span.db {
 }
 
 
+.ad {
+    bottom: 40px;
+}
 
 .col-6.txtall.prl-0 {
     position: absolute!important;
@@ -1385,6 +1388,10 @@ img.ongoing-img {
     .add6 {
         top: 27%;
         left: 51%;
+    }
+
+    .active-map-location {
+        transform: scale(1.4);
     }
 }
 
@@ -3026,8 +3033,8 @@ left: 0 !important;
 }
 
 .add9 {
-    top: 57%;
-    left: 35%;
+    top: 54%;
+    left: 37%;
 }
 
 .add10 {
@@ -3052,7 +3059,7 @@ left: 0 !important;
 
 .add14 {
     top: 58%;
-    left: 33%;
+    left: 35%;
 }
 
 .add15 {
@@ -3518,6 +3525,10 @@ display:none;
         width: 50%;
     }
 
+    .ad {
+        bottom: 10px;
+    }
+
     /* .desktop-story{
         display: none;
     } */
@@ -3743,17 +3754,17 @@ a#nav-link {
 }
 
 .add9 {
-    top: 57%;
-    left: 35%;
+    top: 55%;
+    left: 38%;
 }
 
 .add7 {
-    top: 53%;
+    top: 52%;
     left: 35%;
 }
 
 .add5 {
-    top: 53%;
+    top: 51%;
     left: 32%;
 }
 
