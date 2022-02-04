@@ -23,6 +23,17 @@
         } */
 
 
+        .imagetwo { position: relative; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+.imagetwo:hover .kdnd, .imagetwo:hover .red { opacity: 1; visibility: visible; }
+.red { position: absolute;top: 50%; transform: translateY(-50%);  left: 0; right: 0px; z-index: 6666; color: #fff; opacity: 0; visibility: hidden; -webkit-transition: all .4s ease-in-out;-moz-transition: all .4s ease-in-out; transition: all .4s ease-in-out; }
+/* .kdnd { position: absolute; bottom: 10px; right: 10px; z-index: 666; opacity: 0; visibility: hidden;font-family: gotham-bold; } */
+.white { color: white; }
+.patel-house {
+    padding-top: 70px;
+}
+.patel-house {
+    display: block!important;
+}
 
         .pr-44px {
             padding-right: 40px !important;
@@ -48,9 +59,19 @@
             .white-res {
                 display: none;
             }
+
+            .dd-none{
+                display:none;
+            }
         }
 
         @media only screen and (max-width:998px) {
+            .dm-none{
+                display:none;
+            }
+            .patel-house {
+                 padding-top: 50px;
+            }
             .pr-44px {
                 padding-right: 0 !important;
             }
@@ -337,7 +358,7 @@
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
                 <div class="home-image home-image-2-a w-100 h-100 gwrp " id="home-image-3-a">
 
-                    <a href="ohanahouse.html" id='gotwoalink'>
+                    <a href="ohanahouse.html" id="gotwoalink">
                         <div class="home-hover-text" id="home-hover-text-2-a">
                             <h2>Ohana House
                                 <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
@@ -408,13 +429,13 @@
 
 
     <!-- section-4-->
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container2">
+    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" >
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
                 <div class="home-image home-image-4-a w-100 h-100 gwrp " id="home-image-1-b">
 
-                    <a href="Aminhouse.html" id='gofouralink'>
+                    <a href="Aminhouse.html" id="gofouralink">
                         <div class="home-hover-text" id="home-image-1-b">
                             <h2>Amin House
                                 <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
@@ -427,15 +448,16 @@
 
             </div>
             <div class="col-12 col-lg-6 mt-sm-60px prl-0 pl-44px  h-100 home-col h-md-70vw">
-                <a href="patelhouse.html" id='gofourblink'>
+                <a href="patelhouse.html" class="gofourblink" id='gofourblink'>
                     <div class="home-image home-image-4-b w-100 h-100   h-100 gwrp " id="home-image-4-a">
 
 
                         <div class="home-hover-text">
-                            <h2>Patel House
+                            <h2>Shift House
                                 <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
                             </h2>
-                            <P>Baroda | 2010</P>
+                            <P>Khandala | 2019</P>
+                            <span class="kdnd">KDND</span>
                         </div>
                         <div class="square-anim" id="home-hover-anim-4-b"></div>
                     </div>
@@ -444,6 +466,30 @@
         </div>
     </div>
 
+
+
+    <!-- patel-house -->
+
+    <div class="patel-house" id="container2">
+      <div class="row">
+        <div class="col-12  prl-0  cust-page imagetwo">
+            <a href="patelhouse.html"><div class="red text-center">
+                <h2 class="redy-text white">Patel House
+                    <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
+                </h2>
+                <P class="hy-text white">Baroda | 2010</P>
+               
+            </div></a> 
+
+            <a href="patelhouse.html">
+                <div class="image w-100 h-100 hover-image-container  grayscale">
+                    <img src="./img/ADND_ASSETS/patelhousework.png" alt="image" class="dd-none w-100 hover-image">
+                    <img src="./img/ADND_ASSETS/patelwork.png" alt="image" class="dm-none w-100 hover-image">
+                </div>
+            </a>
+        </div>
+      </div>
+    </div>
 
     <!--================Interiors Section================-->
 
@@ -2842,24 +2888,24 @@
             let commercialscroll = root.style.getPropertyValue("--pseudo-progress-bar-commercial")
             let ongoingscroll = root.style.getPropertyValue("--pseudo-progress-bar-ongoing")
             // console.log(scrolled)
-            if (scrolled < 15) {
+            if (scrolled < 17) {
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "100%");
                 root.style.setProperty("--pseudo-progress-bar-house", scrolled * 4.5 + "%");
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "0%");
 
             }
-            else if (scrolled > 15 && scrolled < 38) {
+            else if (scrolled > 17 && scrolled < 41) {
                 // console.log('home scrolling ...')
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "100%");
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "0%");
                 root.style.setProperty("--pseudo-progress-bar-house", "0%");
-                root.style.setProperty("--pseudo-progress-bar-interior", (scrolled - 15) * 3 + "%");
+                root.style.setProperty("--pseudo-progress-bar-interior", (scrolled - 17) * 3 + "%");
                 root.style.setProperty("--pseudo-progress-bar-commercial", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial-filled", "0%");
 
 
-            } else if (scrolled < 61 && scrolled > 38) {
+            } else if (scrolled < 62 && scrolled > 41) {
                 // console.log('interior scrolling ...')
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "0%");
@@ -2867,11 +2913,11 @@
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial-filled", "100%");
 
-                root.style.setProperty("--pseudo-progress-bar-commercial", (scrolled - 38) * 2.47 + "%");
+                root.style.setProperty("--pseudo-progress-bar-commercial", (scrolled - 41) * 2.7 + "%");
                 root.style.setProperty("--pseudo-progress-bar-ongoing", "0%");
                 root.style.setProperty("--pseudo-progress-bar-ongoing-filled", "0%");
 
-            } else if (scrolled < 100 && scrolled > 61) {
+            } else if (scrolled < 100 && scrolled > 62) {
                 // console.log('commercial scrolling ...')
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "0%");
@@ -2880,7 +2926,7 @@
                 root.style.setProperty("--pseudo-progress-bar-house", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial", "0%");
-                root.style.setProperty("--pseudo-progress-bar-ongoing", (scrolled - 61) * 1.81 + "%");
+                root.style.setProperty("--pseudo-progress-bar-ongoing", (scrolled - 62) * 1.81 + "%");
 
             }
             // else if(scrolled==100){
@@ -3103,7 +3149,7 @@
                     return false;
                 }).dblclick(function () {
                     window.location = this.href;
-                    return false;
+                    return ;
                 });
             }
 
@@ -4231,8 +4277,6 @@
                     $('.home-image-1-b').removeClass('active-image');
                     $('.home-image-2-a').removeClass('active-image');
                     $('.home-image-2-b').removeClass('active-image');
-                    
-                    
                     $('.home-image-4-a').toggleClass('active-image');
                     $('.home-image-4-b').removeClass('active-image');
                     $('.home-image-5-a').removeClass('active-image');

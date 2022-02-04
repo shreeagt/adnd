@@ -189,7 +189,7 @@ span.kdnd.white.rd {right: 9%;}
                    
                 </div></a> 
                 
-                <a href="mangohouse.html">
+                <a href="mangohouse.html" id="golink">
                     <div class="image w-100 h-100 hover-image-container grayscale">
                         <img src="./img/ADND_ASSETS/mangoo.png" alt="image" class="h-100 hover-image">
                     </div>
@@ -673,6 +673,22 @@ span.kdnd.white.rd {right: 9%;}
             });
         });
     </script>
+
+<script>
+    jQuery(function ($) {
+        var width = $(window).width();
+
+        if (width < 998) {
+            $('#golink').click(function () {
+                return false;
+            }).dblclick(function () {
+                window.location = this.href;
+                return false;
+            });
+        }
+
+    });
+</script>
 
 </body>
 
