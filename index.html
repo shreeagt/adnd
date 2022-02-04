@@ -182,58 +182,7 @@
 
 <body>
     <!--================Header-start================-->
-    <!-- <header>
 
-       
-        <nav
-            class="navbar navbar-expand-lg navbar-light bg-light container px-3 d-none d-sm-block d-sm-none d-md-block">
-       
-            <div class="desktop-navbar ">
-                <div class="navbar-nav mr-auto mt-2 mt-lg-0 m-auto mh-66px" id="navbar-nav">
-                    <div class="nav-item desk-item ">
-                        <a class="nav-link m-auto desk-work active" id="nav-link" href="#">WORK </a>
-
-                    </div>
-                    <div class="nav-item desk-item desk-news">
-                        <a class="nav-link m-auto" id="nav-link" href="#">
-                            NEWS </a>
-                    </div>
-                 
-                    <div class="nav-item desk-item desk-brand">
-                        <a class="nav-link m-auto brand" id="nav-link-brand" href="#"><img
-                                src="./img/ADND_ASSETS/Group 36.png" alt="ADND">
-                        </a>
-                    </div>
-                    <div class="nav-item desk-item desk-story">
-                        <a class="nav-link m-auto" id="nav-link" href="#">STORY</a>
-                    </div>
-                    <div class="nav-item desk-item desk-contact">
-                        <a class="nav-link m-auto" id="nav-link" href="page4.html">CONTACT</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-      
-        <nav class="mobile-nav container-fluid">
-            <div class="row">
-                <div class="col-12 txtalc mobile-brand-container">
-                    <img src="./img/ADND_ASSETS/Group 36.png" alt="brand" class="mobile-brand">
-                </div>
-                <div class="col-12">
-                    <div class="mobile-nav-menu">
-                        <div class="mobile-nav-item w-100">
-                            <a href="#" class="active mobile-nav-link">WORK</a>
-                            <a href="#" class=" mobile-nav-link">NEWS</a>
-                            <a href="#" class=" mobile-nav-link">STORY</a>
-                            <a href="#" class=" mobile-nav-link">CONTACT</a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
- -->
 
 
     <header>
@@ -241,17 +190,7 @@
         <!--================Nav for Desktop================-->
         <nav
             class="navbar navbar-expand-lg navbar-light bg-light container px-3 d-none d-sm-block d-sm-none d-md-block">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-            <!-- <div id="snav-icon4" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div> -->
+     
             <div class="desktop-navbar ">
                 <div class="navbar-nav mr-auto mt-2 mt-lg-0 m-auto mh-66px" id="navbar-nav">
                     <div class="nav-item desk-item ">
@@ -356,9 +295,10 @@
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
+                <a href="casabkdnd.html"  id="gotwoalink">
                 <div class="home-image home-image-2-a w-100 h-100 gwrp " id="home-image-2-a">
 
-                    <a href="casabkdnd.html" id="gotwoalink">
+                    
                         <div class="home-hover-text" id="home-hover-text-2-a">
                             <h2>Casa B
                                 <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
@@ -368,9 +308,9 @@
 
                         </div>
                         <div class="square-anim" id="home-hover-anim-2-a"></div>
-                    </a>
+                 
                 </div>
-
+            </a>
             </div>
             <div class="col-12 col-lg-6 mt-sm-60px prl-0 pl-44px  h-100 home-col h-md-70vw">
                 <a href="ohanahouse.html" id='gotwoblink'>
@@ -3052,8 +2992,10 @@
 
             if (width < 998) {
                 $('#gotolink').click(function () {
+                    console.log("hello world");
                     return false;
                 }).dblclick(function () {
+                    console.log("hello world one");
                     window.location = this.href;
                     return false;
                 });
@@ -3066,11 +3008,12 @@
     <script>
         jQuery(function ($) {
             var width = $(window).width();
-
+            // jQuery.noConflict();
             if (width < 998) {
                 $('#gotwoalink').click(function () {
                     return false;
                 }).dblclick(function () {
+                    console.log("hello world");
                     window.location = this.href;
                     return false;
                 });
@@ -3078,6 +3021,10 @@
 
         });
     </script>
+
+    
+
+
 
     <script>
         jQuery(function ($) {
