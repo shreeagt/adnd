@@ -44,7 +44,85 @@
             }
         }
     </style>
-
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script>$(document).ready(function () {
+    // Lazy Load
+  !function(window){
+      var $q = function(q, res){
+            if (document.querySelectorAll) {
+              res = document.querySelectorAll(q);
+            } else {
+              var d=document
+                , a=d.styleSheets[0] || d.createStyleSheet();
+              a.addRule(q,'f:b');
+              for(var l=d.all,b=0,c=[],f=l.length;b<f;b++)
+                l[b].currentStyle.f && c.push(l[b]);
+    
+              a.removeRule(0);
+              res = c;
+            }
+            return res;
+          }
+        , addEventListener = function(evt, fn){
+            window.addEventListener
+              ? this.addEventListener(evt, fn, false)
+              : (window.attachEvent)
+                ? this.attachEvent('on' + evt, fn)
+                : this['on' + evt] = fn;
+          }
+        , _has = function(obj, key) {
+            return Object.prototype.hasOwnProperty.call(obj, key);
+          }
+        ;
+    
+      function loadImage (el, fn) {
+        var img = new Image()
+          , src = el.getAttribute('data-src');
+        img.onload = function() {
+          if (!! el.parent)
+            el.parent.replaceChild(img, el)
+          else
+            el.src = src;
+    
+          fn? fn() : null;
+        }
+        img.src = src;
+      }
+    
+      function elementInViewport(el) {
+        var rect = el.getBoundingClientRect()
+    
+        return (
+           rect.top    >= 0
+        && rect.left   >= 0
+        && rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+        )
+      }
+    
+        var images = new Array()
+          , query = $q('img.lazy')
+          , processScroll = function(){
+              for (var i = 0; i < images.length; i++) {
+                if (elementInViewport(images[i])) {
+                  loadImage(images[i], function () {
+                    images.splice(i, i);
+                  });
+                }
+              };
+            }
+          ;
+        // Array.prototype.slice.call is not callable under our lovely IE8 
+        for (var i = 0; i < query.length; i++) {
+          images.push(query[i]);
+        };
+    
+        processScroll();
+        addEventListener('scroll',processScroll);
+    
+    }(this);
+  })</script>
 </head>
 
 <body>
@@ -77,7 +155,7 @@
                     <!--================Brand for Desktop================-->
                     <div class="nav-item desk-item desk-brand">
                         <a class="nav-link m-auto brand" id="nav-link-brand" href="index.html"><img
-                                src="./img/ADND_ASSETS/Group 36.png" alt="ADND">
+                                data-src="./img/ADND_ASSETS/Group 36.png" alt="ADND" class="lazy">
                         </a>
                     </div>
                     <div class="nav-item desk-item desk-story">
@@ -94,7 +172,7 @@
             <div class="row">
                 <a href="index.html">
                     <div class="col-12 txtalc mobile-brand-container">
-                        <img src="./img/ADND_ASSETS/Group 36.png" alt="brand" class="mobile-brand">
+                        <img data-src="./img/ADND_ASSETS/Group 36.png" alt="brand" class="mobile-brand lazy">
                     </div>
                 </a>
                 <div class="col-12">
@@ -119,12 +197,12 @@
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col-12 pg3-col-lg-4-7  prl-0 ">
                 <div class="image w-100 h-100 hover-image-container grayscale">
-                    <img src="./img/ADND_ASSETS/Mask-Group-32.jpg" alt="image" class="h-100 hover-image">
+                    <img data-src="./img/ADND_ASSETS/Mask-Group-32.jpg" alt="image" class="h-100 hover-image lazy">
                 </div>
             </div>
             <div class="col-12 pg3-col-lg-7-3 mt-sm-60px prl-0 cust-page">
                 <div class="image w-100 h-100 hover-image-container grayscale ml-88px">
-                    <img src="./img/ADND_ASSETS/Component 17 – 2.jpg" alt="image" class="w-100 hover-image">
+                    <img data-src="./img/ADND_ASSETS/Component 17 – 2.jpg" alt="image" class="w-100 hover-image lazy">
 
                 </div>
             </div>
@@ -178,12 +256,12 @@
         <div class="row row-cols-1 row-cols-lg-2 prl-0">
             <div class="col   prl-0 py-44px">
                 <div class="image w-100 h-100 hover-image-container grayscale">
-                    <img src="./img/ADND_ASSETS/Mask-Group-32.jpg" alt="img" class="w-100 h-100 hover-image">
+                    <img data-src="./img/ADND_ASSETS/Mask-Group-32.jpg" alt="img" class="w-100 h-100 hover-image lazy">
                 </div>
             </div>
             <div class="col mt-sm-60px  prl-0 cust-page">
                 <div class="image w-100 h-100 hover-image-container ml-44px grayscale">
-                    <img src="./img/ADND_ASSETS/Mask-Group--3.jpg" alt="img" class="w-100  h-100 hover-image">
+                    <img data-src="./img/ADND_ASSETS/Mask-Group--3.jpg" alt="img" class="w-100  h-100 hover-image lazy">
                 </div>
             </div>
         </div>
@@ -216,7 +294,7 @@
             </div>
             <div class="col-12 pg3-col-lg-4-8 mt-sm-60px prl-0 pd-tp ">
                 <div class="image w-100 h-100 grayscale">
-                    <img src="./img/ADND_ASSETS/Mask-Group--3.jpg" alt="image" class="h-100 hover-image">
+                    <img data-src="./img/ADND_ASSETS/Mask-Group--3.jpg" alt="image" class="h-100 hover-image lazy">
                 </div>
             </div>
         </div>
@@ -246,12 +324,12 @@
         <div class="row row-cols-1 row-cols-lg-2 prl-0 ">
             <div class="col  prl-0 py-44px">
                 <div class="image w-100 h-100 hover-image-container grayscale">
-                    <img src="./img/ADND_ASSETS/Mask-Group-33.jpg" alt="img" class="w-100  h-100 hover-image">
+                    <img data-src="./img/ADND_ASSETS/Mask-Group-33.jpg" alt="img" class="w-100  h-100 hover-image lazy">
                 </div>
             </div>
             <div class="col mt-sm-60px prl-0 cust-page">
                 <div class="image w-100 h-100 hover-image-container ml-44px grayscale">
-                    <img src="./img/ADND_ASSETS/Mask-Group-32.jpg" alt="img" class="w-100 h-100 hover-image">
+                    <img data-src="./img/ADND_ASSETS/Mask-Group-32.jpg" alt="img" class="w-100 h-100 hover-image lazy">
                 </div>
             </div>
         </div>
@@ -259,9 +337,7 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
