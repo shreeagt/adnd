@@ -419,7 +419,7 @@
     <div class="patel-house" id="container2">
       <div class="row">
         <div class="col-12  prl-0  cust-page imagetwo">
-            <a href="patelhouse.html"><div class="red text-center">
+            <a href="patelhouse.html" ><div class="red text-center">
 
                 <h2 class="redy-text white">Patel House
                     <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
@@ -428,7 +428,7 @@
                
             </div></a> 
 
-            <a href="patelhouse.html">
+            <a href="patelhouse.html" class="gopatellink">
                 <div class="image w-100 h-100 hover-image-container  grayscale">
                     <img src="./img/ADND_ASSETS/patelhousework.jpg" alt="image" class="dd-none w-100 hover-image">
                     <img src="./img/ADND_ASSETS/patelwork.jpg" alt="image" class="dm-none w-100 hover-image">
@@ -3638,6 +3638,22 @@
 
         });
     </script>
+
+    <script>
+    jQuery(function ($) {
+        var width = $(window).width();
+
+        if (width < 998) {
+            $('.gopatellink').click(function () {
+                return false;
+            }).dblclick(function () {
+                window.location = this.href;
+                return false;
+            });
+        }
+
+    });
+</script>
 
     <script>
         jQuery(function ($) {
