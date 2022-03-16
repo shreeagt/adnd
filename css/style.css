@@ -904,25 +904,46 @@ span.strong {
     
 }
 .details{
-    height: 370px;
+    height: 330px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 215px !important;
 
 }
-.details h5{
+/* .details h5{
     font-size: 20px;
     font-weight: 100 !important;
     color: #736E64;
     
+} */
+
+
+/* css 16-03 */
+.details h5{
+    font-size: 17px;
+    font-weight: 100 !important;
+    color: #736E64;
+    
 }
-.details h4 {
+
+/* .details h4 {
     font-size: 23px;
     font-weight: 100 !important;
     color: #000000;
     opacity: 95%;
+} */
+
+/* css 16-03 */
+.details h4 {
+    font-size: 19px;
+    font-weight: 100 !important;
+    color: #000000;
+    opacity: 95%;
 }
+
+
+
 .details{
     max-width: 215px !important;
 }
