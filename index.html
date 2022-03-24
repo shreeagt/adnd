@@ -496,7 +496,7 @@
 
     <!-- patel-house -->
 
-    <div class="patel-house" id="container2">
+    <div class="patel-house" id="container">
       <div class="row">
         <div class="col-12  prl-0  cust-page imagetwo">
             <a href="patelhouse.html" ><div class="red text-center">
@@ -571,7 +571,7 @@
 
     <!-- section-6-->
 
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container">
+    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container1">
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
@@ -767,7 +767,7 @@
     </div>
 
     <!-- section 11 -->
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container3">
+    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container">
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
@@ -861,7 +861,7 @@
 
 
     <!-- section-13 -->
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container">
+    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container1">
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
@@ -1019,8 +1019,10 @@
         </div>
     </div>
 
+
+
     <!-- section 17 -->
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container4">
+    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container1">
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
@@ -1059,10 +1061,10 @@
 
 
     <!-- section-18-->
-    <div class="w-100 h-100 mt-60px h-md-auto" id="container1">
+    <div class="w-100 h-100 mt-60px h-md-auto" id="container4">
         <div class="w-100 h-100 ">
             <h3 class="text-center building-text" id="conatiner">Ongoing</h3>
-            <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container1">
+            <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container4">
                 <!-- <h3 class="text-center building-text">ONGOING</h3> -->
                 <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
                 
@@ -2923,24 +2925,24 @@
             let commercialscroll = root.style.getPropertyValue("--pseudo-progress-bar-commercial")
             let ongoingscroll = root.style.getPropertyValue("--pseudo-progress-bar-ongoing")
             // console.log(scrolled)
-            if (scrolled < 17) {
+            if (scrolled < 18) {
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "100%");
-                root.style.setProperty("--pseudo-progress-bar-house", scrolled * 4.5 + "%");
+                root.style.setProperty("--pseudo-progress-bar-house", scrolled * 3.5 + "%");
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "0%");
 
             }
-            else if (scrolled > 17 && scrolled < 41) {
+            else if (scrolled > 18 && scrolled < 42) {
                 // console.log('home scrolling ...')
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "100%");
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "0%");
                 root.style.setProperty("--pseudo-progress-bar-house", "0%");
-                root.style.setProperty("--pseudo-progress-bar-interior", (scrolled - 17) * 3 + "%");
+                root.style.setProperty("--pseudo-progress-bar-interior", (scrolled - 18) * 3 + "%");
                 root.style.setProperty("--pseudo-progress-bar-commercial", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial-filled", "0%");
 
 
-            } else if (scrolled < 62 && scrolled > 41) {
+            } else if (scrolled < 63 && scrolled > 42) {
                 // console.log('interior scrolling ...')
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "0%");
@@ -2948,11 +2950,11 @@
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial-filled", "100%");
 
-                root.style.setProperty("--pseudo-progress-bar-commercial", (scrolled - 41) * 2.7 + "%");
+                root.style.setProperty("--pseudo-progress-bar-commercial", (scrolled - 41) * 2.4 + "%");
                 root.style.setProperty("--pseudo-progress-bar-ongoing", "0%");
                 root.style.setProperty("--pseudo-progress-bar-ongoing-filled", "0%");
 
-            } else if (scrolled < 100 && scrolled > 62) {
+            } else if (scrolled < 100 && scrolled > 63) {
                 // console.log('commercial scrolling ...')
                 root.style.setProperty("--pseudo-progress-bar-house-filled", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior-filled", "0%");
@@ -2961,7 +2963,7 @@
                 root.style.setProperty("--pseudo-progress-bar-house", "0%");
                 root.style.setProperty("--pseudo-progress-bar-interior", "0%");
                 root.style.setProperty("--pseudo-progress-bar-commercial", "0%");
-                root.style.setProperty("--pseudo-progress-bar-ongoing", (scrolled - 62) * 1.81 + "%");
+                root.style.setProperty("--pseudo-progress-bar-ongoing", (scrolled - 63) * 1.78 + "%");
 
             }
             // else if(scrolled==100){

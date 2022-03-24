@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script> -->
-    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/4fe6022375.js" crossorigin="anonymous"></script>
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
@@ -494,15 +492,14 @@
         </div>
     </div>
 
-<!-- <section id="container2" class="" style="display: block;"> -->
+
 
     <!-- patel-house -->
 
-    <div class="patel-house" id="container">
+    <div class="patel-house" id="container2">
       <div class="row">
         <div class="col-12  prl-0  cust-page imagetwo">
-            <a href="patelhouse.html" >
-                <div class="red text-center">
+            <a href="patelhouse.html" ><div class="red text-center">
 
                 <h2 class="redy-text white">Patel House
                     <span class="white-res"><i class="lni lni-chevron-right" id="nx-bt"></i></span>
@@ -519,16 +516,11 @@
             </a>
         </div>
       </div>
-      <!-- <h3 class="text-center building-text " id="container2">Interiors</h3> -->
     </div>
 
     <!--================Interiors Section================-->
 
 
-<!-- 
-    <div id="container2" class="mt-60px">
-        <h3 class="text-center building-text">Interiors</h3>
-    </div> -->
 
     <!-- section-5-->
     <div class="w-100 h-100 mt-60px h-md-auto" id="container2">
@@ -576,7 +568,7 @@
         </div>
 
     </div>
-<!-- </section> -->
+
     <!-- section-6-->
 
     <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container">
@@ -775,7 +767,7 @@
     </div>
 
     <!-- section 11 -->
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container">
+    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container3">
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
@@ -1028,7 +1020,7 @@
     </div>
 
     <!-- section 17 -->
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container">
+    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container4">
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
@@ -1067,10 +1059,10 @@
 
 
     <!-- section-18-->
-    <div class="w-100 h-100 mt-60px h-md-auto" id="container4">
+    <div class="w-100 h-100 mt-60px h-md-auto" id="container1">
         <div class="w-100 h-100 ">
-            <h3 class="text-center building-text">Ongoing</h3>
-            <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container4">
+            <h3 class="text-center building-text" id="conatiner">Ongoing</h3>
+            <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container1">
                 <!-- <h3 class="text-center building-text">ONGOING</h3> -->
                 <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
                 
@@ -1116,7 +1108,7 @@
 
     <!-- section-19 -->
 
-    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container1">
+    <div class="container-fluid mt-60px w-100 h-90 h-md-auto" id="container">
 
         <div class="row row-cols-1 row-cols-lg-2 w-100 h-100 h-md-auto">
             <div class="col-12 col-lg-6  prl-0  h-100 pr-44px home-col h-md-70vw">
@@ -2986,55 +2978,6 @@
     </script>
 
     <!-- Progress Bar -->
-    // <script>
-    //     // Cache selectors
-    //     var lastId,
-    //         topMenu = $("#footerNav"),
-    //         topMenuHeight = topMenu.outerHeight() + 1,
-    //         // All list items
-    //         menuItems = topMenu.find("a"),
-    //         // Anchors corresponding to menu items
-    //         scrollItems = menuItems.map(function () {
-    //             var item = $($(this).attr("href"));
-    //             if (item.length) { return item; }
-    //         });
-
-    //     // Bind click handler to menu items
-    //     // so we can get a fancy scroll animation
-    //     menuItems.click(function (e) {
-    //         var href = $(this).attr("href"),
-    //             offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-    //         $('html, body').stop().animate({
-    //             scrollTop: offsetTop
-    //         }, 850);
-    //         e.preventDefault();
-    //     });
-
-    //     // Bind to scroll
-    //     $(window).scroll(function () {
-    //         // Get container scroll position
-    //         var fromTop = $(this).scrollTop() + topMenuHeight;
-
-    //         // Get id of current scroll item
-    //         var cur = scrollItems.map(function () {
-    //             if ($(this).offset().top < fromTop)
-    //                 return this;
-    //         });
-    //         // Get the id of the current element
-    //         cur = cur[cur.length - 1];
-    //         var id = cur && cur.length ? cur[0].id : "";
-
-    //         if (lastId !== id) {
-    //             lastId = id;
-    
-    //             $(`.page-scroll`).removeClass("active");
-    //             $(`.${id}`).addClass("active");
-             
-    //         }
-    //     });
-
-    // </script>
-
     <script>
         // Cache selectors
         var lastId,
@@ -3052,22 +2995,16 @@
         // so we can get a fancy scroll animation
         menuItems.click(function (e) {
             var href = $(this).attr("href"),
-                offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight;
-                // offsetTop = href === "#" ? 0 : $(href).offset().top  - 200
-            $('html, body').animate({
-                // scrollTop: offsetTop
-                scrollTop: $('.page-scroll').offset().top - $(window).height() - 400
-    }, 1000);
-                // scrollTop: $('.scroll-to-this').offset().top - $(window).height() - 100
-                // scrollTop: $('.page-scroll').offset().top - $(window).height() - 100
-            // }, 850);
+                offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+            $('html, body').stop().animate({
+                scrollTop: offsetTop
+            }, 850);
             e.preventDefault();
         });
 
         // Bind to scroll
         $(window).scroll(function () {
             // Get container scroll position
-
             var fromTop = $(this).scrollTop() + topMenuHeight;
 
             // Get id of current scroll item
@@ -3081,18 +3018,18 @@
 
             if (lastId !== id) {
                 lastId = id;
-    
+                // Set/remove active class
+                //    console.log("rrr - ", $(".temp"));
+                //    console.log("id - ", id, menuItems.filter("[href=#"+id+"]"));
                 $(`.page-scroll`).removeClass("active");
                 $(`.${id}`).addClass("active");
-             
+                //  .end().filter("[href=#"+id+"]").parent().addClass("active");
             }
         });
 
     </script>
 
 
-
-    // return e("html, body").animate({scrollTop:a.offset().top-50},1e3,"easeInOutExpo")
 
 
     <script>
