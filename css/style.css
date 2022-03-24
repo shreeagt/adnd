@@ -801,8 +801,9 @@ html,
 }
 
 span.strong {
-    font-weight: 800!important;
+    font-weight: 200!important;
     font-family: gotham-black!important;
+    font-family: 'Gotham', sans-serif!important;
 }
 
 .text-container b{
@@ -904,7 +905,7 @@ span.strong {
     
 }
 .details{
-    height: 330px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -921,7 +922,7 @@ span.strong {
 
 /* css 16-03 */
 .details h5{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 100 !important;
     color: #736E64;
     
@@ -936,7 +937,7 @@ span.strong {
 
 /* css 16-03 */
 .details h4 {
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 100 !important;
     color: #000000;
     opacity: 95%;
@@ -1000,8 +1001,8 @@ span.strong {
 @media only screen and (min-width:1300px){
 
     .text-container h1{
-        font-size: 30px;
-        line-height: 41px;
+        font-size: 26px;
+        line-height: 36px;
     }
     .mr-88px{
         margin-right: 70px;
@@ -1198,7 +1199,7 @@ span.strong {
         height: 60vw;
     }
     .details{
-        height: 300px;
+        height: 200px;
     }
 }
 
@@ -4619,7 +4620,7 @@ a#nav-link {
         color: #736E64;
     } */
     .details h5 {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 100 !important;
         color: #736E64;
     }
@@ -4631,7 +4632,7 @@ a#nav-link {
         opacity: 95%;
     } */
     .details h4 {
-        font-size: 19px;
+        font-size: 17px;
         font-weight: 100 !important;
         color: #000000;
         opacity: 95%;
