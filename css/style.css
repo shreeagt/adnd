@@ -801,8 +801,11 @@ html,
 }
 
 span.strong {
-    font-weight: 200!important;
-    font-family: gotham-black!important;
+    font-weight: bold!important;
+    /* font-family: gotham-black!important; */
+    /* font-family: gotham-black!important; */
+    /* font-family: gotham-book; */
+
     font-family: 'Gotham', sans-serif!important;
 }
 
