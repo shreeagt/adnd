@@ -802,11 +802,11 @@ html,
 
 span.strong {
     font-weight: bold!important;
-    /* font-family: gotham-black!important; */
-    /* font-family: gotham-black!important; */
-    /* font-family: gotham-book; */
+    /* font-family: gotham-black!important;
+    font-family: gotham-black!important; */
+    font-family: gotham-book;
 
-    font-family: 'Gotham', sans-serif!important;
+    /* font-family: 'Gotham', sans-serif!important; */
 }
 
 .text-container b{
