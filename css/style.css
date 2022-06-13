@@ -1003,9 +1003,13 @@ span.strong {
 
 @media only screen and (min-width:1300px){
 
-    .text-container h1{
+    /* .text-container h1{
         font-size: 26px;
         line-height: 36px;
+    } */
+    .text-container h1{
+        font-size: 24px;
+        line-height: 34px;
     }
     .mr-88px{
         margin-right: 70px;
