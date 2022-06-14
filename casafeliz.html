@@ -23,11 +23,31 @@
             margin-top: 10px;
         }
 
+
+         @media only screen and (min-width: 1900px){
+            .text-container h1 {
+                font-size: 23px;
+                line-height: 34px;
+                opacity:100%;
+            }
+        }
+
+        @media only screen and (min-width: 1600px){
+.text-container h1 {
+    font-size: 20px;
+    line-height: 32px;
+}
+        }
         @media only screen and (min-width:1300px) {
             .row.sarr {
                 /* height: 18px; */
                 margin-top: 16px;
             }
+
+            .text-container h1 {
+    font-size: 20px;
+    line-height: 32px;
+}
         }
 
         .mw-100 {
@@ -53,6 +73,8 @@
                 justify-content: space-around;
                 width: 75%;
             }
+
+
         }
 
         @media only screen and (min-width:1000px) {
@@ -64,14 +86,33 @@
                 margin-left: 33px !important;
             }
 
+            .text-container h1 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
         }
 
-        @media only screen and (max-width:998px) {
+            @media only screen and (max-width:998px) {
             .row.sarr {
                 /* height: 18px; */
                 margin-top: 0px;
             }
-        }
+
+            .text-container h1 {
+            font-size: 17px;
+            line-height:20px;
+            opacity:100%;
+            }
+            }
+
+            @media only screen and (max-width:760px) {
+                .text-container h1 {
+            font-size: 17px!important;
+            line-height:20px;
+            opacity:100%;
+            }
+            }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -228,7 +269,7 @@
         <div class="row ">
             <div class="col col-12 col-lg-4-7 order-last order-lg-first mt-sm-60px ">
                 <div class="row h-100 w-100">
-                    <div class="col-7 col-md-6 col-lg-10 col-xl-7  mt-lg-auto ml-5 ml-lg-auto prl-0 pr-50px">
+                    <div class="col-7 col-md-6 col-lg-10 col-xl-9  mt-lg-auto ml-5 ml-lg-auto prl-0 pr-50px">
                         <div class="text-container ">
                             <!-- <h1>
                                 “The
@@ -237,7 +278,8 @@
                                 <b><span class="strong">placate world</span></b>”
                             </h1> -->
                             <h1>
-                                “With a soul in an ongoing conversation with its verdant context, <span class="strong">Casa Feliz</span> epitomises the quintessential tropical slow life in <span class="strong">Alibaug</span> as the thresholds between the indoor and outdoor blur <span class="strong">with earthy materiality as the frontrunner.</span>”
+                                <!-- “With a soul in an ongoing conversation with its verdant context, <span class="strong">Casa Feliz</span> epitomises the quintessential tropical slow life in <span class="strong">Alibaug</span> as the thresholds between the indoor and outdoor blur <span class="strong">with earthy materiality as the frontrunner.</span>” -->
+                                “With a soul in an ongoing conversation with its verdant context, Casa Feliz epitomises the quintessential tropical slow life in Alibaug as the thresholds between the indoor and outdoor blur with earthy materiality as the frontrunner.”
                             </h1>
                         </div>
                     </div>
