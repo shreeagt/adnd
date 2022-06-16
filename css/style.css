@@ -80,6 +80,11 @@
     font-family: 'gotham-bold';
 }
 
+.text-container h1 {
+  color:#000;
+  opacity: 100%;
+}
+
 .ap {
     bottom: 10%;
 }
@@ -396,6 +401,12 @@ span.db {
     .col-12{
         width: 100%!important;
     }
+
+    .text-container h1 {
+        font-size: 15px!important;
+        line-height:34px;
+        opacity:100%;
+        }
   
 }
 
@@ -772,15 +783,7 @@ html,
 
 /* ********************page1 css******************** */
 
-.text-container h1{
-    font-family: 'Gotham', sans-serif!important;
-    font-weight:200 !important;
-    margin-bottom: 0;
-    color: #000000;
-    opacity: 70%;
-    /* font-weight: lighter !important; */
-                                                
-}
+
 
 .row.row-cols-1.row-cols-lg-2.text_cust {
     align-items: center;
@@ -987,6 +990,11 @@ span.strong {
         font-size: 30px;
         line-height: 35px;
     }
+
+    .text-container h1 {
+        font-size: 11px;
+        line-height: 20px;
+    }
 }
 
 @media only screen and (min-width:1200px){
@@ -995,9 +1003,7 @@ span.strong {
         line-height: 35px;
     }
 
-    .text-container h1 {
-        font-size: 24px;
-    }
+  
 
 }
 
@@ -1008,8 +1014,8 @@ span.strong {
         line-height: 36px;
     } */
     .text-container h1{
-        font-size: 23px;
-        line-height: 34px;
+        font-size: 11px;
+        line-height: 22px;
         font-family: gotham-book!important;
     }
     .mr-88px{
@@ -1102,7 +1108,12 @@ span.strong {
 
 }
 
-
+@media only screen and (min-width:1400px){
+    .text-container h1 {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
 
 
 @media only screen and (min-width:1500px){
@@ -1197,7 +1208,7 @@ span.strong {
 @media only screen and (max-width:976px){
     .text-container {
         text-align: left;
-        padding-right: 100px;
+     
     }
 
     .ml-5{
@@ -1391,17 +1402,11 @@ img.ongoing-img {
 }
 
 @media only screen and (max-width:767px){
-    .text-container {
-        text-align: left;
-        padding-right: 21vw;
-    }
+
 }
 
 @media only screen and (max-width:540px){
-    .text-container {
-        text-align: left;
-        padding-right: 6vw;
-    }
+ 
 
     .yearss .text-container {
         width: 67%;
@@ -1424,6 +1429,11 @@ img.ongoing-img {
         transform: scale(1.4);
     }
 
+    .text-container h1 {
+        font-size: 15px!important;
+        line-height:25px;
+        opacity:100%;
+        }
   
 }
 
@@ -1520,8 +1530,8 @@ img.ongoing-img {
     }
 
     .text-container h1 {
-        font-size: 34px;
-        line-height: 54px;
+        font-size: 20px;
+        line-height: 32px;
     }
 
     /* css start */
@@ -1647,8 +1657,8 @@ img.ongoing-img {
     }
 
     .text-container h1 {
-        font-size: 45px;
-        line-height: 63px;
+        font-size: 23px;
+        line-height: 34px;
     }
 
 
@@ -2669,11 +2679,7 @@ h5.bolder.hover-text {
         line-height: 21px;
         color: #736E64 ;
     }
-    .text-container h1{
-        font-size: 28px !important;
-        line-height: 40px;
-        
-    }
+
     .project-details p{
         font-size: 14px;
         line-height: 21px;
@@ -3522,6 +3528,15 @@ display:none;
   }
   @media only screen and (max-width:998px){
 
+
+    .text-container h1 {
+        font-size: 17px;
+        line-height: 34px;
+        opacity: 100%;
+        padding: 0 10vw;
+        text-align: center;
+    }
+
     .col-12.pg3-col-lg-4-8.mt-sm-60px.prl-0.pd-tp.cust-page {
         width: 100vw!important;
     }
@@ -3631,9 +3646,6 @@ display:none;
         width: 100%!important;
     }
 
-    .text-container h1 {
-        font-size: 28px;
-    }
 
     .col-12.col-lg-3.txtalr.pg-7-col.f-lighter.f-18px.cur-p.project-details {
         margin-bottom: 160px;
@@ -4271,8 +4283,8 @@ a#nav-link {
     }
 
     .text-container h1 {
-        font-size: 55px;
-        line-height: 70px;
+        font-size: 25px;
+        line-height: 36px;
     }
 
     /* #navbar-nav {
@@ -4666,20 +4678,20 @@ a#nav-link {
         letter-spacing: 0px !important;
     }
 
-    .text-container h1 {
+    /* .text-container h1 {
         font-size: 26px !important;
         line-height: 38px;
-    }
+    } */
 
-    .text-container h1 {
+    /* .text-container h1 {
         font-size: 23px !important;
         line-height: 33px;
-    }
+    } */
 
-    .text-container {
+    /* .text-container {
         text-align: left;
         padding-right: 0;
-    }
+    } */
 
     .years h1 {
         font-size: 40px;
@@ -4957,11 +4969,11 @@ a#nav-link {
         font-size: 16px;
         line-height: 12px;
     }
-
+/* 
     .text-container h1 {
         font-size: 20px !important;
         line-height: 25px;
-    }
+    } */
 
     .details {
         height: 200px;
@@ -4969,10 +4981,10 @@ a#nav-link {
 }
 
 @media only screen and (max-width:280px){
-    .text-container h1 {
+    /* .text-container h1 {
         font-size: 20px !important;
         line-height: 28px;
-    }
+    } */
 
 
     .concept {
@@ -5033,10 +5045,10 @@ a#nav-link {
         margin-bottom: 0;
     }
 
-    .text-container h1 {
+    /* .text-container h1 {
         font-size: 17px !important;
         line-height: 22px;
-    }
+    } */
 
     .details h5 {
         font-size: 17px;
